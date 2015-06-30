@@ -28,6 +28,7 @@ script:
     - date
     - ls -al
     - touch IDB.log
-    - make IDB.html
-    - ls -al
+    #- make models.html
+    #- ls -al
+    # uncomment these when there's actually something to check
     - make check

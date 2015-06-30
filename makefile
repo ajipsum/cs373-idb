@@ -1,6 +1,6 @@
 FILES :=                              \
     .travis.yml                       \
-    IDB.html                          \
+    models.html                       \
     IDB.log                           \
     models.py                         \
     tests.py                          
