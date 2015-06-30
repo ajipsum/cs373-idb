@@ -1,0 +1,7 @@
+# http://git-scm.com/docs/gitignore/
+
+__pycache__
+*.pyc
+.coverage
+probe.txt
+env/
