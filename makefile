@@ -1,9 +1,15 @@
-FILES :=                              \
-    .travis.yml                       \
-    models.html                       \
-    IDB.log                           \
-    models.py                         \
-    tests.py                          
+FILES :=                              						\
+    .travis.yml                       						\
+    models.html                       						\
+    IDB.log                           						\
+    models.py                         						\
+    tests.py                          						\
+	__init__.py						  						\
+	index.html						  						\
+	/static/vendors/angular.js		  						\
+	/static/vendors/bootstrap-3.3.5-dist/css/bootstrp.css 	\
+	/static/assets/javascripts/app.js 						\
+	/static/assets/javascripts/controllers/HomeCtrl.js
 
 all:
 
