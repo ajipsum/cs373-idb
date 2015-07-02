@@ -5,7 +5,7 @@ FILES :=                              						\
     models.py                         						\
     tests.py                          						\
 	__init__.py						  						\
-	/templates/index.html			  						\
+	templates/index.html			  						\
 	static/vendors/angular.js		  						\
 	static/vendors/bootstrap-3.3.5-dist/css/bootstrap.css 	\
 	static/assets/javascript/app.js 						\
