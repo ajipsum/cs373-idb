@@ -1,3 +1,3 @@
-app.controller('home_ctrl', function($scope) {
+app.controller('HomeCtrl', function($scope) {
     $scope.test = "this is a test BIATCH!";
 });
