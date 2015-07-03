@@ -16,11 +16,11 @@ def index(static = None):
 @app.route("/test1")
 def test1():
     return render_template('test1.html')
-
-@app.route("/test2")
-def test2():
-    return render_template('test2.html')
 """
+@app.route("/table")
+def table():
+    return render_template('table.html')
+
 if __name__ == "__main__":
     app.debug = True
-    app.run()
+    app.run(host='127.0.0.1', port=80)
