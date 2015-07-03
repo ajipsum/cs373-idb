@@ -198,7 +198,7 @@ for table in tables:
 
 								if '14' in season and '15' in season:
 									print(season)
-									next(iterate) #skip it
+									team = next(iterate) #skip it
 									games_played = next(iterate).text
 									stats['GP'] = games_played
 									games_started = next(iterate).text
