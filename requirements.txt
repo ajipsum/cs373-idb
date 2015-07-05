@@ -1,4 +1,12 @@
+# Flask framework
 Flask==0.10.1
+
+# Template Engine
 Jinja2==2.7.3
+
+# SQLAlchemy
 SQLAlchemy==1.0.6
 Flask-SQLAlchemy==2.0
+
+# Require PyMySQL for SQLAlchemy
+PyMySQL==0.6.6
