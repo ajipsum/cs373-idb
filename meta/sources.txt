@@ -1,0 +1,6 @@
+Navbar:
+  http://startbootstrap.com/template-overviews/scrolling-nav/
+  https://github.com/IronSummitMedia/startbootstrap-scrolling-nav
+
+Bootstrap Components
+  http://getbootstrap.com/components/
