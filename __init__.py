@@ -12,14 +12,11 @@ db = SQLAlchemy(app)
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+  return render_template('index.html') 
 
 # Setup environment
 if __name__ == "__main__":
   # app.debug = True
-
-  # create db based on model
-  import models
 
   # run app
   app.run(host='0.0.0.0', port=5000)
