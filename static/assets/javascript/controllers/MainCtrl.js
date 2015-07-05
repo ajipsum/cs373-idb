@@ -2,72 +2,177 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
  
   $scope.playerData = [
     {
-        "firstName": "Cob",
-        "company": "Enormo",
-        "employed": true
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220"
     },
     {
-        "firstName": "Lorraine",
-        "company": "Comveyer",
-        "employed": false
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251"
     },
     {
-        "firstName": "Steve",
-        "company": "Fuelton",
-        "employed": false
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250"
     }
 ];
 
   $scope.teamData = [
     {
-	"alpha": "1",
-	"beta": "2"
+  "last_name": "Spurs",
+  "city": "San Antonio",
+  "state": "Texas",
+  "site_name": "AT&T Center",
+  "conference": "West",
+  "division": "Southwest"
     },
     {
-	"alpha": "3",
-	"beta": "4"
+  "last_name": "Heat",
+  "city": "Miami",
+  "state": "Florida",
+  "site_name": "AmericanAirlines Arena",
+  "conference": "East",
+  "division": "Southeast"
+    },
+    {
+  "last_name": "Clippers",
+  "city": "Los Angeles",
+  "state": "California",
+  "site_name": "Staples Center",
+  "conference": "West",
+  "division": "Pacific"
     }
 ];
 
   $scope.gameData = [
     {
-	"gamma": "5",
-	"delta": "6"
+  "game_id": "21400102",
+  "home_team": "Los Angeles Clippers",
+  "home_score": "89",
+  "away_team": "San Antonio Spurs",
+  "away_score": "85",
+  "date": "November 10, 2014"
     },
     {
-	"gamma": "7",
-	"delta": "8"
+  "game_id": "21400414",
+  "home_team": "San Antonio Spurs",
+  "home_score": "125",
+  "away_team": "Los Angeles Clippers",
+  "away_score": "118",
+  "date": "December 22, 2014"
+    },
+    {
+  "game_id": "21400559",
+  "home_team": "Los Angeles Clippers",
+  "home_score": "104",
+  "away_team": "Miami Heat",
+  "away_score": "90",
+  "date": "January 11, 2015"
     }
 ];
 
   $scope.playerOptions = {
       data: 'playerData',
       columnDefs: 
-         [{
-	      field:'firstName', 
-	      displayName:'Alpha', 
-	      cellTemplate: '<div class="ngCellText"><a href="/#/player/{[COL_FIELD]}">{[COL_FIELD]}</a></div>'
-	  },
-	  {
-	      field: 'company', 
-	      displayName:'Gamma'
-	  },
-	  {
-	      field: 'employed', 
-	      displayName:'Delta'
-	  }]
+      [
+    {
+        field:'player_name', 
+        displayName:'Name'//, 
+        //cellTemplate: '<div class="ngCellText"><a href="/#/player/{[COL_FIELD]}">{[COL_FIELD]}</a></div>'
+    },
+    {
+        field:'current_team', 
+        displayName:'Team'
+    },
+    {
+        field:'player_number', 
+        displayName:'Number'
+    },
+    {
+        field:'position',
+        displayName:'Position'
+    },
+    {
+        field:'age',
+        displayName:'Age'
+    },
+    {
+        field:'weight',
+        displayName:'Weight'
+    }
+      ]
   };
 
   $scope.teamOptions = {
       data: 'teamData',
-      columnDefs: [{field:'alpha', displayName:'AlphaTest'},
-		   {field:'beta', displayName:'BetaTest'}]
+      columnDefs: 
+      [
+    {
+        field:'last_name', 
+        displayName:'Name'
+    },
+    {
+        field:'city', 
+        displayName:'City'
+    },
+    {
+        field:'state',
+        displayName:'State'
+    },
+    {
+        field:'site_name',
+        displayName:'Arena'
+          },
+    {
+        field:'conference',
+        displayName:'Conference'
+    },
+    {
+        field:'division',
+        displayName:'Division'
+    }
+      ]
   };
 
   $scope.gameOptions = {
       data: 'gameData',
-      columnDefs: [{field:'gamma', displayName:'GammaTest'},
-		   {field:'delta', displayName:'DeltaTest'}]
+      columnDefs: 
+      [
+    {
+        field:'game_id', 
+        displayName:'Game ID'
+    },
+    {
+        field:'home_team', 
+        displayName:'Home Team'
+    },
+    {
+        field:'home_score',
+        displayName:'Home Score'
+    },
+    {
+        field:'away_team',
+        displayName:'Away Team'
+    },
+    {
+        field:'away_score',
+        displayName:'Away Score'
+    },
+    {
+        field:'date',
+        displayName:'Date'
+    }
+      ]
   };
 
 
