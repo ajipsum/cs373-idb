@@ -97,7 +97,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
     {
         field:'player_name', 
         displayName:'Name', 
-        cellTemplate: '<div class="ngCellText"><a href="/{[ row.entity.tag ]}">{[ COL_FIELD ]}</a></div>'
+        cellTemplate: '<div class="ngCellText"><a href="/{{ row.entity.tag }}">{{ COL_FIELD }}</a></div>'
     },
     {
         field:'current_team', 
@@ -129,7 +129,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
     {
         field:'last_name', 
         displayName:'Name',
-	cellTemplate: '<div class="ngCellText"><a href="/{[ row.entity.tag ]}">{[ COL_FIELD ]}</a></div>'
+	cellTemplate: '<div class="ngCellText"><a href="/{{ row.entity.tag }}">{{ COL_FIELD }}</a></div>'
     },
     {
         field:'city', 
@@ -161,7 +161,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
     {
         field:'game_id', 
         displayName:'Game ID',
-	cellTemplate: '<div class="ngCellText"><a href="/{[ row.entity.tag ]}">{[ COL_FIELD ]}</a></div>'
+	cellTemplate: '<div class="ngCellText"><a href="/{{ row.entity.tag }}">{{ COL_FIELD }}</a></div>'
     },
     {
         field:'home_team', 
