@@ -1,4 +1,4 @@
-app.controller('MainCtrl', ['$scope', function ($scope) {
+app.controller('TableCtrl', ['$scope', function ($scope) {
  
   $scope.playerData = [
     {
