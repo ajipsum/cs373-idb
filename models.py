@@ -7,7 +7,7 @@ class Player(db.Model):
   Information includes name, picture, position, player number, weight etc.
   '''
 
-  __tablename__ = "Player"
+  # __tablename__ = "Player"
 
   name = db.Column(db.String(256), primary_key=True)
   picture = db.Column(db.String(256), unique=True)
@@ -62,9 +62,9 @@ class Player(db.Model):
   season_3PM_A = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
 
-  # def __init__(self, name, picture):
-  #   self.name = name
+  # def __init__(self, picture, experience_years):
   #   self.picture = picture
+  #   self.experience_years = experience_years
 
   # def __init__(self, username, email):
   #     self.username = username
@@ -80,7 +80,7 @@ class Team(db.Model):
   Information includes name, conference, division, site_name, city, state, mascot
   '''
 
-  __tablename__ = "Team"
+  # __tablename__ = "Team"
 
   players = db. relationship('Player', backref='team', lazy='dynamic')
   name = db.Column(db.String(256), primary_key=True)
@@ -107,7 +107,7 @@ class Game(db.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
-  __tablename__ = "Game"
+  # __tablename__ = "Game"
 
   id = db.Column(db.Integer, primary_key=True)
   home_team = db.Column(db.String(256))
@@ -155,4 +155,6 @@ class Game(db.Model):
     backref=db.backref('games', lazy='dynamic'))
 
 
+# Create database schema
+db.create_all()
 
