@@ -73,6 +73,10 @@ class Player(db.Model):
 
 
 class Team(db.Model):
+  '''
+  Information about Team 
+  Information includes name, conference, division, site_name, city, state, mascot
+  '''
   players = db. relationship('Player', backref='team', lazy='dynamic')
   name = db.Column(db.String(256))
   conference = db.Column(db.String(256))
@@ -93,6 +97,10 @@ players = db.Table('players',
 )
 
 class Game(db.Model):
+  '''
+  Information about Game
+  Information include home_team, away_team, data, home_score, away_score, etc.
+  '''
   id = db.Column(db.Integer, primary_key=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
