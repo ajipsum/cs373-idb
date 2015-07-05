@@ -29,7 +29,42 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/home",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/table.html",
+                    templateUrl: "../../../templates/home.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.team', {
+            url: "/teams",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/teams/teams.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.players', {
+            url: "/players",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/players/players.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.games', {
+            url: "/games",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/games/games.html",
+                    controller: "TableCtrl"
+                }
+            }
+        }).state('root.about', {
+            url: "/about",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/about.html",
                     controller: "TableCtrl"
                 }
             }
