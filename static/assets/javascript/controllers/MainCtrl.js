@@ -8,7 +8,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "position": "SG",
   "age": "33",
   "weight": "220",
-  "tag": "DW"
+  "tag": "dw"
     },
     {
         "player_name": "Blake Griffin",
@@ -17,7 +17,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "position": "PF",
   "age": "26",
   "weight": "251",
-  "tag": "BG"
+  "tag": "bg"
     },
     {
         "player_name": "Tim Duncan",
@@ -26,7 +26,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "position": "PF",
   "age": "39",
   "weight": "250",
-  "tag": "TD"
+  "tag": "td"
     }
 ];
 
@@ -38,7 +38,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "site_name": "AT&T Center",
   "conference": "West",
   "division": "Southwest",
-  "tag": "SAS"
+  "tag": "sas"
     },
     {
   "last_name": "Heat",
@@ -47,7 +47,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "site_name": "AmericanAirlines Arena",
   "conference": "East",
   "division": "Southeast",
-  "tag": "MIA"
+  "tag": "mia"
     },
     {
   "last_name": "Clippers",
@@ -56,7 +56,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "site_name": "Staples Center",
   "conference": "West",
   "division": "Pacific",
-  "tag": "LAC"
+  "tag": "lac"
     }
 ];
 
