@@ -1,9 +1,4 @@
-from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://perry:@127.0.0.1:3306/nba_flask'
-db = SQLAlchemy(app)
+from . import db
 
 
 class Player(db.Model):
@@ -64,12 +59,12 @@ class Player(db.Model):
     season_3PM_A = db.Column(db.String(256))
     team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
 
-    def __init__(self, username, email):
-        self.username = username
-        self.email = email
+    # def __init__(self, username, email):
+    #     self.username = username
+    #     self.email = email
 
-    def __repr__(self):
-        return '<User %r>' % self.username
+    # def __repr__(self):
+    #     return '<User %r>' % self.username
 
 
 class Team(db.Model):
