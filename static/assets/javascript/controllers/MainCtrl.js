@@ -7,7 +7,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "player_number": "3",
   "position": "SG",
   "age": "33",
-  "weight": "220"
+  "weight": "220",
+  "tag": "DW"
     },
     {
         "player_name": "Blake Griffin",
@@ -15,7 +16,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "player_number": "32",
   "position": "PF",
   "age": "26",
-  "weight": "251"
+  "weight": "251",
+  "tag": "BG"
     },
     {
         "player_name": "Tim Duncan",
@@ -23,7 +25,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "player_number": "21",
   "position": "PF",
   "age": "39",
-  "weight": "250"
+  "weight": "250",
+  "tag": "TD"
     }
 ];
 
@@ -34,7 +37,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "state": "Texas",
   "site_name": "AT&T Center",
   "conference": "West",
-  "division": "Southwest"
+  "division": "Southwest",
+  "tag": "SAS"
     },
     {
   "last_name": "Heat",
@@ -42,7 +46,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "state": "Florida",
   "site_name": "AmericanAirlines Arena",
   "conference": "East",
-  "division": "Southeast"
+  "division": "Southeast",
+  "tag": "MIA"
     },
     {
   "last_name": "Clippers",
@@ -50,7 +55,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "state": "California",
   "site_name": "Staples Center",
   "conference": "West",
-  "division": "Pacific"
+  "division": "Pacific",
+  "tag": "LAC"
     }
 ];
 
@@ -61,7 +67,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "home_score": "89",
   "away_team": "San Antonio Spurs",
   "away_score": "85",
-  "date": "November 10, 2014"
+  "date": "November 10, 2014",
+  "tag": "102"
     },
     {
   "game_id": "21400414",
@@ -69,7 +76,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "home_score": "125",
   "away_team": "Los Angeles Clippers",
   "away_score": "118",
-  "date": "December 22, 2014"
+  "date": "December 22, 2014",
+  "tag": "414"
     },
     {
   "game_id": "21400559",
@@ -77,7 +85,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
   "home_score": "104",
   "away_team": "Miami Heat",
   "away_score": "90",
-  "date": "January 11, 2015"
+  "date": "January 11, 2015",
+  "tag": "559"
     }
 ];
 
@@ -87,8 +96,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
       [
     {
         field:'player_name', 
-        displayName:'Name'//, 
-        //cellTemplate: '<div class="ngCellText"><a href="/#/player/{[COL_FIELD]}">{[COL_FIELD]}</a></div>'
+        displayName:'Name', 
+        cellTemplate: '<div class="ngCellText"><a href="/{[ row.entity.tag ]}">{[ COL_FIELD ]}</a></div>'
     },
     {
         field:'current_team', 
@@ -119,7 +128,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
       [
     {
         field:'last_name', 
-        displayName:'Name'
+        displayName:'Name',
+	cellTemplate: '<div class="ngCellText"><a href="/{[ row.entity.tag ]}">{[ COL_FIELD ]}</a></div>'
     },
     {
         field:'city', 
@@ -150,7 +160,8 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
       [
     {
         field:'game_id', 
-        displayName:'Game ID'
+        displayName:'Game ID',
+	cellTemplate: '<div class="ngCellText"><a href="/{[ row.entity.tag ]}">{[ COL_FIELD ]}</a></div>'
     },
     {
         field:'home_team', 
