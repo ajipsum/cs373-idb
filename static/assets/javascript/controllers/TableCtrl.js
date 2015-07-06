@@ -68,7 +68,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "away_team": "San Antonio Spurs",
   "away_score": "85",
   "date": "November 10, 2014",
-  "tag": "102"
+  "tag": "g102"
     },
     {
   "game_id": "21400414",
@@ -77,7 +77,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "away_team": "Los Angeles Clippers",
   "away_score": "118",
   "date": "December 22, 2014",
-  "tag": "414"
+  "tag": "g414"
     },
     {
   "game_id": "21400559",
@@ -86,7 +86,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "away_team": "Miami Heat",
   "away_score": "90",
   "date": "January 11, 2015",
-  "tag": "559"
+  "tag": "g559"
     }
 ];
 
