@@ -5,8 +5,7 @@ from jinja2 import TemplateNotFound
 app = Flask(__name__)
 
 # Load config.py
-app.config.from_object('config')
-
+#app.config.from_object('config')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
 db = SQLAlchemy(app)
 

@@ -33,13 +33,13 @@ class TestAPI (TestCase) :
         db.session.add(team)
         db.session.commit()
         t = Team.query.filter_by(name='Spurs').first()
-        assertEqual(t.name, "Spurs") 
-        assertEqual(t.conference, "West")
-        assertEqual(t.division, "Southwest")
-        assertEqual(t.site_name, "AT&T Center")
-        assertEqual(t.city, "San Antonio")
-        assertEqual(t.state, "Texas")
-        assertEqual(t.mascot, "The Coyote")
+        self.assertEqual(t.name, "Spurs") 
+        self.assertEqual(t.conference, "West")
+        self.assertEqual(t.division, "Southwest")
+        self.assertEqual(t.site_name, "AT&T Center")
+        self.assertEqual(t.city, "San Antonio")
+        self.assertEqual(t.state, "Texas")
+        self.assertEqual(t.mascot, "The Coyote")
 
     def test_team_create_2(self):
          team = Team(
@@ -54,13 +54,13 @@ class TestAPI (TestCase) :
          db.session.add(team)
          db.session.commit()
          t = Team.query.filter_by(name='').first()
-         assertEqual(t.name, "") 
-         assertEqual(t.conference, "")
-         assertEqual(t.division, "")
-         assertEqual(t.site_name, "")
-         assertEqual(t.city, "")
-         assertEqual(t.state, "")
-         assertEqual(t.mascot, "")
+         self.assertEqual(t.name, "") 
+         self.assertEqual(t.conference, "")
+         self.assertEqual(t.division, "")
+         self.assertEqual(t.site_name, "")
+         self.assertEqual(t.city, "")
+         self.assertEqual(t.state, "")
+         self.assertEqual(t.mascot, "")
 
     def test_team_create_3(self):
          team = Team(
@@ -75,13 +75,13 @@ class TestAPI (TestCase) :
          db.session.add(team)
          db.session.commit()
          t = Team.query.filter_by(name='Heat').first()
-         assertEqual(t.name, "Heat") 
-         assertEqual(t.conference, "East")
-         assertEqual(t.division, "Southeast")
-         assertEqual(t.site_name, "AmericanAirlines Arena")
-         assertEqual(t.city, "Miami")
-         assertEqual(t.state, "Florida")
-         assertEqual(t.mascot, "Burnie")
+         self.assertEqual(t.name, "Heat") 
+         self.assertEqual(t.conference, "East")
+         self.assertEqual(t.division, "Southeast")
+         self.assertEqual(t.site_name, "AmericanAirlines Arena")
+         self.assertEqual(t.city, "Miami")
+         self.assertEqual(t.state, "Florida")
+         self.assertEqual(t.mascot, "Burnie")
 
     def test_player_create_1(self):
          player = Player(
@@ -95,12 +95,12 @@ class TestAPI (TestCase) :
          db.session.add(player)
          db.session.commit()
          p = Player.query.filter_by(name='Dwyane Wade').first()
-         assertEqual(p.name, "Dwyane Wade") 
-         assertEqual(p.position, "SG")
-         assertEqual(p.player_number, "3")
-         assertEqual(p.current_team, "Miami Heat")
-         assertEqual(p.age, "33")
-         assertEqual(p.weight, "220")
+         self.assertEqual(p.name, "Dwyane Wade") 
+         self.assertEqual(p.position, "SG")
+         self.assertEqual(p.player_number, "3")
+         self.assertEqual(p.current_team, "Miami Heat")
+         self.assertEqual(p.age, "33")
+         self.assertEqual(p.weight, "220")
 
     def test_player_create_2(self):
          player = Player(
@@ -114,12 +114,12 @@ class TestAPI (TestCase) :
          db.session.add(player)
          db.session.commit()
          p = Player.query.filter_by(name='').first()
-         assertEqual(p.name, "") 
-         assertEqual(p.position, "")
-         assertEqual(p.player_number, "")
-         assertEqual(p.current_team, "")
-         assertEqual(p.age, "")
-         assertEqual(p.weight, "")
+         self.assertEqual(p.name, "") 
+         self.assertEqual(p.position, "")
+         self.assertEqual(p.player_number, "")
+         self.assertEqual(p.current_team, "")
+         self.assertEqual(p.age, "")
+         self.assertEqual(p.weight, "")
 
     def test_player_create_3(self):
          player = Player(
@@ -133,16 +133,16 @@ class TestAPI (TestCase) :
          db.session.add(player)
          db.session.commit()
          p = Player.query.filter_by(name='Tim Duncan').first()
-         assertEqual(p.name, "Tim Duncan") 
-         assertEqual(p.position, "PF")
-         assertEqual(p.player_number, "21")
-         assertEqual(p.current_team, "San Antonio Spurs")
-         assertEqual(p.age, "39")
-         assertEqual(p.weight, "250")
+         self.assertEqual(p.name, "Tim Duncan") 
+         self.assertEqual(p.position, "PF")
+         self.assertEqual(p.player_number, "21")
+         self.assertEqual(p.current_team, "San Antonio Spurs")
+         self.assertEqual(p.age, "39")
+         self.assertEqual(p.weight, "250")
 
     def test_game_create_1(self):
          game = Game(
-             id = "21400102",
+             id = 21400102,
              home_team = "Los Angeles Clippers",
              home_score = "89",
              away_team = "San Antonio Spurs",
@@ -152,15 +152,15 @@ class TestAPI (TestCase) :
          db.session.add(game)
          db.session.commit()
          g = Game.query.filter_by(id='21400102').first()
-         assertEqual(g.home_team, "Los Angeles Clippers") 
-         assertEqual(g.home_score, "89")
-         assertEqual(g.away_team, "San Antonio Spurs")
-         assertEqual(g.away_score, "85")
-         assertEqual(g.date, "November 10, 2014")
+         self.assertEqual(g.home_team, "Los Angeles Clippers") 
+         self.assertEqual(g.home_score, "89")
+         self.assertEqual(g.away_team, "San Antonio Spurs")
+         self.assertEqual(g.away_score, "85")
+         self.assertEqual(g.date, "November 10, 2014")
 
     def test_game_create_2(self):
          game = Game(
-             id = "",
+             id = 21455555,
              home_team = "",
              home_score = "",
              away_team = "",
@@ -169,16 +169,16 @@ class TestAPI (TestCase) :
          )
          db.session.add(game)
          db.session.commit()
-         g = Game.query.filter_by(id='').first()
-         assertEqual(g.home_team, "") 
-         assertEqual(g.home_score, "")
-         assertEqual(g.away_team, "")
-         assertEqual(g.away_score, "")
-         assertEqual(g.date, "")
+         g = Game.query.filter_by(id=21455555).first()
+         self.assertEqual(g.home_team, "") 
+         self.assertEqual(g.home_score, "")
+         self.assertEqual(g.away_team, "")
+         self.assertEqual(g.away_score, "")
+         self.assertEqual(g.date, "")
 
     def test_game_create_3(self):
          game = Game(
-             id = "21400559",
+             id = 21400559,
              home_team = "Los Angeles Clippers",
              home_score = "104",
              away_team = "Miami Heat",
@@ -187,12 +187,12 @@ class TestAPI (TestCase) :
          )
          db.session.add(game)
          db.session.commit()
-         g = Game.query.filter_by(id='21400559').first()
-         assertEqual(g.home_team, "Los Angeles Clippers") 
-         assertEqual(g.home_score, "104")
-         assertEqual(g.away_team, "Miami Heat")
-         assertEqual(g.away_score, "90")
-         assertEqual(g.date, "January 11, 2015")
+         g = Game.query.filter_by(id=21400559).first()
+         self.assertEqual(g.home_team, "Los Angeles Clippers") 
+         self.assertEqual(g.home_score, "104")
+         self.assertEqual(g.away_team, "Miami Heat")
+         self.assertEqual(g.away_score, "90")
+         self.assertEqual(g.date, "January 11, 2015")
 
 
 if __name__ == '__main__':
