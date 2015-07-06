@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from unittest import TestCase, main
-import models
+from models import Player, Team, Game
 from flask import Flask
 from __init__ import app, db
 
