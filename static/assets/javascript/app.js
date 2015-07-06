@@ -34,7 +34,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
                 }
             }
         })
-        .state('root.team', {
+        .state('root.teams', {
             url: "/teams",
             views : { 
                 '@' : {
@@ -60,7 +60,90 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
                     controller: "TableCtrl"
                 }
             }
-        }).state('root.about', {
+        })
+        .state('root.lac', {
+            url: "/lac",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/teams/LAC.html",
+                    controller: "TableCtrl"
+                }
+            }
+
+        })
+        .state('root.mia', {
+            url: "/mia",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/teams/MIA.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.sas', {
+            url: "/sas",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/teams/SAS.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.bg', {
+            url: "/bg",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/players/BG.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.dw', {
+            url: "/dw",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/players/DW.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.td', {
+            url: "/td",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/players/TD.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.g102', {
+            url: "/g102",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/games/102.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.g414', {
+            url: "/g414",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/games/414.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.g559', {
+            url: "/g559",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/games/559.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
+        .state('root.about', {
             url: "/about",
             views : { 
                 '@' : {
@@ -68,5 +151,6 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
                     controller: "TableCtrl"
                 }
             }
-        });
+        })
+        ;
 });
