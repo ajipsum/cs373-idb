@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-
+from flask.ext.sqlalchemy import SQLAlchemy
 from flask import Flask, send_file, send_from_directory, safe_join
 from jinja2 import TemplateNotFound
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
+db = SQLAlchemy(app)
 
 # Allows for any URL to be handled by AngularJS
 # http://flask.pocoo.org/snippets/57/
