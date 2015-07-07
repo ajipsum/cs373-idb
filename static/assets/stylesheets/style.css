@@ -68,3 +68,44 @@ body {
     width: 100%;
     height: 450px;
 }
+
+/* Game CSS */
+.gameHeading {
+    background-color: white;
+    padding: 20px;
+}
+
+.gameDate h2 {
+    margin-top: 0;
+    font-size: 2.5vw;
+}
+.gameAwayTeamLogo img {
+}
+
+.gameHomeTeamLogo img {
+}
+
+.gameVS {
+    font-size: 3.5vw;
+}
+
+.gameInfo div {
+    margin: 20px 0;
+    background-color: white;
+}
+
+.gameStats h1 {
+    font-size: 2.0vw;
+}
+
+.gameMap iframe {
+    width: 100%;
+    height: 450px;
+}
+
+@media (min-width: 992px) {
+    .gameVS {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+}
