@@ -109,3 +109,37 @@ body {
         margin-left: 50px;
     }
 }
+
+
+/* Team CSS */
+.teamHeading {
+    background-color: white;
+}
+
+.teamInfo {
+    margin: 20px;
+}
+
+.teamInfo h1 {
+    font-size: 2.0vw;
+}
+
+.teamInfo h2 {
+    font-size: 1.7vw;
+}
+
+.teamRoster {
+    margin: 20px 0;
+    background-color: white;
+}
+
+.teamGameLog {
+    margin: 20px 0;
+    background-color: white;
+}
+
+.teamCitations {
+    background-color: white;
+    margin: 20px 0;
+    padding: 3px 20px 20px;
+}
