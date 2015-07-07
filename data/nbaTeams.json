@@ -3,180 +3,240 @@
     "team_id": 1610612737,
     "city": "Atlanta",
     "team_name": "Hawks",
-    "abbreviation": "ATL"
+    "abbreviation": "ATL",
+    "twitter": "https://twitter.com/ATLHawks",
+    "mascot": "Harry the Hawk"
   },
   {
     "team_id": 1610612738,
     "city": "Boston",
     "team_name": "Celtics",
-    "abbreviation": "BOS"
+    "abbreviation": "BOS",
+    "twitter": "https://twitter.com/celtics",
+    "mascot": "Lucky the Leprechaun"
   },
   {
     "team_id": 1610612739,
     "city": "Cleveland",
     "team_name": "Cavaliers",
-    "abbreviation": "CLE"
+    "abbreviation": "CLE",
+    "twitter": "https://twitter.com/cavs",
+    "mascot": "Moondog"
   },
   {
     "team_id": 1610612740,
     "city": "New Orleans",
     "team_name": "Pelicans",
-    "abbreviation": "NOP"
+    "abbreviation": "NOP",
+    "twitter": "https://twitter.com/PelicansNBA",
+    "mascot": "Pierre the Pelican"
   },
   {
     "team_id": 1610612741,
     "city": "Chicago",
     "team_name": "Bulls",
-    "abbreviation": "CHI"
+    "abbreviation": "CHI",
+    "twitter": "https://twitter.com/chicagobulls",
+    "mascot": "Benny the Bull"
   },
   {
     "team_id": 1610612742,
     "city": "Dallas",
     "team_name": "Mavericks",
-    "abbreviation": "DAL"
+    "abbreviation": "DAL",
+    "twitter": "https://twitter.com/dallasmavs",
+    "mascot": "Mavs Man and Champ"
   },
   {
     "team_id": 1610612743,
     "city": "Denver",
     "team_name": "Nuggets",
-    "abbreviation": "DEN"
+    "abbreviation": "DEN",
+    "twitter": "https://twitter.com/nuggets",
+    "mascot": "Rocky the Mountain Lion"
   },
   {
     "team_id": 1610612744,
     "city": "Golden State",
     "team_name": "Warriors",
-    "abbreviation": "GSW"
+    "abbreviation": "GSW",
+    "twitter": "https://twitter.com/warriors",
+    "mascot": "N/A"
   },
   {
     "team_id": 1610612745,
     "city": "Houston",
     "team_name": "Rockets",
-    "abbreviation": "HOU"
+    "abbreviation": "HOU",
+    "twitter": "https://twitter.com/HoustonRockets",
+    "mascot": "Clutch"
   },
   {
     "team_id": 1610612746,
     "city": "Los Angeles",
     "team_name": "Clippers",
-    "abbreviation": "LAC"
+    "abbreviation": "LAC",
+    "twitter": "https://twitter.com/LAClippers",
+    "mascot": "N/A"
   },
   {
     "team_id": 1610612747,
     "city": "Los Angeles",
     "team_name": "Lakers",
-    "abbreviation": "LAL"
+    "abbreviation": "LAL",
+    "twitter": "https://twitter.com/Lakers",
+    "mascot": "N/A"
   },
   {
     "team_id": 1610612748,
     "city": "Miami",
     "team_name": "Heat",
-    "abbreviation": "MIA"
+    "abbreviation": "MIA",
+    "twitter": "https://twitter.com/MiamiHEAT",
+    "mascot": "Burnie"
   },
   {
     "team_id": 1610612749,
     "city": "Milwaukee",
     "team_name": "Bucks",
-    "abbreviation": "MIL"
+    "abbreviation": "MIL",
+    "twitter": "https://twitter.com/Bucks",
+    "mascot": "Bango"
   },
   {
     "team_id": 1610612750,
     "city": "Minnesota",
     "team_name": "Timberwolves",
-    "abbreviation": "MIN"
+    "abbreviation": "MIN",
+    "twitter": "https://twitter.com/MNTimberwolves",
+    "mascot": "Crunch the Wolf"
   },
   {
     "team_id": 1610612751,
     "city": "Brooklyn",
     "team_name": "Nets",
-    "abbreviation": "BKN"
+    "abbreviation": "BKN",
+    "twitter": "https://twitter.com/BrooklynNets",
+    "mascot": "N/A"
   },
   {
     "team_id": 1610612752,
     "city": "New York",
     "team_name": "Knicks",
-    "abbreviation": "NYK"
+    "abbreviation": "NYK",
+    "twitter": "https://twitter.com/nyknicks",
+    "mascot": "N/A"
   },
   {
     "team_id": 1610612753,
     "city": "Orlando",
     "team_name": "Magic",
-    "abbreviation": "ORL"
+    "abbreviation": "ORL",
+    "twitter": "https://twitter.com/OrlandoMagic",
+    "mascot": "Stuff the Magic Dragon"
   },
   {
     "team_id": 1610612754,
     "city": "Indiana",
     "team_name": "Pacers",
-    "abbreviation": "IND"
+    "abbreviation": "IND",
+    "twitter": "https://twitter.com/Pacers",
+    "mascot": "Boomer"
   },
   {
     "team_id": 1610612755,
     "city": "Philadelphia",
     "team_name": "76ers",
-    "abbreviation": "PHI"
+    "abbreviation": "PHI",
+    "twitter": "https://twitter.com/Sixers",
+    "mascot": "Franklin"
   },
   {
     "team_id": 1610612756,
     "city": "Phoenix",
     "team_name": "Suns",
-    "abbreviation": "PHX"
+    "abbreviation": "PHX",
+    "twitter": "https://twitter.com/Suns",
+    "mascot": "Go the Gorilla"
   },
   {
     "team_id": 1610612757,
     "city": "Portland",
     "team_name": "Trail Blazers",
-    "abbreviation": "POR"
+    "abbreviation": "POR",
+    "twitter": "https://twitter.com/trailblazers",
+    "mascot": "Blaze the Trail Cat"
   },
   {
     "team_id": 1610612758,
     "city": "Sacramento",
     "team_name": "Kings",
-    "abbreviation": "SAC"
+    "abbreviation": "SAC",
+    "twitter": "https://twitter.com/SacramentoKings",
+    "mascot": "Slamson the Lion"
   },
   {
     "team_id": 1610612759,
     "city": "San Antonio",
     "team_name": "Spurs",
-    "abbreviation": "SAS"
+    "abbreviation": "SAS",
+    "twitter": "https://twitter.com/spurs",
+    "mascot": "The Coyote"
   },
   {
     "team_id": 1610612760,
     "city": "Oklahoma City",
     "team_name": "Thunder",
-    "abbreviation": "OKC"
+    "abbreviation": "OKC",
+    "twitter": "https://twitter.com/okcthunder",
+    "mascot": "Rumble the Bison"
   },
   {
     "team_id": 1610612761,
     "city": "Toronto",
     "team_name": "Raptors",
-    "abbreviation": "TOR"
+    "abbreviation": "TOR",
+    "twitter": "https://twitter.com/Raptors",
+    "mascot": "Stripes, the Raptor"
   },
   {
     "team_id": 1610612762,
     "city": "Utah",
     "team_name": "Jazz",
-    "abbreviation": "UTA"
+    "abbreviation": "UTA",
+    "twitter": "https://twitter.com/utahjazz",
+    "mascot": "Jazz Bear"
   },
   {
     "team_id": 1610612763,
     "city": "Memphis",
     "team_name": "Grizzlies",
-    "abbreviation": "MEM"
+    "abbreviation": "MEM",
+    "twitter": "https://twitter.com/memgrizz",
+    "mascot": "Grizz"
   },
   {
     "team_id": 1610612764,
     "city": "Washington",
     "team_name": "Wizards",
-    "abbreviation": "WAS"
+    "abbreviation": "WAS",
+    "twitter": "https://twitter.com/washwizards",
+    "mascot": "G-Wiz, G-Man"
   },
   {
     "team_id": 1610612765,
     "city": "Detroit",
     "team_name": "Pistons",
-    "abbreviation": "DET"
+    "abbreviation": "DET",
+    "twitter": "https://twitter.com/detroitpistons",
+    "mascot": "Sir Slam A Lot"
   },
   {
     "team_id": 1610612766,
     "city": "Charlotte",
     "team_name": "Hornets",
-    "abbreviation": "CHA"
+    "abbreviation": "CHA",
+    "twitter": "https://twitter.com/hornets",
+    "mascot": "Hugo the Hornet"
   }
 ]
