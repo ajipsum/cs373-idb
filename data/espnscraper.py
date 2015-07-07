@@ -4,6 +4,7 @@ import requests
 import sys
 from bs4 import BeautifulSoup
 import time
+import re
 
 url = 'http://espn.go.com/nba/teams'
 r = requests.get(url)
@@ -121,8 +122,8 @@ for table in tables:
 							player_life_info_list = player_life_info[0].find_all('li')
 							#set it all up
 							player_dic['birth_info'] = 'N/A'
-							player_dic['draft info'] = 'N/A'
-							player_dic['experience_info'] = 'N/A'
+							player_dic['draft_info'] = 'N/A'
+							player_dic['experience_years'] = 'N/A'
 							for v in player_life_info_list:
 								if "Born" in v.text:
 									birth_info = v.text[4:]
@@ -141,38 +142,172 @@ for table in tables:
 							if len(player_header_stats_element) == 0:
 								continue
 							else: 
-								player_header_stats_element = player_header_stats_element[0]
-							# print(len(player_header_stats_element))
-							# sys.exit()
-							player_header_stats_check = player_header_stats_element.find_all('tr')[0]
-							player_header_stats_stats = player_header_stats_check.find_all('td')
-							iterate = iter(player_header_stats_stats)
-							ppg = next(iterate).text
-							print("Points per game: " + ppg)
-							player_dic['ppg'] = ppg
-							rpg = next(iterate).text
-							print("Rebounds per game: " + rpg)
-							player_dic['rpg'] = rpg
-							blkpg = next(iterate).text
-							print("Blocks per game: " + blkpg)
-							player_dic['blkpg'] = blkpg
-							per = next(iterate).text
-							print("Player Efficiency Rating: " + per)
-							player_dic['per'] = per
+							# 	player_header_stats_element = player_header_stats_element[0]
+							# # print(len(player_header_stats_element))
+							# # sys.exit()
+							# player_header_stats_check = player_header_stats_element.find_all('tr')[0]
+							# player_header_stats_stats = player_header_stats_check.find_all('td')
+							
+							# iterate = iter(player_header_stats_stats)
+							# ppg = next(iterate).text
+							# print("Points per game: " + ppg)
+							# player_dic['ppg'] = ppg
+							# rpg = next(iterate).text
+							# print("Rebounds per game: " + rpg)
+							# player_dic['rpg'] = rpg
+							# blkpg = next(iterate).text
+							# print("Blocks per game: " + blkpg)
+							# player_dic['blkpg'] = blkpg
+							# per = next(iterate).text
+							# print("Player Efficiency Rating: " + per)
+							# player_dic['per'] = per
+
+								#check '14-15' season
+
+								print(player_name['href'])
+								player_stats_page = 'http://espn.go.com/nba/player/stats/_/id/' + player_name['href'][player_name['href'].index('id/') + 3:]
+								stats_page = requests.get(player_stats_page)
+								stats_page_soup = BeautifulSoup(stats_page.text)
+								# print(player_stats_page)
+								# print(stats_page_soup)
+								stats_page_soup_tablehead = stats_page_soup.find_all('table', class_='tablehead')[0]
+								# print(len(stats_page_soup_tablehead))
+								# sys.exit()
+								stats_rows_odd = stats_page_soup_tablehead.find_all('tr', class_='oddrow')
+								stats_rows_even = stats_page_soup_tablehead.find_all('tr', class_='evenrow')
+								odd_row_iterate = iter(stats_rows_odd)
+								even_row_iterate = iter(stats_rows_even)
+								stats_all_rows = []
+								try: #121 #1212
+									while True:
+										stats_all_rows.append(next(odd_row_iterate))
+										stats_all_rows.append(next(even_row_iterate))
+								except StopIteration:
+									pass
+								# print(len(stats_all_rows))
+								# gt
+							# http://espn.go.com/nba/player/stats/_/id/2745/brandon-bass%20http://espn.go.com/nba/player/_/id/2745/brandon-bass
+								most_recent_year_played_row = stats_all_rows[len(stats_all_rows) - 1]
+								most_recent_year_played_row_stats = most_recent_year_played_row.find_all('td')
+								# print(len(most_recent_year_played_row_stats))
+								# sys.exit()
+								stats = {} #stats for 2014-2015 NBA season
+								iterate = iter(most_recent_year_played_row_stats)
+								season = next(iterate).text
+								# print(season)
+
+								if '14' in season and '15' in season:
+									print(season)
+									team = next(iterate) #skip it
+									games_played = next(iterate).text
+									stats['GP'] = games_played
+									games_started = next(iterate).text
+									stats['GS'] = games_started
+									average_minutes_per_game = next(iterate).text
+									stats['MIN'] = average_minutes_per_game
+									fgm_a = next(iterate).next
+									stats['FGM-A'] = fgm_a
+									fg_percentage = next(iterate).next
+									stats['FG%'] = fg_percentage
+									three_pointers_made_attempted = next(iterate).next
+									stats['3PM-A'] = three_pointers_made_attempted
+									three_pointers_percentage = next(iterate).next
+									stats['3P%'] = three_pointers_percentage
+									free_throws_made_attempted = next(iterate).next
+									stats['FTM-A'] = free_throws_made_attempted
+									free_throws_percentage = next(iterate).next
+									stats['FT%'] = free_throws_percentage
+									offensive_rebounds = next(iterate).next
+									stats['OR'] = offensive_rebounds
+									defensive_rebounds = next(iterate).next
+									stats['DR'] = defensive_rebounds
+									rebounds = next(iterate).next
+									stats['REB'] = rebounds
+									assists = next(iterate).next
+									stats['AST'] = assists
+									blocks = next(iterate).next
+									stats['BLK'] = blocks
+									steals = next(iterate).next
+									stats['STL'] = steals
+									personal_fouls = next(iterate).next
+									stats['PF'] = personal_fouls
+									turnovers = next(iterate).next
+									stats['TO'] = turnovers
+									points = next(iterate).next
+									stats['PTS'] = points
+									player_dic['stats_avg_per_game'] = stats
+								else:
+									player_dic['stats_avg_per_game'] = 'Did not play in 2014-2015 NBA season'
+									print('DID NOT PLAY')
+								# for stat in most_recent_year_played_row_stats:
+								# 	if stat.text == '14-\'15':
+								# 		print(stat.text)
+								# 	else:
+								# 		player_dic['stats_average_per_game'] = 'DIP(Did not play)'
+								# 		print('DID NOT PLAY')
+								# 		break
+								# sys.exit()
+
+								career_stats = {}
+								career_total_row = stats_page_soup_tablehead.find_all('tr', class_='total')[0]
+								career_total_stats = career_total_row.find_all('td')
+								iterate = iter(career_total_stats)
+								next(iterate) #skip career word
+								games_played = next(iterate).text
+								career_stats['career_GP'] = games_played
+								games_started = next(iterate).text
+								career_stats['career_GS'] = games_started
+								average_minutes_per_game = next(iterate).text
+								career_stats['career_MIN'] = average_minutes_per_game
+								fgm_a = next(iterate).next
+								career_stats['career_FGM-A'] = fgm_a
+								fg_percentage = next(iterate).next
+								career_stats['career_FG%'] = fg_percentage
+								three_pointers_made_attempted = next(iterate).next
+								career_stats['career_3PM-A'] = three_pointers_made_attempted
+								three_pointers_percentage = next(iterate).next
+								career_stats['career_3P%'] = three_pointers_percentage
+								free_throws_made_attempted = next(iterate).next
+								career_stats['career_FTM-A'] = free_throws_made_attempted
+								free_throws_percentage = next(iterate).next
+								career_stats['career_FT%'] = free_throws_percentage
+								offensive_rebounds = next(iterate).next
+								career_stats['career_OR'] = offensive_rebounds
+								defensive_rebounds = next(iterate).next
+								career_stats['career_DR'] = defensive_rebounds
+								rebounds = next(iterate).next
+								career_stats['career_REB'] = rebounds
+								assists = next(iterate).next
+								career_stats['career_AST'] = assists
+								blocks = next(iterate).next
+								career_stats['career_BLK'] = blocks
+								steals = next(iterate).next
+								career_stats['career_STL'] = steals
+								personal_fouls = next(iterate).next
+								career_stats['career_PF'] = personal_fouls
+								turnovers = next(iterate).next
+								career_stats['career_TO'] = turnovers
+								points = next(iterate).next
+								career_stats['career_PTS'] = points
+
+								player_dic['career_stats_avg_per_game'] = career_stats
+
+
+
 
 							#now get career ppg, apg, and rpg
-							player_career_element = player_page_soup.find_all('tr', class_='career')[0]
-							player_career_stats = player_career_element.find_all('td')
-							iterate = iter(player_career_stats)
-							career_ppg = next(iterate).text
-							print("Career Points per game: " + career_ppg)
-							player_dic['career_ppg'] = career_ppg
-							career_rpg = next(iterate).text
-							print("Career Rebounds per game: " + career_rpg)
-							player_dic['career_rpg'] = career_rpg
-							career_blkpg = next(iterate).text
-							print("Career Blocks per game: " + career_blkpg)
-							player_dic['career_blkpg'] = career_blkpg
+							# player_career_element = player_page_soup.find_all('tr', class_='career')[0]
+							# player_career_stats = player_career_element.find_all('td')
+							# iterate = iter(player_career_stats)
+							# career_ppg = next(iterate).text
+							# print("Career Points per game: " + career_ppg)
+							# player_dic['career_ppg'] = career_ppg
+							# career_rpg = next(iterate).text
+							# print("Career Rebounds per game: " + career_rpg)
+							# player_dic['career_rpg'] = career_rpg
+							# career_blkpg = next(iterate).text
+							# print("Career Blocks per game: " + career_blkpg)
+							# player_dic['career_blkpg'] = career_blkpg
 
 						#USE CONTINUE
 						#We're on player page
