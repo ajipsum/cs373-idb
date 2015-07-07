@@ -61,6 +61,15 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
                 }
             }
         })
+        .state('root.about', {
+            url: "/about",
+            views : { 
+                '@' : {
+                    templateUrl: "../../../templates/about/about.html",
+                    controller: "TableCtrl"
+                }
+            }
+        })
         .state('root.lac', {
             url: "/lac",
             views : { 
@@ -139,15 +148,6 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             views : { 
                 '@' : {
                     templateUrl: "../../../templates/games/559.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.about', {
-            url: "/about",
-            views : { 
-                '@' : {
-                    templateUrl: "../../../templates/about.html",
                     controller: "TableCtrl"
                 }
             }
