@@ -1,3 +1,9 @@
+commit 398061e054d6d3a188dc5d73655ab430241cf445
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 21:09:47 2015 -0500
+
+    updating about resolved #58
+
 commit 4c9626e332bde04e96ad4e654d03709b363e26f5
 Merge: a87c2b9 78cfbda
 Author: Brandon Gottesman <brandon.gottesman@gmail.com>
