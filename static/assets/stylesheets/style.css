@@ -1,5 +1,9 @@
 /*style.css*/
 
+.homeLogo{
+    margin-top: 100px;
+}
+
 .defaultGrid {
     width: 100%;
     height: 100%;
