@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<h3>
+<a id="user-content-models" class="anchor" href="#models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Models</h3>
+
+<p>These are the models we are using, with descriptions added for the most important attributes:</p>
+
+<h4>
+<a id="user-content-player" class="anchor" href="#player" aria-hidden="true"><span class="octicon octicon-link"></span></a>Player</h4>
+
+<p><strong>Description</strong>: This model represents an individual NBA player and includes performance data, media links, and relationships to other models.</p>
+
+<p><strong>Attributes</strong></p>
+
+<ul>
+<li>name = db.Column(db.String(256), primary_key=True) - The player's name.</li>
+<li>picture = db.Column(db.String(256), unique=True) - A link to the player's picture.</li>
+<li>experience_years = db.Column(db.String(256))</li>
+<li>draft_info = db.Column(db.String(256))</li>
+<li>position = db.Column(db.String(256)) - The player's position.</li>
+<li>player_number = db.Column(db.String(256)) - The player's number.</li>
+<li>current_team = db.Column(db.String(256)) - The player's team.</li>
+<li>college = db.Column(db.String(256))</li>
+<li>birth_info = db.Column(db.String(256))</li>
+<li>weight = db.Column(db.String(256)) - The player's weight in pounds.</li>
+<li>twitter = db.Column(db.String(256))</li>
+<li>age = db.Column(db.String(256)) - The player's age in years.</li>
+<li>youtube_link_1 = db.Column(db.String(256)) - A YouTube link to a player's highlight reel.</li>
+<li>youtube_link_2 = db.Column(db.String(256))</li>
+<li>youtube_link_3 = db.Column(db.String(256))</li>
+<li>career_GS = db.Column(db.String(256))</li>
+<li>career_REB = db.Column(db.String(256))</li>
+<li>career_BLK = db.Column(db.String(256))</li>
+<li>career_FT_PCT = db.Column(db.String(256))</li>
+<li>career_DR = db.Column(db.String(256))</li>
+<li>career_MIN = db.Column(db.String(256))</li>
+<li>career_FG_PCT = db.Column(db.String(256))</li>
+<li>career_3PM_A = db.Column(db.String(256))</li>
+<li>career_OR = db.Column(db.String(256))</li>
+<li>career_FGM_A = db.Column(db.String(256))</li>
+<li>career_STL = db.Column(db.String(256))</li>
+<li>career_TO = db.Column(db.String(256))</li>
+<li>career_3PM_PCT = db.Column(db.String(256))</li>
+<li>career_AST = db.Column(db.String(256))</li>
+<li>career_GP = db.Column(db.String(256))</li>
+<li>career_PF = db.Column(db.String(256))</li>
+<li>career_PTS = db.Column(db.String(256))</li>
+<li>CAREER_FTM_A = db.Column(db.String(256))</li>
+<li>season_TO = db.Column(db.String(256))</li>
+<li>season_GS = db.Column(db.String(256))</li>
+<li>season_FG_PCT = db.Column(db.String(256))</li>
+<li>seasonseason__PTS = db.Column(db.String(256))</li>
+<li>season_OR = db.Column(db.String(256))</li>
+<li>season_GP = db.Column(db.String(256))</li>
+<li>season_PF = db.Column(db.String(256))</li>
+<li>season_REB = db.Column(db.String(256))</li>
+<li>season_FTM_A = db.Column(db.String(256))</li>
+<li>season_BLK = db.Column(db.String(256))</li>
+<li>season_MIN = db.Column(db.String(256))</li>
+<li>season_STL = db.Column(db.String(256))</li>
+<li>season_AST = db.Column(db.String(256))</li>
+<li>season_FT_PCT = db.Column(db.String(256))</li>
+<li>season_FGM_A = db.Column(db.String(256))</li>
+<li>season_3P_PCT = db.Column(db.String(256))</li>
+<li>season_DR = db.Column(db.String(256))</li>
+<li>season_3PM_A = db.Column(db.String(256))</li>
+<li>id_url = db.Column(db.String(256))</li>
+<li>team_name = db.Column(db.String(256), db.ForeignKey('team.name'))</li>
+</ul>
+
+<h4>
+<a id="user-content-team" class="anchor" href="#team" aria-hidden="true"><span class="octicon octicon-link"></span></a>Team</h4>
+
+<p><strong>Description</strong>: This model represents one of 30 NBA teams and includes aggregate season data, media links, and relationships to other models.</p>
+
+<p><strong>Attributes</strong></p>
+
+<ul>
+<li>players = db. relationship('Player', backref='team', lazy='dynamic') - The relationship that defines the players on the team.</li>
+<li>name = db.Column(db.String(256), primary_key=True) - The name of the team.</li>
+<li>conference = db.Column(db.String(256)) - The conference in which the team plays.</li>
+<li>division = db.Column(db.String(256)) - The division in which the team plays.</li>
+<li>site_name = db.Column(db.String(256)) - The name of the team's home arena.</li>
+<li>city = db.Column(db.String(256)) - The team's home city.</li>
+<li>state = db.Column(db.String(256)) - The team's home state.</li>
+<li>mascot = db.Column(db.String(256)) - The name of the team's mascot.</li>
+<li>twitter = db.Column(db.String(256)) - The team's official Twitter account.</li>
+</ul>
+
+<h4>
+<a id="user-content-game" class="anchor" href="#game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Game</h4>
+
+<p><strong>Description</strong>: This model represents one game played during the 2014-2015 season and includes game data, media links, and relationships to other models.</p>
+
+<p><strong>Attributes</strong>
+id = db.Column(db.Integer, primary_key=True) - The identifying number of the game.</p>
+
+<ul>
+<li>home_team = db.Column(db.String(256)) - The name of the home team.</li>
+<li>away_team = db.Column(db.String(256)) - The name of the away team.</li>
+<li>date = db.Column(db.String(256)) - The date on which the game was played.</li>
+<li>home_score = db.Column(db.String(256)) - The home team's final score.</li>
+<li>away_score = db.Column(db.String(256)) - The away team's final score.</li>
+<li>home_box_fgm = db.Column(db.String(256))</li>
+<li>home_box_fga = db.Column(db.String(256))</li>
+<li>home_box_fg3m = db.Column(db.String(256))</li>
+<li>home_box_fg3a = db.Column(db.String(256))</li>
+<li>home_box_ftm = db.Column(db.String(256))</li>
+<li>home_box_fta = db.Column(db.String(256))</li>
+<li>home_box_oreb = db.Column(db.String(256))</li>
+<li>home_box_dreb = db.Column(db.String(256))</li>
+<li>home_box_ast = db.Column(db.String(256))</li>
+<li>home_box_stl = db.Column(db.String(256))</li>
+<li>home_box_blk = db.Column(db.String(256))</li>
+<li>home_box_to = db.Column(db.String(256))</li>
+<li>home_box_pf = db.Column(db.String(256))</li>
+<li>home_box_pts = db.Column(db.String(256))</li>
+<li>home_box_plus_minus = db.Column(db.String(256))</li>
+<li>away_box_fgm = db.Column(db.String(256))</li>
+<li>away_box_fga = db.Column(db.String(256))</li>
+<li>away_box_fg3m = db.Column(db.String(256))</li>
+<li>away_box_fg3a = db.Column(db.String(256))</li>
+<li>away_box_ftm = db.Column(db.String(256))</li>
+<li>away_box_fta = db.Column(db.String(256))</li>
+<li>away_box_oreb = db.Column(db.String(256))</li>
+<li>away_box_dreb = db.Column(db.String(256))</li>
+<li>away_box_ast = db.Column(db.String(256))</li>
+<li>away_box_stl = db.Column(db.String(256))</li>
+<li>away_box_blk = db.Column(db.String(256))</li>
+<li>away_box_to = db.Column(db.String(256))</li>
+<li>away_box_pf = db.Column(db.String(256))</li>
+<li>away_box_pts = db.Column(db.String(256))</li>
+<li>away_box_plus_minus = db.Column(db.String(256))</li>
+</ul>
+
+<h4>
+<a id="user-content-relationships" class="anchor" href="#relationships" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relationships</h4>
+
+<p>Many-to-many between teams and games</p>
+<p>teams = db.relationship('Team', secondary=teams, backref=db.backref('games', lazy='dynamic'))</p>
+
+<p>Many-to-many between players and games</p>
+<p>players = db.relationship('Player', secondary=players, backref=db.backref('games', lazy='dynamic'))</p>
+</body>
+</html>

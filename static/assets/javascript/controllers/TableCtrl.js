@@ -38,6 +38,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "site_name": "AT&T Center",
   "conference": "West",
   "division": "Southwest",
+  "mascot": "The Coyote",
   "tag": "sas"
     },
     {
@@ -47,6 +48,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "site_name": "AmericanAirlines Arena",
   "conference": "East",
   "division": "Southeast",
+  "mascot": "Burnie",
   "tag": "mia"
     },
     {
@@ -56,6 +58,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "site_name": "Staples Center",
   "conference": "West",
   "division": "Pacific",
+  "mascot": "Clippy",
   "tag": "lac"
     }
 ];
@@ -150,6 +153,10 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
     {
         field:'division',
         displayName:'Division'
+    },
+    {
+        field:'mascot',
+        displayName:'Mascot'
     }
       ]
   };
