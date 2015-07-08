@@ -28,6 +28,7 @@ before_script:
     - python3 --version
     - coverage3 --version
     - python3 -c "import numpy; print(numpy.__version__)"
+    - sudo chmod +x init_db.sh
     - sudo ./init_db.sh
     - python3 createDB.py
 script:
