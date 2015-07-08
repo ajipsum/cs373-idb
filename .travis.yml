@@ -9,11 +9,16 @@ python:
 
 before_install:
     - sudo apt-get update
-
+    
 install:
+    - sudo apt-get install mysql-server
     - pip install --upgrade pip
     - pip install coverage
     - pip install numpy
+    - pip install Flask
+    - pip install SQLAlchemy
+    - pip install Flask-SQLAlchemy
+    - pip install PyMySql
 
 before_script:
     - uname -a
@@ -23,7 +28,11 @@ before_script:
     - python3 --version
     - coverage3 --version
     - python3 -c "import numpy; print(numpy.__version__)"
-
+    # Currently having issues with database creation
+    # on Travis. This will remain commented until resolved.
+    #- sudo chmod +x init_db.sh
+    #- sudo ./init_db.sh
+    #- python3 createDB.py
 script:
     - date
     - ls -al
@@ -32,3 +41,5 @@ script:
     #- ls -al
     # uncomment these when there's actually something to check
     - make check
+    # Data base issue needs to be resolved before test.
+    #- make test

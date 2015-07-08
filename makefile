@@ -5,11 +5,23 @@ FILES :=                              						\
     models.py                         						\
     tests.py                          						\
 	__init__.py						  						\
-	templates/index.html			  						\
+	config.py												\
+	createDB.py												\
+	index.html												\
+	requirements.txt										\
+	UML.pdf													\
+	templates/about/about.html								\
+	templates/games/games.html								\
+	templates/players/players.html							\
+	templates/teams/teams.html								\
+	templates/shared/navbar.html							\
 	static/vendors/angular.js		  						\
 	static/vendors/bootstrap-3.3.5-dist/css/bootstrap.css 	\
 	static/assets/javascript/app.js 						\
-	static/assets/javascript/controllers/HomeCtrl.js
+	static/assets/javascript/controllers/HomeCtrl.js		\
+	static/assets/javascript/controllers/NavbarCtrl.js		\
+	static/assets/javascript/controllers/TableCtrl.js		\
+	static/assets/stylesheets/style.css						
 
 all:
 
@@ -34,3 +46,8 @@ models.html: models.py
 
 IDB.log:
 	git log > IDB.log
+
+test: tests.py
+	python3 tests.py
+
+	
