@@ -32,3 +32,4 @@ script:
     #- ls -al
     # uncomment these when there's actually something to check
     - make check
+    - make test
