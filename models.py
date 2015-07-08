@@ -57,6 +57,7 @@ class Player(db.Model):
   season_3P_PCT = db.Column(db.String(256))
   season_DR = db.Column(db.String(256))
   season_3PM_A = db.Column(db.String(256))
+  id_url = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
 
 
@@ -74,6 +75,7 @@ class Team(db.Model):
   city = db.Column(db.String(256))
   state = db.Column(db.String(256))
   mascot = db.Column(db.String(256))
+  twitter = db.Column(db.String(256))
 
 teams = db.Table('teams',
   db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
