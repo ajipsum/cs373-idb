@@ -9,11 +9,16 @@ python:
 
 before_install:
     - sudo apt-get update
-
+    
 install:
+    - sudo apt-get install mysql-server
     - pip install --upgrade pip
     - pip install coverage
     - pip install numpy
+    - pip install Flask
+    - pip install SQLAlchemy
+    - pip install Flask-SQLAlchemy
+    - pip install PyMySql
 
 before_script:
     - uname -a
