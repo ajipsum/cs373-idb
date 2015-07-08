@@ -1,0 +1,1005 @@
+commit 4c9626e332bde04e96ad4e654d03709b363e26f5
+Merge: a87c2b9 78cfbda
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 21:01:35 2015 -0500
+
+    Merge branch 'dev'
+
+commit 78cfbdac6da57658dd5b20974152513daf4a658a
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 20:59:15 2015 -0500
+
+    fixed apiary link
+
+commit 3790fe69760d5524edda585e42cb8f8fd6ae038e
+Merge: 8530577 4b5d459
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:55:51 2015 -0500
+
+    Merge branch 'josh' into dev
+
+commit 4b5d459d64c1b3e3692de834b9a3709f70af2baa
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:53:33 2015 -0500
+
+    Removed database test for now since Travis is having problems (works locally)
+
+commit 853057720c766f08bcffcfd9b00b8df59471ad29
+Merge: d8de2bc 322d1cc
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 20:48:12 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit d8de2bc93b9eb46969a2c149c785224d9a82a969
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 20:46:57 2015 -0500
+
+    added two more fields to models
+
+commit 322d1cc41f4ea17f06c60dd69540d730eb063578
+Merge: 84d62a3 3b6b8af
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 20:44:01 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit 84d62a3414bad1317c2783a78e74c4942dbb1950
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 20:52:22 2015 -0500
+
+    added more attributes to models.py
+
+commit 6baf4aef1bb06bb3414b37f500dadc28aac74729
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 20:43:22 2015 -0500
+
+    added models.html
+
+commit 3b6b8afdafc5f8d466c991f235175f9f5f4a8237
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 20:43:19 2015 -0500
+
+    adding Logo AI file
+
+commit 503230852748544fc9695837a2129063265784c9
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:41:07 2015 -0500
+
+    Changed bash script to execute mysql without REPL
+
+commit e5201b19924f6b22db4417386e35f403a5500c8b
+Merge: a38b807 8eceffb
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:30:27 2015 -0500
+
+    Merge branch 'dev' into josh
+
+commit a38b8074c812bdf1d2820b7f8e36f596c11d4c0f
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:23:32 2015 -0500
+
+    Added chmod to bash script in Travis
+
+commit 9645846c3d8f738462d3a59c3f3706c8f718d935
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:20:55 2015 -0500
+
+    Small fix to bash script
+
+commit 49ef0878bcfaf1849f16fb55c6a269e769ae8a2b
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:18:56 2015 -0500
+
+    Updated travis CI and added bash script Perry made to initialize DB env.
+
+commit 48e6631c9a5a32e4368dc0abddeb7fce7c9fa562
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:10:01 2015 -0500
+
+    Added Apiary Link to About page.
+
+commit a87c2b98716101066cafebddc636d1ade12f1ac6
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 20:07:06 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 1a87033f71d8b71c8ecf726514ea816fa47abf71
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 20:06:41 2015 -0500
+
+    Updated travis to install requirements, and fixed Time->Tim
+
+commit fe262a54b944252ccc08e645f6dc2efdb68f12ad
+Merge: f38d552 449d365
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 19:59:51 2015 -0500
+
+    Merge branch 'dev' into josh
+
+commit 8eceffb3842d372da704a47da83d0e507f9b2ce3
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 19:59:09 2015 -0500
+
+    added mascot to team table
+
+commit f38d552a055b623e4c148c1c02a7bc2ef689c799
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 19:57:09 2015 -0500
+
+    Updated travis to actually make the test target
+
+commit 449d365400a40dce862a7a4e67569ccc8b8bae15
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 19:31:52 2015 -0500
+
+    resolved #21
+
+commit b19e89dda82168257003d8fa196a7d5bfccc4c18
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 19:29:04 2015 -0500
+
+    Updated makefile. Testing with Travis.
+
+commit 39aba307f619a317627d855bc937b272d455ca19
+Merge: 34d1490 5ab0c92
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 18:50:32 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 5ab0c92668b0221f16f167b9248c00d48da14f2b
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 19:06:30 2015 -0500
+
+    added more data to nbaTeam.json
+
+commit 34d1490c8f09892090a78d7cb8f2f97dec7189e9
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 18:50:17 2015 -0500
+
+    filled in team data for LAC and SAS
+
+commit dd80976b9fe46594383f49f9b3696bb898ebdb73
+Merge: b97cf9f d21324e
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 18:30:29 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit d21324eb0618b9acac69a8ad0797628a197ed793
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 18:30:05 2015 -0500
+
+    added team template
+
+commit b97cf9f2579c7a5846d10867c13c94ea077c8700
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 17:44:45 2015 -0500
+
+    Updated image size to almost 200x200
+
+commit 08bb7a739f0d4d74453aa32b738ecf293ad97473
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 17:37:32 2015 -0500
+
+    Added profile picture.
+
+commit 3f581e44adafeeaec568d1f2d306d84effd58aeb
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 17:36:10 2015 -0500
+
+    added data and logos to game pages
+
+commit b9240403663d907f64cb9e2d1acb2835dbaf5934
+Merge: 51b3076 9a11290
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 17:17:10 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 9a11290ee105ff31b61251064bb80f828d724761
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 17:19:34 2015 -0500
+
+    added all team logos
+
+commit 51b3076ea2ed3f1b2f44942a992a4309af0266ef
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 17:16:21 2015 -0500
+
+    filled in game pages
+
+commit c8572eb0aa4d438132fc98f021b4556979c630cf
+Merge: 38e51b7 6274099
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 16:26:44 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 62740998aa9245895a6f35e257eb5ee2e6068722
+Merge: 162fc4c c44977d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 16:25:55 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit c44977db20549f100788726d6fda1779d3f3982a
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 16:25:03 2015 -0500
+
+    updated game layout
+
+commit 38e51b73519ab16db94d63143432f041d5ead398
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 16:22:48 2015 -0500
+
+    edited games table for DW
+
+commit 7a5badd954138ced05b9f8a594bfc7a4ac294ce6
+Merge: 6c0a781 2495e70
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 15:56:37 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit 162fc4cf1c2951b9e76c1acd657717102c60d600
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 7 15:53:27 2015 -0500
+
+    Updated personal bio page
+
+commit 6c0a781ec7484d0d67832980f362cd91150dbdbe
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 15:52:53 2015 -0500
+
+    added game template -- not finished
+
+commit 2495e70f2c39224dd0d3abe88163c6ba023f1843
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 15:42:09 2015 -0500
+
+    added transparent logos
+
+commit 56beb87ef1962fc6d4f42a69f7e726d0dac4465a
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 14:36:26 2015 -0500
+
+    added game links for BG page
+
+commit af94fbce83d72f202a0a121813b814f0fb93341d
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 14:26:43 2015 -0500
+
+    fixed Dwyane Wade arena map
+
+commit 130ef22ebe09cee72d4c5ed1f9b03c169044a443
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 14:24:59 2015 -0500
+
+    fixing typo on Tim Duncan page
+
+commit dee3abe3d592fbdfd26c2e134f0adb023a1f241c
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 14:39:47 2015 -0500
+
+    added blake griffin.html
+
+commit 3b5d18ebf4f26c8110a02bf692e3ca299dde600a
+Merge: de4ee84 b5b91d2
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 14:14:37 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit de4ee84f9ad894e613140abb8f0514d1a2a946cb
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 7 14:14:15 2015 -0500
+
+    about bio and TD player page
+
+commit b5b91d2ad4e462c399bb7057bd80a34e94182a70
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 14:05:48 2015 -0500
+
+    added perry's bio
+
+commit 548c4df9b9885de14c81f1204e23f8698971c896
+Merge: 299590c 3f3bce0
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 11:13:47 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit 3f3bce0593e7f975f9e131fcee3fb4bb6e44c1e0
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 11:13:34 2015 -0500
+
+    updated player template with links
+
+commit 299590c2467b01a114eb90d07a952eabab9990f9
+Merge: 8cb0570 f6ce664
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 11:03:44 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit f6ce664a28ec30335b4743e2b2f87c95d168288d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 11:03:09 2015 -0500
+
+    adding player template
+
+commit 8cb05703ad3fe215939f2e31700dc2161f6418ef
+Author: Josh Tiras <joshua.tiras@utexas.edu>
+Date:   Tue Jul 7 09:30:41 2015 -0500
+
+    Added personal information to About page.
+
+commit afb77134da02a71813e22c6d2c6f5feb2525f672
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 7 08:35:38 2015 -0500
+
+    Moved personal bio image to correct directory.
+
+commit f4b331c32fcb2dde64c38647bbb7ed6597aef401
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 7 08:29:11 2015 -0500
+
+    Update personal about image
+
+commit 818abe2d3a18bd1048d200aba3e85a45aa2e5569
+Merge: f44c8d0 f4fa4f4
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 06:47:42 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit f4fa4f40d2b64ae9c84c5b4971b55f36e4c408f9
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 06:46:38 2015 -0500
+
+    updated about with personal info
+
+commit f44c8d0530a3faaea529e14e4d7d7e61ebe09321
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 21:36:29 2015 -0500
+
+    Erroneus file
+
+commit c4b86550a881e36804bdec26355796dd607a8d88
+Merge: 4d5f5ba 1f9e454
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 21:33:34 2015 -0500
+
+    Merge branch 'dev' of https://github.com/jrpeden/cs373-idb into dev
+
+commit 4d5f5badae18524c0ea28c0d6d6a3b5fa6b9dc70
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 21:32:22 2015 -0500
+
+    About file is ready to be filled out. Include pictures in templates/about/
+
+commit 1f9e45440b862538bc7067117a975cc3e01eea86
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Mon Jul 6 20:34:48 2015 -0500
+
+    Added skeleton code for data API to Flask.
+
+commit 692636692a3511ee30550856c6ba888c3ad5e05a
+Merge: bd52f14 cf34698
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Mon Jul 6 20:11:37 2015 -0500
+
+    Merge branch 'dev' into josh
+
+commit cf34698b405277891f0fbe8bd7318844c7266f04
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 20:05:50 2015 -0500
+
+    Initialize about page
+
+commit f0dbebeb437ab5b693a235fbff31b50d4edc9e88
+Merge: 6a81745 32ef769
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 20:04:33 2015 -0500
+
+    Merge branch 'dev' into zach
+
+commit 6a817451e193fc3226d248a0351df103b1bd6bee
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 20:04:19 2015 -0500
+
+    Initialize about page
+
+commit 32ef769ee087cf78642a7c8cae869cd114fc7009
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 19:21:55 2015 -0500
+
+    generate UML.pdf
+
+commit 811165003f8d48e6d558727e1bae4eca4ff4f17e
+Merge: eaf43b2 a5795aa
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 19:03:58 2015 -0500
+
+    Merge branch 'zach' into dev
+
+commit a5795aa6cf9eaf988f13fa6075d4ea96fd26a916
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Mon Jul 6 19:02:47 2015 -0500
+
+    Generate UML.pdf
+
+commit eaf43b21945cf21fec29fad5aabb72614b978bb0
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Mon Jul 6 18:36:32 2015 -0500
+
+    fixed tests.py
+
+commit 7374b3652b51d402b968e4805406e3edfbbe7308
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Mon Jul 6 18:04:25 2015 -0500
+
+    fixed models import
+
+commit d6b6b975244abd181b0f98919a0225363a2e6968
+Merge: e68d314 bb300ce
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Mon Jul 6 18:02:15 2015 -0500
+
+    fixed merge conflicts
+
+commit bb300ceb163c74b6a39f40ea8dc8f02b208ccd4e
+Merge: 00bb737 0d83ddc
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 6 17:35:32 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit 0d83ddc1451b7679f37e85d4176fdc8691b34fab
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 6 17:33:39 2015 -0500
+
+    resolved #22
+
+commit 00bb737fd7ebc9674fe3969071831d45269db1bb
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 19:25:33 2015 -0500
+
+    Initialize about.html file
+
+commit f57b2a2db92ff1c8a01a1a356499758d2ea20b06
+Merge: 30854f2 a386751
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 19:15:57 2015 -0500
+
+    Merge branch 'dev' of https://github.com/jrpeden/cs373-idb into dev
+
+commit 30854f2f10f9fc376b1554108af4073861cf272e
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 19:08:02 2015 -0500
+
+    Fix links to include individual game/player/team elements
+
+commit b1d7e7d6431c5abd3577e4243597cc7d66c4444f
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 19:05:50 2015 -0500
+
+    Fix links to include individual game/player/team elements
+
+commit a386751ecb28ec2573ebd25508ddd9d6df3dd5ce
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 19:00:05 2015 -0500
+
+    changed game tags to start with letter
+
+commit 059304a49ae7840eacc1365a5269438ac7f363ce
+Merge: 7bc9425 ebf2222
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 18:41:25 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit e16ef0e5d78803c30d522515d3605e33e043726d
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:37:57 2015 -0500
+
+    delete unneeded file
+
+commit 584ce2bebca1962b9c90d55c6374b33dbb32e2a4
+Merge: 9cbb0c8 ebf2222
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:34:27 2015 -0500
+
+    Merge branch 'dev' of https://github.com/jrpeden/cs373-idb into dev
+
+commit 9cbb0c8c239cf752dc9bd506d66ad1d558335875
+Merge: 22efcb7 77c67af
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:34:23 2015 -0500
+
+    this is bs
+
+commit 22efcb7262acca2679e7c35a12b9ecfa2a11f92c
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:21:22 2015 -0500
+
+    update navbar elements
+
+commit 76ea096f0b261832347cff01f8f26ef9f6ac1881
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:20:41 2015 -0500
+
+    Initialize home html
+
+commit ebf2222a0492783184ed6cf4fc4896cb3308a6a9
+Merge: 7bc9b0b 77c67af
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sun Jul 5 18:19:08 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit 77c67afa99d99627861749c80c9fc38cd2165fee
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sun Jul 5 18:18:52 2015 -0500
+
+    fixing dev branch
+
+commit 7bc9b0b38b1e5e4dc94b8d9cbd656fd9088a45e6
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sun Jul 5 18:13:19 2015 -0500
+
+    added background image"
+
+commit a1315348e788e50d3a05493e4d6019bf631aaccd
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:05:55 2015 -0500
+
+    update links
+
+commit a91b6e0bf53328fac658655c661fcc7c1509bd50
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:05:20 2015 -0500
+
+    update links
+
+commit 7bc9425a36a274bc0fb9c79c29aad73e151d06da
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 18:03:32 2015 -0500
+
+    changing bracket style
+
+commit 8d78cb6308e3fec64533442603ca7aa4b49d14fd
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 18:00:54 2015 -0500
+
+    Create player, teams and game html files.
+
+commit 3932e2579e8534575c2929c634dffcb2cdb945ba
+Merge: d7f892a 4651987
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 17:58:41 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit d7f892a477c61e25c6de0fca68f6976f2ac0e9d6
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 17:58:03 2015 -0500
+
+    minor changes
+
+commit bbe9a85657a305c4ae124dc12e888c626d966245
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 16:52:19 2015 -0500
+
+    adding support for links to individual pages
+
+commit 4651987b0e4a15d249bf85df54a2c3bf07831919
+Merge: 89017dd 3a467f3
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sun Jul 5 16:48:39 2015 -0500
+
+    merging brandong with dev
+
+commit 3a467f381083c723651c54f45f2f19d7b3304130
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sun Jul 5 16:18:11 2015 -0500
+
+    resolved #48
+
+commit c076d9707f33adf92c734d4f5cf259420eb25f61
+Merge: f72b9cf 89017dd
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 15:37:49 2015 -0500
+
+    updating table controller
+
+commit 89017dddeb4ea8cfc1a558ddcf137640e197607c
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 15:33:53 2015 -0500
+
+    Fix table bug
+
+commit f72b9cf73f7b0ac3611cdecf616a50c2e7453bc5
+Merge: 760cebe 736feff
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 15:25:18 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 736feff3a1cc224578c8e005f27cb53995780e87
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 15:18:14 2015 -0500
+
+    Added meta-source
+
+commit 760cebe2f82efe19c97df3673ce5acdbb41e0c5b
+Merge: 45e8bd5 390197c
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 15:16:36 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 87f34e3ccdb847f4efc120be095bfe81ad075b34
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 15:14:32 2015 -0500
+
+    Improve navbar. Includes dropdown menus.
+
+commit 45e8bd5b780672068b91fe324b1dde67fcdef8c4
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 5 14:58:03 2015 -0500
+
+    adding basic table data #36, but tables do not currently display
+
+commit b40eae9c08e162ac0fee63079dac8cc42c46f69a
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 14:25:19 2015 -0500
+
+    Update navbar
+
+commit 99a1df30baf3683f6ab817668e79135701853d16
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 14:24:16 2015 -0500
+
+    Add meta folder to store project info. ie source websites.
+
+commit fc6471ed30ff6008ad69c2a52f10341184a89f8c
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 14:05:28 2015 -0500
+
+    Implement primitive navbar
+
+commit d84d1b59b466db2aaf347ceeb4e3a862f7a32f70
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 13:07:27 2015 -0500
+
+    Set __init__.py to run locally
+
+commit 14bdbe28bec19f15858d202fd957a214285c9676
+Merge: 0deb9c5 390197c
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 13:04:47 2015 -0500
+
+    Fix __init__.py for merge
+
+commit 0deb9c55093d12c02d1069ed5db8c1a70a1b5848
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Sun Jul 5 13:00:51 2015 -0500
+
+    Clean pull. Update __init__.py to run locally
+
+commit e68d314819f6cc515a7215c379f1a7531e9bba5c
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 05:05:33 2015 -0500
+
+    add drop & create ddl for mysql convenient
+
+commit 2f498087d47d13bb1f2bdb8e3ab369f344717634
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 04:45:14 2015 -0500
+
+    added message in requirements.txt
+
+commit 1e8c965e1aaa068ea77b2dcef49c94b8d2abdba8
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 04:35:08 2015 -0500
+
+    modularized script to create db schema
+
+commit f346c6f610c4e26db2f575b3fb06b323b6bf70fd
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 04:17:33 2015 -0500
+
+    db should be created
+
+commit 3477f19c9d3a0b28121eee9516ed1a872b084d41
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 03:46:49 2015 -0500
+
+    indentation and missing primary key
+
+commit aeceadf4825f33291fc067ef087063c969bb2d47
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 03:25:30 2015 -0500
+
+    more configuration for db
+
+commit 638bc804df4c1868b77e9c7bfef88fcf91e77b71
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 03:03:42 2015 -0500
+
+    setup db WIP
+
+commit c2a639c3ced34f9d78eafa463d61a191a9180438
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 02:50:48 2015 -0500
+
+    documented models
+
+commit 0be99fabd9c852151dd57ef7f1d87d6ffd9ba822
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sun Jul 5 02:45:55 2015 -0500
+
+    db WIP
+
+commit fce12a21c66293541dcf25a8e3220ccf0c3675ee
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sat Jul 4 22:41:18 2015 -0500
+
+    created requirements.text for dependencies
+
+commit 600c9cb4ef9c9293d1ce9f20852fe7577f42b377
+Merge: 8696730 55149db
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Sat Jul 4 22:30:11 2015 -0500
+
+    Merge branch 'master' of http://github.com/jrpeden/cs373-idb into perry
+
+commit bd52f14345d6ecfc645b9fbae3832630156c6c83
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 3 15:44:52 2015 -0500
+
+    removing test files
+
+commit 390197c6917c5dea2b6f2b67fca25878190d3934
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 3 15:40:57 2015 -0500
+
+    Updated css issue causing problems with Chrome. Closes #45
+
+commit 86967309f795ef9051d3b8845d8d431bf660a62c
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 15:05:51 2015 -0500
+
+    prettified nba teams data
+
+commit 1882557dd4b5139c197461da09e655ee9245e4fa
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 15:03:32 2015 -0500
+
+    grabbed team data
+
+commit 672d10334917ef3fdb0ae62696a4aae473869e4d
+Merge: 36ff938 73036fa
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 3 14:41:25 2015 -0500
+
+    Merged dev into local
+
+commit 73036fa00d19f47f2a3af4ad2f97d76e19985026
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 3 14:38:06 2015 -0500
+
+    altered file structure and removed scratch work
+
+commit 2b65aced3dfea0a8b0aac115d7b2319c4c174aae
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 3 14:28:27 2015 -0500
+
+    resolved #36
+
+commit dea3cb83c122840e77616d59dea6af57624196bb
+Merge: 8d44a5f c13a1ef
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 14:26:16 2015 -0500
+
+    Merge remote-tracking branch 'origin/dev' into perry
+    Bringing dev changes into local
+
+commit 55149dbbab74e598babbed28c09393e99716d8fe
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 3 14:24:29 2015 -0500
+
+    removing test file
+
+commit 3cddc5a1b8e1d541d40c3881a944bd9ea6b21d84
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 3 14:22:19 2015 -0500
+
+    trying to fix git
+
+commit ceb286cdfddb43b846f3e272e2e0e4f4e1ca13a1
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 3 12:40:14 2015 -0500
+
+    adding table work
+
+commit 36ff9380b86d838e59811f6dd6577863b3ff31f4
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 3 11:41:20 2015 -0500
+
+    Flask will now dynamically serve static pages based on the url provided. Such that /<name> will serve the template <name>.html if it exists or return a 404 on a TemplateNotFound exception. So we don't have to change to server for new static pages, simply name the template whatever name you would like the URL to correspond to.
+
+commit b00d2091db70b08e57acbdb490d0e1d8f33f5229
+Merge: 4c68127 c13a1ef
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 3 11:19:39 2015 -0500
+
+    Merge remote-tracking branch 'origin/brandong' into josh
+    Updating my branch with Brandon's most recent changes (dev still has 404
+    errors on JS serving)
+
+commit 4c68127fd5d803afa0e1bf3438c11f8420df9420
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 3 11:07:09 2015 -0500
+
+    Removing lingering swap file
+
+commit 8d44a5f3ce7e07d9f7b3fb3fb6e8a82fce594457
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 01:39:27 2015 -0500
+
+    added nbaTeamGameStats.json, includes data for every game of the season.
+
+commit 17d80235e3cfd88620a52b88880c4c66064e6bc5
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 01:31:08 2015 -0500
+
+    prettified nbaTeam.json
+
+commit 915c744466932cf91761e28fc327fda205dd02f0
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 01:29:02 2015 -0500
+
+    added nbaGames.json and nbaTeams.json, will populate nbaTeams.json with more data
+
+commit f354f9a0b98c51e22b4c8e2a87932c0e55d3d2a5
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 00:46:23 2015 -0500
+
+    prettified nba_players_data.json
+
+commit 6cd8c6f1c006170e3f3253f033825867d814010b
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 3 00:43:54 2015 -0500
+
+    fixed stats scraping. added more data to stats. updated scraper
+
+commit c13a1ef0bcc8aa4c4a092015664398b30c1c5c2d
+Merge: 956e096 beea44f
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 22:06:52 2015 +0000
+
+    Merge remote-tracking branch 'origin/perry' into dev
+
+commit 956e0967e1983995a0711e19955e7579a020a862
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 22:00:30 2015 +0000
+
+    fixing travis file
+
+commit c0a7ee547d25723cd57d05117e495d186be22b54
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 16:55:02 2015 -0500
+
+    removing old index
+
+commit beea44f8e66f562a4c130dc46217bfcaad6ab050
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 2 16:49:30 2015 -0500
+
+    added scraper and player data json file in data folder
+
+commit d479abbc257a8dc7eeb146bee3ea5847e41fb44f
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 21:29:53 2015 +0000
+
+    staging for production
+
+commit 203a10e16a779e37804c89b612e4934905d3585d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 16:20:58 2015 -0500
+
+    updating travis again
+
+commit efb805d8435ee2c58135957fab0b74f15fec1424
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 16:17:34 2015 -0500
+
+    updating travis
+
+commit 7a49b058971104bf80a211aa686a2cea4bdf31ac
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 16:10:59 2015 -0500
+
+    updating travis yml
+
+commit 435bf01d8165ebbee6d05230dbb35cdc161fea1a
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 15:40:48 2015 -0500
+
+    resolved #38
+
+commit 3b15da8125b97fe7573d7ef49fcfc78fdfdbc6fd
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 15:09:42 2015 -0500
+
+    resolved #34
+
+commit aab3751f4139c8f18542d99759a7bcfc6c5e9db3
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 2 00:09:59 2015 +0000
+
+    turning off debug
+
+commit 9860da21fd1b906cdbd79515bc12b660e2f74e81
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Wed Jul 1 23:52:51 2015 +0000
+
+    resolved #33
+
+commit dd03d6ad862e064c3e6e0b6c29ee138edcc5514e
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Wed Jul 1 22:37:19 2015 +0000
+
+    updating port to 80
+
+commit 7b8ad30b362f363c929a553988328d4d443b8e0b
+Merge: 27c1468 80921fd
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Wed Jul 1 21:17:55 2015 +0000
+
+    Merge branch 'master' into dev
+
+commit 80921fdec41203fd9b9e79c33560fb331d0f3f12
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Wed Jul 1 21:16:23 2015 +0000
+
+    resolved #6
+
+commit 27c1468ed80e8f1bfd87edb0c1a814032368a2f0
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jun 30 15:42:23 2015 -0500
+
+    fixing barebones travis config and make
+
+commit 02484b0745da2e6aa6c6e4538682c7cbfadda7be
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jun 30 15:28:39 2015 -0500
+
+    Create .travis.yml
+    
+    adding basic .travis.yml file
+
+commit 49e77f39be60e0040fda9d9f6215f1c13b55b043
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jun 30 15:15:58 2015 -0500
+
+    Create .gitignore
+    
+    adding basic .gitignore
+
+commit a645614cbfd4ef518fc26bf389e5033ea99b0bfc
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jun 30 14:27:48 2015 -0500
+
+    adding basic skeleton makefile
+
+commit c396ce072c39a7eb63cd6ca64989aa240a909a4d
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jun 30 13:26:33 2015 -0500
+
+    Initial commit
