@@ -66,6 +66,7 @@
 <li>season_3P_PCT = db.Column(db.String(256))</li>
 <li>season_DR = db.Column(db.String(256))</li>
 <li>season_3PM_A = db.Column(db.String(256))</li>
+<li>id_url = db.Column(db.String(256))</li>
 <li>team_name = db.Column(db.String(256), db.ForeignKey('team.name'))</li>
 </ul>
 
@@ -85,6 +86,7 @@
 <li>city = db.Column(db.String(256)) - The team's home city.</li>
 <li>state = db.Column(db.String(256)) - The team's home state.</li>
 <li>mascot = db.Column(db.String(256)) - The name of the team's mascot.</li>
+<li>twitter = db.Column(db.String(256)) - The team's official Twitter account.</li>
 </ul>
 
 <h4>
