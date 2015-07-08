@@ -12,10 +12,10 @@ before_install:
     
 install:
     - sudo apt-get install mysql-server
-    - pip install --upgrade pip
-    - pip install coverage
-    - pip install numpy
-    - pip install -r requirements.txt
+    - pip3 install --upgrade pip
+    - pip3 install coverage
+    - pip3 install numpy
+    - pip3 install -r requirements.txt
 
 before_script:
     - uname -a
