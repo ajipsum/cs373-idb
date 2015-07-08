@@ -27,9 +27,9 @@ before_script:
     - python3 -c "import numpy; print(numpy.__version__)"
     # Currently having issues with database creation
     # on Travis. This will remain commented until resolved.
-    #- sudo chmod +x init_db.sh
-    #- sudo ./init_db.sh
-    #- python3 createDB.py
+    - sudo chmod +x init_db.sh
+    - sudo ./init_db.sh
+    - python3 createDB.py
 script:
     - date
     - ls -al
