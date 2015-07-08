@@ -1,0 +1,225 @@
+FORMAT: 1A
+HOST: api2k15.me
+# api2k15
+
+The api2k15 Data API is broken down by data model into three categories: Player,
+Team and Game. Each model category has a collections API endpoint as well as other
+single resource endpoints. 
+
+The collections endpoint handles queries against the 
+entire set of model objects in the database, filtered by the parameters passed as 
+query arguments to the API. This allows dynamic customized requests to be handled
+via the API to retrieve whatever subset of the data model is required. 
+
+Single resource endpoints alternatively correspond to a single data object, be it a unique
+resource or a specialized view of the data model that is common enough to dedicate
+an API endpoint.
+
+## Group Player
+
+Resources related to the Player data model.
+
+## Player Collection [/rescources/players{?name}{?position}{?player_number}{?current_team}{?age}{?weight}]
+
+This is the collection endpoint for the Player data model.
+
+### Query against the Player Database [GET]
+
+When querying Players in the database it is possible to filter the request 
+based on attributes of the Player model. If no attributes are provided the entire
+list of players will be returned. Players may be filtered on one or more attributes
+and numerical attributes may be provided with a tuple range to match all values 
+within that range. 
+
++ Parameters
+    + name:  None (optional, string) - Name of player to filter by.
+    + position: None (optional, string) - Position to filter by.
+    + player_number: None (optional, number) - Jersey number to filter by, may be tuple range.
+    + current_team: None (optional, string) - Shortened team name to filter by.
+    + age: None (optional, number) - Age to filter by, may be tuple range.
+    + weight: None (optional, number) - Weight to filter by, may be tuple range.
+
++ Response 200 (application/json)
+
+### Add a Player to the Database [POST]
+
+Adding a player to the database requires sending a POST request to the Player 
+collection endpoint and providing a JSON Player object as the message body.
+
++ Response 201 (application/json)
+
+## Player [/resources/player/{name}?{attribute}]
+
+Single resource endpoint. Will return the Player data associated with the provided
+name if it exists, optionally filtered by the provided attribute parameters.
+
+### Retrieve a Player [GET]
+
++ Parameters
+    + name: None (required, string) - Name of the Player to retrieve.
+    + attribute: None (optional, bool) - Specific attribute to return, may be zero or more of the attributes associated with the Player data model.
+
++ Response 200 (application/json)
+
+## Group Team
+
+API endpoints serving Team model data.
+
+## Team Collection [/resources/teams{?name}{?conference}{?division}{?site_name}{?city}{?state}{?mascot}]
+
+This is the collection API endpoint for the Team model.
+
+### Query the Teams [GET]
+
+Clients may query this endpoint to search the database for teams filtered by zero
+or more attributes of the Team model. If no query parameters are provided the entire
+list of Teams is returned.
+
++ Parameters
+    + name: None (optional, string) - The shortened Team name.
+    + conference: None (optional, string) - The conference the Team plays in.
+    + division: None (optional, string) - The division the Team plays in.
+    + site_name: None (optional, string) - The name of the Team's home arena.
+    + city: None (optional, string) - The Team's home city.
+    + state: None (optional, string) - The Team's home state.
+    + mascot: None (optional, string) - The Team's mascot.
+
++ Response 200 (application/json)
+
+
+### Add a Team [POST]
+
+Adding a team to the database requires sending a POST request to the Team 
+collection endpoint and providing a JSON Team object as the message body.
+
++ Response 201 (application/json)
+
+## Team [/resources/team/{team_name}?{attribute}]
+
+This single resource endpoint will return the data model of a team which matches
+Team name, optinally filtered by the associated attributes.
+
+### Retrieve a Team [GET]
+
++ Parameters
+    + team_name: None (required, string) - Name of the Team to retrieve.
+    + attribute: None (optional, bool) - Specific attribute to return, may be zero or more of the attributes associated with the Team data model.
+
++ Response 200 (application/json)
+
+## Schedule [/resources/team/{team_name}/schedule]
+
+This single resource endpoint will return a list of all games played by this team
+during the season.
+
+### Retrieve a Team Schedule [GET]
+
++ Parameters
+    + team_name: None (required, string) - Name of the Team to retrieve schedule.
+
++ Response 200 (application/json)
+
+## Top Starters [/resources/team/{team_name}/top_starters]
+
+Requests will return a list of five players for the Team who started the 
+most games during the season.
+
+### Retrieve Team top starters [GET]
+
++ Parameters
+    + team_name: None (required, string) - Name of the Team to retrieve top starters
+
++ Response 200 (application/json)
+
+## Wins [/resources/team/{team_name}/wins]
+
+Requests will return a list of all games won by the team during the season.
+
+### Retrieve Team wins [GET]
+
++ Parameters
+    + team_name: None (required, string) - Name of Team to query wins.
+
++ Response 200 (application/json)
+
+## Losses [/resources/team/{team_name}/losses]
+
+Requests will return a list of all games lost by the team during the season.
+
+### Retrieve Team losses [GET]
+
++ Parameters
+    + team_name: None (required, string) - Name of Team to query losses.
+    
++ Response 200 (application/json)
+
+## Group Game
+
+API endpoints serving the Game data model.
+
+## Game Collection [/resources/games{?game_id}{?home_team}{?home_score}{?away_team}{?away_score}{?date}]
+
+This is the collection endpoint for the Game model.
+
+### Query Games [GET]
+
+This target will return game objects stored in the 
+database filtered by the query parameters. If no parameters are provided all 
+games will be returned. Requests may be filtered by any attribute of the 
+Game model, where integer attributes may be provided singly or as an inclusive 
+tuple range value.
+
++ Parameters
+    + game_id: None (optional, number) - ID of the game.
+    + home_team: None (optional, string) - Shortened name of the home team.
+    + home_score: None (optional, number) - Goals scored by the home team.
+    + away_team: None (optional, string) - Shortened name of the away team.
+    + away_score: None (optional, number) - Goals scored by the away team.
+    + date: None (optional, string) - String representation of the game date, format "Month DD, YYYY"
+
++ Response 200 (application/json)
+
+### Add a Game [POST]
+
+A post request with a JSON Game data model object in the message body 
+will add the object to the database.
+
++ Response 201 (application/json)
+
+## Game [/resources/game/{id}]
+
+Requests will return the JSON game object associated with game {id}.
+
+### Retrieve a Game [GET]
+
++ Parameters
+    + id: None (required, number) - ID of the game to retrieve.
+
++ Response 200 (application/json)
+
+## Games by Month [/resources/game/{month_id}]
+
+Requests will return a list of all games played during a given month, indicated
+by the corresponding numerical value (1-12).
+
+### Retrieve Games by Month [GET]
+
++ Parameters
+    + month_id: None (required, number) - Numerical value of month to return.
+
++ Response 200 (application/json)
+
+## Games by Arena [/resources/game/{site}]
+
+Request will return a list of all games played at the given arena during the year.
+
+### Retrieve Games by Arena [GET]
+
++ Parameters
+    + site: None (required, string) - Name of the Arena to query for.
+    
++ Response 200 (application/json)
+
+
+
+
