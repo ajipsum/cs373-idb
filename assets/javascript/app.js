@@ -1,7 +1,8 @@
 var app = angular.module('api2k15', [
     'ngTouch',
     'ui.grid',
-    'ui.router'    
+    'ui.router',
+    'ui.grid.pagination'    
 ]);
 
 app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
