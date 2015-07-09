@@ -17,11 +17,11 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             abstract: true,
             views: {
                 'navbar': {
-                    templateUrl: '../../../templates/shared/navbar.html',
+                    templateUrl: 'assets/templates/shared/navbar.html',
                     controller: 'NavbarCtrl'
                 }
                // 'footer': {
-               //     templateUrl: '../../../templates/shared/footer.html',
+               //     templateUrl: 'assets/templates/shared/footer.html',
                //     controller: 'FooterCtrl'
                // }
             }
@@ -30,7 +30,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/home",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/home.html",
+                    templateUrl: "assets/templates/home.html",
                     controller: "TableCtrl"
                 }
             }
@@ -39,7 +39,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/teams",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/teams/teams.html",
+                    templateUrl: "assets/templates/teams/teams.html",
                     controller: "TableCtrl"
                 }
             }
@@ -48,7 +48,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/players",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/players/players.html",
+                    templateUrl: "assets/templates/players/players.html",
                     controller: "TableCtrl"
                 }
             }
@@ -57,7 +57,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/games",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/games/games.html",
+                    templateUrl: "assets/templates/games/games.html",
                     controller: "TableCtrl"
                 }
             }
@@ -66,7 +66,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/about",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/about/about.html",
+                    templateUrl: "assets/templates/about/about.html",
                     controller: "TableCtrl"
                 }
             }
@@ -75,7 +75,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/lac",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/teams/LAC.html",
+                    templateUrl: "assets/templates/teams/LAC.html",
                     controller: "TableCtrl"
                 }
             }
@@ -85,7 +85,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/mia",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/teams/MIA.html",
+                    templateUrl: "assets/templates/teams/MIA.html",
                     controller: "TableCtrl"
                 }
             }
@@ -94,7 +94,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/sas",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/teams/SAS.html",
+                    templateUrl: "assets/templates/teams/SAS.html",
                     controller: "TableCtrl"
                 }
             }
@@ -103,7 +103,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/bg",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/players/BG.html",
+                    templateUrl: "assets/templates/players/BG.html",
                     controller: "TableCtrl"
                 }
             }
@@ -112,7 +112,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/dw",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/players/DW.html",
+                    templateUrl: "assets/templates/players/DW.html",
                     controller: "TableCtrl"
                 }
             }
@@ -121,7 +121,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/td",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/players/TD.html",
+                    templateUrl: "assets/templates/players/TD.html",
                     controller: "TableCtrl"
                 }
             }
@@ -130,7 +130,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/g102",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/games/102.html",
+                    templateUrl: "assets/templates/games/102.html",
                     controller: "TableCtrl"
                 }
             }
@@ -139,7 +139,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/g414",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/games/414.html",
+                    templateUrl: "assets/templates/games/414.html",
                     controller: "TableCtrl"
                 }
             }
@@ -148,7 +148,7 @@ app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $l
             url: "/g559",
             views : { 
                 '@' : {
-                    templateUrl: "../../../templates/games/559.html",
+                    templateUrl: "assets/templates/games/559.html",
                     controller: "TableCtrl"
                 }
             }
