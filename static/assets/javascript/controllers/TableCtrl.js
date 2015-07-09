@@ -27,6 +27,3624 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
   "age": "39",
   "weight": "250",
   "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
+    },
+    {
+        "player_name": "Dwyane Wade",
+        "current_team": "Miami Heat",
+  "player_number": "3",
+  "position": "SG",
+  "age": "33",
+  "weight": "220",
+  "tag": "dw"
+    },
+    {
+        "player_name": "Blake Griffin",
+        "current_team": "Los Angeles Clippers",
+  "player_number": "32",
+  "position": "PF",
+  "age": "26",
+  "weight": "251",
+  "tag": "bg"
+    },
+    {
+        "player_name": "Tim Duncan",
+        "current_team": "San Antonio Spurs",
+  "player_number": "21",
+  "position": "PF",
+  "age": "39",
+  "weight": "250",
+  "tag": "td"
     }
 ];
 
@@ -95,6 +3713,8 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
 
   $scope.playerOptions = {
       data: 'playerData',
+      paginationPageSizes: [10, 25, 50, 75, 100],
+      paginationPageSize: 25,
       columnDefs: 
       [
     {
