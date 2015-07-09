@@ -39,7 +39,7 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/home.html",
-                    controller: "TableCtrl"
+                    controller: "HomeCtrl"
                 }
             }
         })
@@ -48,7 +48,7 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/teams/teams.html",
-                    controller: "TableCtrl"
+                    controller: "TeamsCtrl"
                 }
             }
         })
