@@ -10,18 +10,18 @@ FILES :=                              						\
 	index.html												\
 	requirements.txt										\
 	UML.pdf													\
-	templates/about/about.html								\
-	templates/games/games.html								\
-	templates/players/players.html							\
-	templates/teams/teams.html								\
-	templates/shared/navbar.html							\
-	static/vendors/angular.js		  						\
-	static/vendors/bootstrap-3.3.5-dist/css/bootstrap.css 	\
-	static/assets/javascript/app.js 						\
-	static/assets/javascript/controllers/HomeCtrl.js		\
-	static/assets/javascript/controllers/NavbarCtrl.js		\
-	static/assets/javascript/controllers/TableCtrl.js		\
-	static/assets/stylesheets/style.css						
+	assets/templates/about/about.html								\
+	assets/templates/games/games.html								\
+	assets/templates/players/players.html							\
+	assets/templates/teams/teams.html								\
+	assets/templates/shared/navbar.html							\
+	vendors/angular.js		  						\
+	vendors/bootstrap-3.3.5-dist/css/bootstrap.css 	\
+	assets/javascript/app.js 						\
+	assets/javascript/controllers/HomeCtrl.js		\
+	assets/javascript/controllers/NavbarCtrl.js		\
+	assets/javascript/controllers/TableCtrl.js		\
+	assets/stylesheets/style.css						
 
 all:
 
