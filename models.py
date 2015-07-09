@@ -5,7 +5,7 @@ class Player(db.Model):
   Information about player
   Information includes name, picture, position, player number, weight etc.
   '''
-  id = db.Column(db.String(256), primary_key=True,unique=True,index=True)
+  id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   name = db.Column(db.String(256))
   picture = db.Column(db.String(256), unique=True)
   experience_years = db.Column(db.String(256))
@@ -82,7 +82,7 @@ teams = db.Table('teams',
 )
 
 players = db.Table('players',
-  db.Column('player_name', db.String(256), db.ForeignKey('player.name')),
+  db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
   db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
 )
 
