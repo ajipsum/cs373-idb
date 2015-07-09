@@ -2,10 +2,18 @@ var app = angular.module('api2k15', [
     'ngTouch',
     'ui.grid',
     'ui.router'    
-]);
+])
 
-app.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
-    app.constant('Host', 'http://127.0.0.1:5000');
+.constant('Host', 'http://127.0.0.1:5000')
+
+.run(function($rootScope, $state) {
+    $rootScope.$on('$stateChangeSuccess', function() {
+        // scroll to top on page transitions
+        $('html, body').animate({ scrollTop: 0 }, 200);
+    })
+})
+
+.config(function($interpolateProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/home');
     $locationProvider.html5Mode(true);
