@@ -52,12 +52,54 @@ var app = angular.module('api2k15', [
                 }
             }
         })
+        .state('root.team-detail', {
+            url: "/teams/:id",
+            views : {
+                '@' : {
+                    templateUrl: "assets/templates/teams/team-detail.html",
+                    controller: "TeamDetailCtrl",
+                    resolve: {
+                        team: function(teamFactory, $q, $stateParams) {
+                            var deferred = $q.defer();
+                            teamFactory.getTeamDetail($stateParams['id']).then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve team details", error);
+                                });
+                            return deferred.promise;
+                        }
+                    }
+                }
+            }
+        })
         .state('root.players', {
             url: "/players",
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/players/players.html",
                     controller: "PlayersCtrl"
+                }
+            }
+        })
+        .state('root.player-detail', {
+            url: "/player/:id",
+            views : {
+                '@' : {
+                    templateUrl: "assets/templates/players/player-detail.html",
+                    controller: "PlayerDetailCtrl",
+                    resolve: {
+                        player: function(playerFactory, $q, $stateParams) {
+                            var deferred = $q.defer();
+                            playerFactory.getPlayerDetail($stateParams['id']).then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve player details", error);
+                                });
+                            return deferred.promise;
+                        }
+                    }
                 }
             }
         })
@@ -70,6 +112,27 @@ var app = angular.module('api2k15', [
                 }
             }
         })
+        .state('root.game-detail', {
+            url: "/game/:id",
+            views : {
+                '@' : {
+                    templateUrl: "assets/templates/games/game-detail.html",
+                    controller: "GameDetailCtrl",
+                    resolve: {
+                        game: function(gameFactory, $q, $stateParams) {
+                            var deferred = $q.defer();
+                            gameFactory.getGameDetail($stateParams['id']).then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve game details", error);
+                                });
+                            return deferred.promise;
+                        }
+                    }
+                }
+            }
+        })
         .state('root.about', {
             url: "/about",
             views : { 
@@ -78,88 +141,5 @@ var app = angular.module('api2k15', [
                     controller: "AboutCtrl"
                 }
             }
-        })
-        .state('root.lac', {
-            url: "/lac",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/teams/LAC.html",
-                    controller: "TableCtrl"
-                }
-            }
-
-        })
-        .state('root.mia', {
-            url: "/mia",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/teams/MIA.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.sas', {
-            url: "/sas",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/teams/SAS.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.bg', {
-            url: "/bg",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/players/BG.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.dw', {
-            url: "/dw",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/players/DW.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.td', {
-            url: "/td",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/players/TD.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.g102', {
-            url: "/g102",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/games/102.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.g414', {
-            url: "/g414",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/games/414.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        .state('root.g559', {
-            url: "/g559",
-            views : { 
-                '@' : {
-                    templateUrl: "assets/templates/games/559.html",
-                    controller: "TableCtrl"
-                }
-            }
-        })
-        ;
+        });
 });
