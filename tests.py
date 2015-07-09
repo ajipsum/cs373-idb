@@ -121,6 +121,7 @@ class TestAPI (TestCase) :
          self.assertEqual(p.age, "")
          self.assertEqual(p.weight, "")
 
+
     def test_player_create_3(self):
          player = Player(
              name = "Tim Duncan",
@@ -139,6 +140,7 @@ class TestAPI (TestCase) :
          self.assertEqual(p.current_team, "San Antonio Spurs")
          self.assertEqual(p.age, "39")
          self.assertEqual(p.weight, "250")
+
 
     def test_game_create_1(self):
          game = Game(
