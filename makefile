@@ -10,11 +10,11 @@ FILES :=                              						\
 	index.html												\
 	requirements.txt										\
 	UML.pdf													\
-	templates/about/about.html								\
-	templates/games/games.html								\
-	templates/players/players.html							\
-	templates/teams/teams.html								\
-	templates/shared/navbar.html							\
+	assets/templates/about/about.html								\
+	assets/templates/games/games.html								\
+	assets/templates/players/players.html							\
+	assets/templates/teams/teams.html								\
+	assets/templates/shared/navbar.html							\
 	vendors/angular.js		  						\
 	vendors/bootstrap-3.3.5-dist/css/bootstrap.css 	\
 	assets/javascript/app.js 						\
