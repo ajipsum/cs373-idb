@@ -57,7 +57,7 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/players/players.html",
-                    controller: "TableCtrl"
+                    controller: "PlayersCtrl"
                 }
             }
         })
@@ -66,7 +66,7 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/games/games.html",
-                    controller: "TableCtrl"
+                    controller: "GamesCtrl"
                 }
             }
         })
@@ -75,7 +75,7 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/about/about.html",
-                    controller: "TableCtrl"
+                    controller: "AboutCtrl"
                 }
             }
         })
