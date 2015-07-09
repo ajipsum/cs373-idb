@@ -1,0 +1,76 @@
+<div class="row teamHeading">
+  <div class="col-md-6 col-xs-6">
+    <img class="img-responsive" alt="Responsive image" src="{{ teamLogo }}">
+  </div>
+  <div class="col-md-5 col-xs-5">
+    <div class="teamInfo">
+      <div>
+        <h1>{{ teamName }}</h1>
+      </div>
+      <div>
+        <h2>Conference: {{ conference }}</h2>
+      </div>
+      <div>
+        <h2>Division: {{ division }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row teamDetails">
+  <!-- links to players -->
+  <div class="col-md-5 col-xs-5 teamRoster">
+   <h2>Roster</h2>
+   <table class="table">
+     <tbody>
+       <tr>
+         <th>Players</th>
+       </tr>
+       <tr>
+         <div ng-repeat="(playerId, playerName) in playerObj">
+           <tr>
+             <td><a href="/{{ playerId }}">{{ playerName }}</a></td>
+           </tr>
+         </div>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col-md-6 col-xs-6 teamGameLog pull-right">
+   <!-- link to games -->
+   <h2>Games</h2>
+   <table class="table">
+     <tbody>
+      <tr>
+        <th>Date</th>
+        <th>Opp</th>
+        <th>Score</th>
+      </tr>
+      <div ng-repeat="(gameId, gameDate, opponentShort, homeScore, awayScore) in gameObj">
+        <tr>
+          <td><a href="/{{ gameId }}">{{ gameDate }}</a></td>
+          <td>VS {{ opponentShort}} </td>
+          <td>{{ homeScore }} - {{ awayScore }}</td>
+        </tr>
+      </div>
+      //<tr>
+      //  <td><a href="/g559">Sun 1/11</a></td>
+      //  <td>VS MIA</td>
+      //  <td>W 104-90</td>
+      //</tr>
+    </tbody>
+  </table>
+</div>
+<div class="playerMap">
+  <!-- Map -->
+  <iframe src="{{ playerMapSource }}" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="teamCitations">
+  <!-- Citations -->
+  <h2>Citations</h2>
+  <div>
+    ESPN: <a href="{{ playerCitation }}">{{ playerCitation }}</a>
+  </div>
+</div>
+</div>
