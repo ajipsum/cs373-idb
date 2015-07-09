@@ -18,7 +18,7 @@ def index(**kwargs):
 
 # Allows us to not have to rely on Flask's default directory structure
 # http://stackoverflow.com/questions/23685687/flask-html-js-css-img-reference-404-error
-@app.route('/<any(assets, vendors, templates):folder>/<path:filename>')
+@app.route('/<any(assets, vendors):folder>/<path:filename>')
 def toplevel_static(folder, filename):
     filename = safe_join(folder, filename)
     cache_timeout = app.get_send_file_max_age(filename)
