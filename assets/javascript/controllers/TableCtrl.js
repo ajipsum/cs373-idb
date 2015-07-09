@@ -30,7 +30,7 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
     }
 ];
 
-  $scope.teamData = [
+$scope.teamData = [
     {
   "last_name": "Spurs",
   "city": "San Antonio",
@@ -95,6 +95,8 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
 
   $scope.playerOptions = {
       data: 'playerData',
+      paginationPageSizes: [10, 25, 50, 75, 100],
+      paginationPageSize: 25,
       columnDefs: 
       [
     {
@@ -127,6 +129,8 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
 
   $scope.teamOptions = {
       data: 'teamData',
+      paginationPageSizes: [5, 10, 15, 30],
+      paginationPageSize: 15,
       columnDefs: 
       [
     {
@@ -163,6 +167,8 @@ app.controller('TableCtrl', ['$scope', function ($scope) {
 
   $scope.gameOptions = {
       data: 'gameData',
+      paginationPageSizes: [10, 25, 50, 75, 100],
+      paginationPageSize: 25,
       columnDefs: 
       [
     {
