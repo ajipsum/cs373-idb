@@ -1,4 +1,6 @@
-app.controller('TeamsCtrl', function($scope) {
+app.controller('TeamsCtrl', function($scope, teams) {
+    $scope.teams = teams;    
+
     $scope.teamData = [
         {
             "last_name": "Spurs",
@@ -33,7 +35,7 @@ app.controller('TeamsCtrl', function($scope) {
     ];
 
     $scope.teamOptions = {
-        data: 'teamData',
+        data: 'teams',
         paginationPageSizes: [5, 10, 15, 30],
         paginationPageSize: 15,
         columnDefs: 

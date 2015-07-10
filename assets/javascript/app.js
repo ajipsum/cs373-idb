@@ -5,7 +5,7 @@ var app = angular.module('api2k15', [
     'ui.grid.pagination'    
 ])
 
-.constant('Host', 'http://127.0.0.1:5000')
+.constant('host', 'http://127.0.0.1:5000')
 
 .run(function($rootScope, $state) {
     $rootScope.$on('$stateChangeSuccess', function() {
@@ -48,7 +48,19 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/teams/teams.html",
-                    controller: "TeamsCtrl"
+                    controller: "TeamsCtrl",
+                    resolve: {
+                        teams: function(teamFactory, $q, $stateParams) {
+                            var deferred = $q.defer();
+                            teamFactory.getTeams().then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve teams", error);
+                                });
+                            return deferred.promise;
+                        }
+                    }
                 }
             }
         })
