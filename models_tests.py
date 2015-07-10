@@ -57,7 +57,7 @@ class Player(db_tests.Model):
   season_3P_PCT = db_tests.Column(db_tests.String(256))
   season_DR = db_tests.Column(db_tests.String(256))
   season_3PM_A = db_tests.Column(db_tests.String(256))
-  citation = db.Column(db.String(256))
+  citation = db_tests.Column(db_tests.String(256))
   team_name = db_tests.Column(db_tests.String(256), db_tests.ForeignKey('team.name'))
 
 
@@ -76,7 +76,7 @@ class Team(db_tests.Model):
   state = db_tests.Column(db_tests.String(256))
   mascot = db_tests.Column(db_tests.String(256))
   twitter = db_tests.Column(db_tests.String(256))
-  citation = db.Column(db.String(256))
+  citation = db_tests.Column(db_tests.String(256))
 
 team_game = db_tests.Table('team_game',
   db_tests.Column('team_name', db_tests.String(256), db_tests.ForeignKey('team.name')),
@@ -130,9 +130,9 @@ class Game(db_tests.Model):
   away_box_pf = db_tests.Column(db_tests.String(256))
   away_box_pts = db_tests.Column(db_tests.String(256))
   away_box_plus_minus = db_tests.Column(db_tests.String(256))
-  youtube_link_1 = db.Column(db.String(256))
-  youtube_link_2 = db.Column(db.String(256))
-  youtube_link_3 = db.Column(db.String(256))
+  youtube_link_1 = db_tests.Column(db_tests.String(256))
+  youtube_link_2 = db_tests.Column(db_tests.String(256))
+  youtube_link_3 = db_tests.Column(db_tests.String(256))
 
   #many to many team game relationship
   team_game = db_tests.relationship('Team', secondary=team_game,
