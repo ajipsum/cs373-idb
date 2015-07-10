@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from flask.ext.sqlalchemy import SQLAlchemy
-from flask import Flask, send_file, send_from_directory, safe_join
+from flask import Flask, send_file, send_from_directory, safe_join, request
 from jinja2 import TemplateNotFound
 app = Flask(__name__)
 
@@ -33,7 +33,16 @@ def players_collection():
     on the provided request arguments (within the HTTP Request
     object). Optimally we will handle this async.
     """
-    pass
+    if request.method == 'POST':
+        return 'Not yet implemented.'
+
+    # GET request:
+    # So SQLAlchemy takes filter_by arguments for queries by dict,
+    # so we can simply unpack the request params and pass them along
+    # Since this isn't raw SQL we don't need to sanitize the request, 
+    # it'll be handled internally.
+    return flask.jsonify(db.Player.query.filter_by(**request.args))
+
 
 @app.route('/resources/player/<name>')
 def player_by_name(name):
@@ -43,7 +52,12 @@ def player_by_name(name):
     based on the provided attribute request arguments (HTTP request
     object).
     """
-    pass
+    player_data = db.Player.query.filter_by(name = name);
+    if player_data:
+        return flask.jsonify(player_data)
+    else:
+        abort(404)
+
 
 @app.route('/resources/teams', methods=['GET','POST'])
 def teams_collection():
@@ -51,7 +65,12 @@ def teams_collection():
     This function will query the database for all teams and 
     filter based on the provided HTTP Request arguments.
     """
-    pass
+    if request.method == 'POST':
+        return 'Not yet implemented'
+
+    # GET
+    return flask.jsonify(db.Team.query.filter_by(**request.args))
+
 
 @app.route('/resources/team/<team_name>')
 def team_by_name(team_name):
@@ -60,7 +79,11 @@ def team_by_name(team_name):
     the given team_name and will further filter that request 
     based on optional parameters in the HTTP request object.
     """
-    pass
+    team_data = db.Team.query.filter_by(name = team_name)
+    if team_data:
+        return flask.jsonify(team_data)
+    else:
+        abort(404)
 
 @app.route('/resources/team/<team_name>/schedule')
 def team_schedule(team_name):
@@ -68,8 +91,7 @@ def team_schedule(team_name):
     This function will return the schedule of games played
     by the team given by team_name.
     """
-    pass
-
+    
 @app.route('/resources/team/<team_name>/top_starters')
 def team_top_starters(team_name):
     """
