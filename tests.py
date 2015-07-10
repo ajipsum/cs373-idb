@@ -5,12 +5,12 @@ from flask import Flask
 from __init__ import app, db
 
 class TestAPI (TestCase) :
-    app = Flask(__name__)
+    # app = Flask(__name__)
 
     @classmethod
     def setUpClass(models):
         #database for testing
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
+        # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
         # models.set_verbose(True)    
         db.drop_all()
         db.create_all()
