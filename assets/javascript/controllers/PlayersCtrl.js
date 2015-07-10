@@ -1,4 +1,4 @@
-app.controller('PlayersCtrl', function($scope) {
+app.controller('PlayersCtrl', function($scope, players) {
 
     $scope.playerData = [
         {

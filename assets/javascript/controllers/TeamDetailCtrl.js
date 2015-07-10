@@ -1,4 +1,4 @@
-app.controller('TeamDetailCtrl', ['$scope', function ($scope) {
+app.controller('TeamDetailCtrl', ['$scope', function ($scope, team) {
 
 	$scope.teamName='team_name_from_json';
 	$scope.conference='conference_from_json';

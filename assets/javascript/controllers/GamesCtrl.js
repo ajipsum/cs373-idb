@@ -1,4 +1,4 @@
-app.controller('GamesCtrl', function($scope) {
+app.controller('GamesCtrl', function($scope, games) {
 
     $scope.gameData = [
         {

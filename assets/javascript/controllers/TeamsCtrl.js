@@ -71,5 +71,4 @@ app.controller('TeamsCtrl', function($scope, teams) {
             }
         ]
     };
-
 });

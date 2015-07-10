@@ -2,9 +2,6 @@
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask import Flask, send_file, send_from_directory, safe_join
 from jinja2 import TemplateNotFound
-import json
-import models
-
 app = Flask(__name__)
 
 # Load config.py
@@ -48,13 +45,13 @@ def player_by_name(name):
     """
     pass
 
-@app.route('/resources/teams')
+@app.route('/resources/teams', methods=['GET','POST'])
 def teams_collection():
     """
     This function will query the database for all teams and 
     filter based on the provided HTTP Request arguments.
     """
-    return  json.dumps([i.serialize_clipped for i in db.session.query(models.Team).all()])
+    pass
 
 @app.route('/resources/team/<team_name>')
 def team_by_name(team_name):

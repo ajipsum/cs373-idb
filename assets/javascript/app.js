@@ -90,7 +90,19 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/players/players.html",
-                    controller: "PlayersCtrl"
+                    controller: "PlayersCtrl",
+                    resolve: {
+                        players: function(playerFactory, $q, $stateParams) {
+                            var deferred = $q.defer();
+                            playerFactory.getPlayers().then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve players", error);
+                                });
+                            return deferred.promise;
+                        }
+                    }
                 }
             }
         })
@@ -120,7 +132,19 @@ var app = angular.module('api2k15', [
             views : { 
                 '@' : {
                     templateUrl: "assets/templates/games/games.html",
-                    controller: "GamesCtrl"
+                    controller: "GamesCtrl",
+                    resolve: {
+                        games: function(gameFactory, $q, $stateParams) {
+                            var deferred = $q.defer();
+                            gameFactory.getGames().then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve games", error);
+                                });
+                            return deferred.promise;
+                        }
+                    }
                 }
             }
         })
