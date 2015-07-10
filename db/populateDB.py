@@ -47,8 +47,8 @@ def populate():
         player = players[player_name]
         player_career_stats = player['career_stats_avg_per_game']
         player_season_stats = player['stats_avg_per_game']
-        print(type(player_season_stats))
-        print(player_name)
+        # print(type(player_season_stats))
+        # print(player_name)
         # sys.exit()
         # print(player['current_team'][player['current_team'].rfind(" ") + 1:])
         # sys.exit()
