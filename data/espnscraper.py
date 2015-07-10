@@ -96,6 +96,7 @@ for table in tables:
 
 						#now we want to go to player page and get more information
 						player_page = requests.get(player_name['href'])
+						player_dic['citation'] = player_name['href']
 						player_page_soup = BeautifulSoup(player_page.text)
 						headshot_tag = player_page_soup.find_all('div', class_='main-headshot')
 						player_headshot = None

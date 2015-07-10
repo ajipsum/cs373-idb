@@ -5,7 +5,8 @@
     "team_name": "Hawks",
     "abbreviation": "ATL",
     "twitter": "https://twitter.com/ATLHawks",
-    "mascot": "Harry the Hawk"
+    "mascot": "Harry the Hawk",
+    "citation": "http://espn.go.com/nba/team/_/name/atl/atlanta-hawks"
   },
   {
     "team_id": 1610612738,
@@ -13,7 +14,8 @@
     "team_name": "Celtics",
     "abbreviation": "BOS",
     "twitter": "https://twitter.com/celtics",
-    "mascot": "Lucky the Leprechaun"
+    "mascot": "Lucky the Leprechaun",
+    "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics"
   },
   {
     "team_id": 1610612739,
@@ -21,7 +23,8 @@
     "team_name": "Cavaliers",
     "abbreviation": "CLE",
     "twitter": "https://twitter.com/cavs",
-    "mascot": "Moondog"
+    "mascot": "Moondog",
+    "citation": "http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers"
   },
   {
     "team_id": 1610612740,
@@ -29,7 +32,8 @@
     "team_name": "Pelicans",
     "abbreviation": "NOP",
     "twitter": "https://twitter.com/PelicansNBA",
-    "mascot": "Pierre the Pelican"
+    "mascot": "Pierre the Pelican",
+    "citation": "http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans"
   },
   {
     "team_id": 1610612741,
@@ -37,7 +41,8 @@
     "team_name": "Bulls",
     "abbreviation": "CHI",
     "twitter": "https://twitter.com/chicagobulls",
-    "mascot": "Benny the Bull"
+    "mascot": "Benny the Bull",
+    "citation": "http://espn.go.com/nba/team/_/name/chi/chicago-bulls"
   },
   {
     "team_id": 1610612742,
@@ -45,7 +50,8 @@
     "team_name": "Mavericks",
     "abbreviation": "DAL",
     "twitter": "https://twitter.com/dallasmavs",
-    "mascot": "Mavs Man and Champ"
+    "mascot": "Mavs Man and Champ",
+    "citation": "http://espn.go.com/nba/team/_/name/dal/dallas-mavericks"
   },
   {
     "team_id": 1610612743,
@@ -53,7 +59,8 @@
     "team_name": "Nuggets",
     "abbreviation": "DEN",
     "twitter": "https://twitter.com/nuggets",
-    "mascot": "Rocky the Mountain Lion"
+    "mascot": "Rocky the Mountain Lion",
+    "citation": "http://espn.go.com/nba/team/_/name/den/denver-nuggets"
   },
   {
     "team_id": 1610612744,
@@ -61,7 +68,8 @@
     "team_name": "Warriors",
     "abbreviation": "GSW",
     "twitter": "https://twitter.com/warriors",
-    "mascot": "N/A"
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/gs/golden-state-warriors"
   },
   {
     "team_id": 1610612745,
@@ -69,7 +77,8 @@
     "team_name": "Rockets",
     "abbreviation": "HOU",
     "twitter": "https://twitter.com/HoustonRockets",
-    "mascot": "Clutch"
+    "mascot": "Clutch",
+    "citation": "http://espn.go.com/nba/team/_/name/hou/houston-rockets"
   },
   {
     "team_id": 1610612746,
@@ -77,7 +86,8 @@
     "team_name": "Clippers",
     "abbreviation": "LAC",
     "twitter": "https://twitter.com/LAClippers",
-    "mascot": "N/A"
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics"
   },
   {
     "team_id": 1610612747,
@@ -85,7 +95,8 @@
     "team_name": "Lakers",
     "abbreviation": "LAL",
     "twitter": "https://twitter.com/Lakers",
-    "mascot": "N/A"
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers"
   },
   {
     "team_id": 1610612748,
@@ -93,7 +104,8 @@
     "team_name": "Heat",
     "abbreviation": "MIA",
     "twitter": "https://twitter.com/MiamiHEAT",
-    "mascot": "Burnie"
+    "mascot": "Burnie",
+    "citation": "http://espn.go.com/nba/team/_/name/mia/miami-heat"
   },
   {
     "team_id": 1610612749,
@@ -101,7 +113,8 @@
     "team_name": "Bucks",
     "abbreviation": "MIL",
     "twitter": "https://twitter.com/Bucks",
-    "mascot": "Bango"
+    "mascot": "Bango",
+    "citation": "http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks"
   },
   {
     "team_id": 1610612750,
@@ -109,7 +122,8 @@
     "team_name": "Timberwolves",
     "abbreviation": "MIN",
     "twitter": "https://twitter.com/MNTimberwolves",
-    "mascot": "Crunch the Wolf"
+    "mascot": "Crunch the Wolf",
+    "citation": "http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves"
   },
   {
     "team_id": 1610612751,
@@ -117,7 +131,8 @@
     "team_name": "Nets",
     "abbreviation": "BKN",
     "twitter": "https://twitter.com/BrooklynNets",
-    "mascot": "N/A"
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets"
   },
   {
     "team_id": 1610612752,
@@ -125,7 +140,8 @@
     "team_name": "Knicks",
     "abbreviation": "NYK",
     "twitter": "https://twitter.com/nyknicks",
-    "mascot": "N/A"
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/ny/new-york-knicks"
   },
   {
     "team_id": 1610612753,
@@ -133,7 +149,8 @@
     "team_name": "Magic",
     "abbreviation": "ORL",
     "twitter": "https://twitter.com/OrlandoMagic",
-    "mascot": "Stuff the Magic Dragon"
+    "mascot": "Stuff the Magic Dragon",
+    "citation": "http://espn.go.com/nba/team/_/name/orl/orlando-magic"
   },
   {
     "team_id": 1610612754,
@@ -141,7 +158,8 @@
     "team_name": "Pacers",
     "abbreviation": "IND",
     "twitter": "https://twitter.com/Pacers",
-    "mascot": "Boomer"
+    "mascot": "Boomer",
+    "citation": "http://espn.go.com/nba/team/_/name/ind/indiana-pacers"
   },
   {
     "team_id": 1610612755,
@@ -149,7 +167,8 @@
     "team_name": "76ers",
     "abbreviation": "PHI",
     "twitter": "https://twitter.com/Sixers",
-    "mascot": "Franklin"
+    "mascot": "Franklin",
+    "citation": "http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers"
   },
   {
     "team_id": 1610612756,
@@ -157,7 +176,8 @@
     "team_name": "Suns",
     "abbreviation": "PHX",
     "twitter": "https://twitter.com/Suns",
-    "mascot": "Go the Gorilla"
+    "mascot": "Go the Gorilla",
+    "citation": "http://espn.go.com/nba/team/_/name/phx/phoenix-suns"
   },
   {
     "team_id": 1610612757,
@@ -165,7 +185,8 @@
     "team_name": "Trail Blazers",
     "abbreviation": "POR",
     "twitter": "https://twitter.com/trailblazers",
-    "mascot": "Blaze the Trail Cat"
+    "mascot": "Blaze the Trail Cat",
+    "citation": "http://espn.go.com/nba/team/_/name/por/portland-trail-blazers"
   },
   {
     "team_id": 1610612758,
@@ -173,7 +194,8 @@
     "team_name": "Kings",
     "abbreviation": "SAC",
     "twitter": "https://twitter.com/SacramentoKings",
-    "mascot": "Slamson the Lion"
+    "mascot": "Slamson the Lion",
+    "citation": "http://espn.go.com/nba/team/_/name/sac/sacramento-kings"
   },
   {
     "team_id": 1610612759,
@@ -181,7 +203,8 @@
     "team_name": "Spurs",
     "abbreviation": "SAS",
     "twitter": "https://twitter.com/spurs",
-    "mascot": "The Coyote"
+    "mascot": "The Coyote",
+    "citation": "http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs"
   },
   {
     "team_id": 1610612760,
@@ -189,7 +212,8 @@
     "team_name": "Thunder",
     "abbreviation": "OKC",
     "twitter": "https://twitter.com/okcthunder",
-    "mascot": "Rumble the Bison"
+    "mascot": "Rumble the Bison",
+    "citation": "http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder"
   },
   {
     "team_id": 1610612761,
@@ -197,7 +221,8 @@
     "team_name": "Raptors",
     "abbreviation": "TOR",
     "twitter": "https://twitter.com/Raptors",
-    "mascot": "Stripes, the Raptor"
+    "mascot": "Stripes, the Raptor",
+    "citation": "http://espn.go.com/nba/team/_/name/tor/toronto-raptors"
   },
   {
     "team_id": 1610612762,
@@ -205,7 +230,8 @@
     "team_name": "Jazz",
     "abbreviation": "UTA",
     "twitter": "https://twitter.com/utahjazz",
-    "mascot": "Jazz Bear"
+    "mascot": "Jazz Bear",
+    "citation": "http://espn.go.com/nba/team/_/name/utah/utah-jazz"
   },
   {
     "team_id": 1610612763,
@@ -213,7 +239,8 @@
     "team_name": "Grizzlies",
     "abbreviation": "MEM",
     "twitter": "https://twitter.com/memgrizz",
-    "mascot": "Grizz"
+    "mascot": "Grizz",
+    "citation": "http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies"
   },
   {
     "team_id": 1610612764,
@@ -221,7 +248,8 @@
     "team_name": "Wizards",
     "abbreviation": "WAS",
     "twitter": "https://twitter.com/washwizards",
-    "mascot": "G-Wiz, G-Man"
+    "mascot": "G-Wiz, G-Man",
+    "citation": "http://espn.go.com/nba/team/_/name/wsh/washington-wizards"
   },
   {
     "team_id": 1610612765,
@@ -229,7 +257,8 @@
     "team_name": "Pistons",
     "abbreviation": "DET",
     "twitter": "https://twitter.com/detroitpistons",
-    "mascot": "Sir Slam A Lot"
+    "mascot": "Sir Slam A Lot",
+    "citation": "http://espn.go.com/nba/team/_/name/det/detroit-pistons"
   },
   {
     "team_id": 1610612766,
@@ -237,6 +266,7 @@
     "team_name": "Hornets",
     "abbreviation": "CHA",
     "twitter": "https://twitter.com/hornets",
-    "mascot": "Hugo the Hornet"
+    "mascot": "Hugo the Hornet",
+    "citation": "http://espn.go.com/nba/team/_/name/cha/charlotte-hornets"
   }
 ]
