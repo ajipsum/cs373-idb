@@ -1,33 +1,29 @@
 <!-- Organization -->
 <div class="row playerHeading">
     <div class="col-md-5">
-        <img class="centerImg" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254">
+        <img class="centerImg" src="{{ playerHeadshot }}">
     </div>
     <div class="col-md-7">
         <div>
             <h1> 
                 <!-- name --> 
-                Dwyane Wade
+                {{ playerName }}
                 <!-- kind & location | crisis-->
-                <small> #3 SG | <a href="/mia">Miami Heat</a></small>
+                <small> #{{ playerNumber }} {{ playerPosition }} | <a href="/{{ teamId }}">{{ teamName }}</a></small>
             </h1>
         </div>
         <div class="playerTwitter">
             <!-- Social Media -->
-            <a href="https://twitter.com/DwyaneWade"><h4>@DwyaneWade</h4></a>
+            <a href="https://twitter.com/{{ twitterAccount }}"><h4>@{{ twitterAccount }}</h4></a>
         </div>
         <div class="playerBio">
             <div>
                 <!-- history -->
-                <h4>Age: 33</h4>
+                <h4>Age: {{ age }}</h4>
             </div>
             <div>
                 <!-- weight -->
-                <h4>Weight: 220</h4>
-            </div>
-            <div>
-                <!-- External Links -->
-                <a href="dwyanewade.com/"><h4>website</h4></a>
+                <h4>Weight: {{ weight }}</h4>
             </div>
         </div>
     </div>
@@ -44,34 +40,36 @@
                     <th>Opp</th>
                     <th>Score</th>
                 </tr>
-                <tr>
-                    <td><a href="/g559">Wed 4/15</a></td>
-                    <td>@ PHI</td>
-                    <td>W 105-101</td>
-                </tr>
-            </tbody>
-        </table>
+                <div ng-repeat="(gameId, gameDate, opponentShort, homeScore, awayScore) in gameObj">
+                    <tr>
+                      <td><a href="/{{ gameId }}">{{ gameDate }}</a></td>
+                      <td>VS {{ opponentShort}} </td>
+                      <td>{{ homeScore }} - {{ awayScore }}</td>
+                  </tr>
+              </div>
+          </tbody>
+      </table>
+  </div>
+
+  <div class="playerVideos">
+    <!-- Videos -->
+    <h2>Videos</h2>
+    <iframe src="{{ playerVideo }}" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="playerMap">
+    <!-- Map -->
+    <h2>Map</h2>
+    <iframe src="{{ playerMapSource }}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="playerCitations">
+    <!-- Citations -->
+    <h2>Citations</h2>
+    <div>
+        ESPN: <a href="{{ playerCitation }}">{{ playerCitation }}</a>
     </div>
-    
-    <div class="playerVideos">
-        <!-- Videos -->
-        <h2>Videos</h2>
-        <iframe src="https://www.youtube.com/embed/cqTSKKZeYyw" frameborder="0" allowfullscreen></iframe>
-    </div>
-    
-    <div class="playerMap">
-        <!-- Map -->
-        <h2>Map</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14370.687265925053!2d-80.186969!3d25.7814014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13ad0552284f5b6c!2sAmericanAirlines+Arena!5e0!3m2!1sen!2sus!4v1436297153418" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    
-    <div class="playerCitations">
-        <!-- Citations -->
-        <h2>Citations</h2>
-        <div>
-            ESPN: <a href="http://espn.go.com/nba/player/_/id/1987/dwyane-wade">http://espn.go.com/nba/player/_/id/1987/dwyane-wade</a>
-        </div>
-    </div>
+</div>
 </div>
 
 
