@@ -94,7 +94,7 @@ class Game(db.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
-  id = db.Column(db.Integer, primary_key=True)
+  id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
   date = db.Column(db.String(256))

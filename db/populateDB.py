@@ -6,20 +6,33 @@ from __init__ import app, db
 import json
 import sys
 
+players = None
+teams = None
+nbaGames = None
+nbaGameStats = None
+with open("../data/nba_players_data.json") as json_file:
+    players = json.load(json_file)
+
+with open("../data/nba_teams_data.json") as json_file:
+    teams = json.load(json_file)
+
+with open("../data/nbaGames_highlights.json") as json_file:
+    nbaGames = json.load(json_file)
+
+with open("../data/nbaTeamGameStats.json") as json_file:
+    nbaGameStats = json.load(json_file)
+
+def findGameStats(game_id, team_id):
+    for v in nbaGameStats:
+        if v['game_id'] == game_id and v['team_id'] == team_id:
+            return v
+
 def populate():
 
     db.session.remove()
     db.drop_all()
     db.create_all()
 
-
-    players = None
-    teams = None
-    with open("../data/nba_players_data.json") as json_file:
-        players = json.load(json_file)
-
-    with open("../data/nba_teams_data.json") as json_file:
-        teams = json.load(json_file)
 
     # print(len(teams))
     # sys.exit()
@@ -41,7 +54,7 @@ def populate():
         db.session.commit()
 
 
-    i = 1
+    # i = 1
     # print(len(players))
     for player_name in players:
         player = players[player_name]
@@ -113,10 +126,71 @@ def populate():
             )
         db.session.add(player_entry)
         db.session.commit()
+        # print(i)
+        # i += 1
+
+    i = 1
+    for game_id in nbaGames:
+        game = nbaGames[game_id]
+        if game['season'] == '2014':
+            home_team_stats = findGameStats(game['game_id'], game['home_id'])
+            # print(home_team_stats)
+            # sys.exit()
+            away_team_stats = findGameStats(game['game_id'], game['away_id'])
+            # print(away_team_stats)
+            # sys.exit()
+
+            print("game id: " + game_id + "   home team " + str(game['home_id']) + "  away team: " + str(game['away_id']))
+            if not home_team_stats == None:
+                game_entry = Game(
+                        home_team = teams[str(game['home_id'])]['last_name'],
+                        away_team = teams[str(game['away_id'])]['last_name'],
+                        date = game['date'],
+                        home_score = game['home_score'],
+                        away_score = game['away_score'],
+                        home_box_fgm = home_team_stats['box_fgm'],
+                        home_box_fga = home_team_stats['box_fga'],
+                        home_box_fg3m = home_team_stats['box_fg3m'],
+                        home_box_fg3a = home_team_stats['box_fg3a'],
+                        home_box_ftm = home_team_stats['box_ftm'],
+                        home_box_fta = home_team_stats['box_fta'],
+                        home_box_oreb = home_team_stats['box_oreb'],
+                        home_box_dreb = home_team_stats['box_dreb'],
+                        home_box_ast = home_team_stats['box_ast'],
+                        home_box_stl = home_team_stats['box_stl'],
+                        home_box_blk = home_team_stats['box_blk'],
+                        home_box_to = home_team_stats['box_to'],
+                        home_box_pf = home_team_stats['box_pf'],
+                        home_box_pts = home_team_stats['box_pts'],
+                        home_box_plus_minus = home_team_stats['box_plus_minus'],
+                        away_box_fgm = away_team_stats['box_fgm'],
+                        away_box_fga = away_team_stats['box_fga'],
+                        away_box_fg3m = away_team_stats['box_fg3m'],
+                        away_box_fg3a = away_team_stats['box_fg3a'],
+                        away_box_ftm = away_team_stats['box_ftm'],
+                        away_box_fta = away_team_stats['box_fta'],
+                        away_box_oreb = away_team_stats['box_oreb'],
+                        away_box_dreb = away_team_stats['box_dreb'],
+                        away_box_ast = away_team_stats['box_ast'],
+                        away_box_stl = away_team_stats['box_stl'],
+                        away_box_blk = away_team_stats['box_blk'],
+                        away_box_to = away_team_stats['box_to'],
+                        away_box_pf = away_team_stats['box_pf'],
+                        away_box_pts = away_team_stats['box_pts'],
+                        away_box_plus_minus = away_team_stats['box_plus_minus'],
+                        youtube_link_1 = game['youtube_links'][0],
+                        youtube_link_2 = game['youtube_links'][1],
+                        youtube_link_3 = game['youtube_links'][2],
+                )
+                db.session.add(game_entry)
+                db.session.commit()
         print(i)
         i += 1
 
-    print("DONE WITH INSERTING PLAYER DATA")
+
+
+
+    print("DONE WITH INSERTING TEAM AND PLAYER DATA AND GAME DATA")
 
 
 # class TestAPI (TestCase) :

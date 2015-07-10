@@ -68,7 +68,7 @@ class Team(db_tests.Model):
   '''
 
   players = db_tests. relationship('Player', backref='team', lazy='dynamic')
-  name = db_tests.Column(db_tests.String(256), primary_key=True)
+  name = db_tests.Column(db_tests.String(256), primary_key=True,unique=True,index=True)
   conference = db_tests.Column(db_tests.String(256))
   division = db_tests.Column(db_tests.String(256))
   site_name = db_tests.Column(db_tests.String(256))
