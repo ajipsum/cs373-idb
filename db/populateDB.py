@@ -18,11 +18,27 @@ def populate():
     with open("../data/nba_players_data.json") as json_file:
         players = json.load(json_file)
 
-    with open("../data/nbaTeams.json") as json_file:
+    with open("../data/nba_teams_data.json") as json_file:
         teams = json.load(json_file)
 
-        
+    # print(len(teams))
+    # sys.exit()
 
+    for team_id in teams:
+        team = teams[team_id]
+        team_entry = Team(
+                name = team['last_name'],
+                conference = team['conference'],
+                division = team['division'],
+                site_name = team['site_name'],
+                city = team['city'],
+                state = team['state'],
+                mascot = team['mascot'],
+                twitter = team['twitter'],
+                citation = team['citation'],
+            )
+        db.session.add(team_entry)
+        db.session.commit()
 
 
     i = 1
@@ -31,8 +47,15 @@ def populate():
         player = players[player_name]
         player_career_stats = player['career_stats_avg_per_game']
         player_season_stats = player['stats_avg_per_game']
+        print(type(player_season_stats))
+        print(player_name)
+        # sys.exit()
         # print(player['current_team'][player['current_team'].rfind(" ") + 1:])
         # sys.exit()
+        player_current_team = player['current_team'][player['current_team'].rfind(" ") + 1:]
+        if(player_current_team == 'Blazers'):
+            player_current_team = 'Trail Blazers'
+
         player_entry = Player(
                 name = player_name,
                 picture = player['picture'],
@@ -85,7 +108,8 @@ def populate():
                 season_3P_PCT = player_season_stats['3P%'],
                 season_DR = player_season_stats['DR'],
                 season_3PM_A = player_season_stats['3PM-A'],
-                team_name = player['current_team'][player['current_team'].rfind(" ") + 1:],
+                citation = player['citation'],
+                team_name = player_current_team,
             )
         db.session.add(player_entry)
         db.session.commit()
