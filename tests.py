@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from unittest import TestCase, main
-from models import Player, Team, Game
+from models_tests import Player, Team, Game, team_game, player_game
 from flask import Flask
-from __init__ import app, db
+from __init__ import app, db_tests
 
 class TestAPI (TestCase) :
     # app = Flask(__name__)
@@ -12,13 +12,13 @@ class TestAPI (TestCase) :
         #database for testing
         # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
         # models.set_verbose(True)    
-        db.drop_all()
-        db.create_all()
+        db_tests.drop_all()
+        db_tests.create_all()
 
     @classmethod
     def tearDownClass(models):
-        db.session.remove()
-        db.drop_all()
+        db_tests.session.remove()
+        db_tests.drop_all()
 
     def test_team_create_1(self):
         team = Team(
@@ -30,8 +30,8 @@ class TestAPI (TestCase) :
             state = "Texas",
             mascot = "The Coyote",
         )
-        db.session.add(team)
-        db.session.commit()
+        db_tests.session.add(team)
+        db_tests.session.commit()
         t = Team.query.filter_by(name='Spurs').first()
         self.assertEqual(t.name, "Spurs") 
         self.assertEqual(t.conference, "West")
@@ -51,8 +51,8 @@ class TestAPI (TestCase) :
              state = "",
              mascot = "",
          )
-         db.session.add(team)
-         db.session.commit()
+         db_tests.session.add(team)
+         db_tests.session.commit()
          t = Team.query.filter_by(name='').first()
          self.assertEqual(t.name, "") 
          self.assertEqual(t.conference, "")
@@ -72,8 +72,8 @@ class TestAPI (TestCase) :
              state = "Florida",
              mascot = "Burnie",
          )
-         db.session.add(team)
-         db.session.commit()
+         db_tests.session.add(team)
+         db_tests.session.commit()
          t = Team.query.filter_by(name='Heat').first()
          self.assertEqual(t.name, "Heat") 
          self.assertEqual(t.conference, "East")
@@ -92,8 +92,8 @@ class TestAPI (TestCase) :
              age = "33",
              weight = "220",
          )
-         db.session.add(player)
-         db.session.commit()
+         db_tests.session.add(player)
+         db_tests.session.commit()
          p = Player.query.filter_by(name='Dwyane Wade').first()
          self.assertEqual(p.name, "Dwyane Wade") 
          self.assertEqual(p.position, "SG")
@@ -111,8 +111,8 @@ class TestAPI (TestCase) :
              age = "",
              weight = "",
          )
-         db.session.add(player)
-         db.session.commit()
+         db_tests.session.add(player)
+         db_tests.session.commit()
          p = Player.query.filter_by(name='').first()
          self.assertEqual(p.name, "") 
          self.assertEqual(p.position, "")
@@ -131,8 +131,8 @@ class TestAPI (TestCase) :
              age = "39",
              weight = "250",
          )
-         db.session.add(player)
-         db.session.commit()
+         db_tests.session.add(player)
+         db_tests.session.commit()
          p = Player.query.filter_by(name='Tim Duncan').first()
          self.assertEqual(p.name, "Tim Duncan") 
          self.assertEqual(p.position, "PF")
@@ -151,8 +151,8 @@ class TestAPI (TestCase) :
              away_score = "85",
              date = "November 10, 2014",
          )
-         db.session.add(game)
-         db.session.commit()
+         db_tests.session.add(game)
+         db_tests.session.commit()
          g = Game.query.filter_by(id='21400102').first()
          self.assertEqual(g.home_team, "Los Angeles Clippers") 
          self.assertEqual(g.home_score, "89")
@@ -169,8 +169,8 @@ class TestAPI (TestCase) :
              away_score = "",
              date = "",
          )
-         db.session.add(game)
-         db.session.commit()
+         db_tests.session.add(game)
+         db_tests.session.commit()
          g = Game.query.filter_by(id=21455555).first()
          self.assertEqual(g.home_team, "") 
          self.assertEqual(g.home_score, "")
@@ -187,8 +187,8 @@ class TestAPI (TestCase) :
              away_score = "90",
              date = "January 11, 2015",
          )
-         db.session.add(game)
-         db.session.commit()
+         db_tests.session.add(game)
+         db_tests.session.commit()
          g = Game.query.filter_by(id=21400559).first()
          self.assertEqual(g.home_team, "Los Angeles Clippers") 
          self.assertEqual(g.home_score, "104")
