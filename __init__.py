@@ -91,13 +91,22 @@ def team_schedule(team_name):
     This function will return the schedule of games played
     by the team given by team_name.
     """
-    
+    # Requests all games filtered by home_team OR away_team 
+    # equal team_name. Done with SQLAlchemy filter(_or..
+
+    schedule = db.Game.filter(_or(home_team == team_name, away_team == team_name))
+    if schedule:
+        return flask.jsonify(schedule)
+    else:
+        abort(404)
+
 @app.route('/resources/team/<team_name>/top_starters')
 def team_top_starters(team_name):
     """
     This function will return the top five players of given 
     team_name based on number of games started.
     """
+
     pass
 
 @app.route('/resources/team/<team_name>/wins')
