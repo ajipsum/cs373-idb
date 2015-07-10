@@ -42,7 +42,7 @@ class Player(db.Model):
   season_TO = db.Column(db.String(256))
   season_GS = db.Column(db.String(256))
   season_FG_PCT = db.Column(db.String(256))
-  seasonseason__PTS = db.Column(db.String(256))
+  season__PTS = db.Column(db.String(256))
   season_OR = db.Column(db.String(256))
   season_GP = db.Column(db.String(256))
   season_PF = db.Column(db.String(256))
@@ -57,6 +57,7 @@ class Player(db.Model):
   season_3P_PCT = db.Column(db.String(256))
   season_DR = db.Column(db.String(256))
   season_3PM_A = db.Column(db.String(256))
+  citation = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
 
 
@@ -75,13 +76,14 @@ class Team(db.Model):
   state = db.Column(db.String(256))
   mascot = db.Column(db.String(256))
   twitter = db.Column(db.String(256))
+  citation = db.Column(db.String(256))
 
-teams = db.Table('teams',
+team_game = db.Table('team_game',
   db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
   db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
 )
 
-players = db.Table('players',
+player_game = db.Table('player_game',
   db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
   db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
 )
@@ -92,7 +94,7 @@ class Game(db.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
-  id = db.Column(db.Integer, primary_key=True)
+  id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
   date = db.Column(db.String(256))
@@ -128,11 +130,14 @@ class Game(db.Model):
   away_box_pf = db.Column(db.String(256))
   away_box_pts = db.Column(db.String(256))
   away_box_plus_minus = db.Column(db.String(256))
+  youtube_link_1 = db.Column(db.String(256))
+  youtube_link_2 = db.Column(db.String(256))
+  youtube_link_3 = db.Column(db.String(256))
 
   #many to many team game relationship
-  teams = db.relationship('Team', secondary=teams,
+  team_game = db.relationship('Team', secondary=team_game,
     backref=db.backref('games', lazy='dynamic'))
 
   #many to many player game relationship
-  players = db.relationship('Player', secondary=players,
+  player_game = db.relationship('Player', secondary=player_game,
     backref=db.backref('games', lazy='dynamic'))
