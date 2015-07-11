@@ -7,6 +7,8 @@ from models import Player, Team, Game
 def player_by_name_handler(name):
     return Player.query.filter_by(name = name).all()
 
+
+
 def players_collection_handler(a):
     """
     Eventually we need to modify this to handle 
