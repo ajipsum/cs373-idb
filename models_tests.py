@@ -77,6 +77,7 @@ class Team(db_tests.Model):
   mascot = db_tests.Column(db_tests.String(256))
   twitter = db_tests.Column(db_tests.String(256))
   citation = db_tests.Column(db_tests.String(256))
+  google_maps = db.Column(db.String(256))
 
 team_game = db_tests.Table('team_game',
   db_tests.Column('team_name', db_tests.String(256), db_tests.ForeignKey('team.name')),
