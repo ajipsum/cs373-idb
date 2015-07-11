@@ -8,7 +8,7 @@ import json
 
 def player_by_id_handler(id):
     data = Player.query.filter_by(id = id).first().serialize
-    data["schedule"] = team_schedule_handler(data["team_name"]);
+    data["schedule"] = sorted(team_schedule_handler(data["team_name"]), key=lambda k: k["date"]);
     return json.dumps(data)
 
 def players_collection_handler(a):
@@ -29,7 +29,7 @@ def team_schedule_handler(tn):
 
 def team_top_starters_handler(tn):
     data = [i.serialize for i in Player.query.filter_by(current_team = tn).all()]
-    data = sorted(data, key='season_GS')
+    data = sorted(data, key= lambda k: k['season_GS'])
     return json.dumps(set(data[:5]))
 
 def team_wins_handler(tn):
