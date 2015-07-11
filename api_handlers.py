@@ -1,4 +1,5 @@
-from flask.ext.sqlalchemy import SQLAlchemy, or_, and_
+from flask.ext.sqlalchemy import SQLAlchemy 
+from sqlalchemy import or_, and_
 from models import Player, Team, Game
 import json
 
