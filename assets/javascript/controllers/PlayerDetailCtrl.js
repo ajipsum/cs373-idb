@@ -1,7 +1,8 @@
-app.controller('PlayerDetailCtrl', ['$scope', function ($scope, player) {
-
-	$scope.playerHeadshot='playerHeadshot_from_json';
-	$scope.playerName='playerName_from_json';
+app.controller('PlayerDetailCtrl', ['$scope', 'player', function ($scope, player) {
+    
+    console.log(player);
+	$scope.playerHeadshot = player.picture;
+	$scope.playerName= player.name;
 	$scope.playerNumber='playerNumber_from_json';
 	$scope.playerPosition='playerPosition_from_json';
 	$scope.teamId='teamId_from_json';

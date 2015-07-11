@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from flask.ext.sqlalchemy import SQLAlchemy
+from flask.json import jsonify
 from flask import Flask, send_file, send_from_directory, safe_join, request
 from jinja2 import TemplateNotFound
 
@@ -16,7 +17,7 @@ app_tests.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.
 db_tests = SQLAlchemy(app_tests)
 
 
-from api_handlers import player_by_name_handler
+import api_handlers
 
 # Allows for any URL to be handled by AngularJS
 # http://flask.pocoo.org/snippets/57/
@@ -50,20 +51,20 @@ def players_collection():
     # so we can simply unpack the request params and pass them along
     # Since this isn't raw SQL we don't need to sanitize the request, 
     # it'll be handled internally.
-    return flask.jsonify(players_collection_handler(request.args))
+    return api_handlers.players_collection_handler(request.args)
 
 
-@app.route('/resources/player/<name>')
-def player_by_name(name):
+@app.route('/resources/player/<id>')
+def player_by_id(id):
     """
     This function will query the database for a given player
     by name, and optionally will further filter the data 
     based on the provided attribute request arguments (HTTP request
     object).
     """
-    player_data = player_by_name_handler(name) 
+    player_data = api_handlers.player_by_id_handler(id) 
     if player_data:
-        return flask.jsonify(player_data)
+        return player_data
     else:
         abort(404)
 
@@ -78,7 +79,7 @@ def teams_collection():
         return 'Not yet implemented'
 
     # GET
-    return flask.jsonify(teams_collection_handler(request.args))
+    return api_handlers.teams_collection_handler(request.args)
 
 
 @app.route('/resources/team/<team_name>')
@@ -88,9 +89,9 @@ def team_by_name(team_name):
     the given team_name and will further filter that request 
     based on optional parameters in the HTTP request object.
     """
-    team_data = team_by_name_handler(team_name) 
+    team_data = api_handlers.team_by_name_handler(team_name) 
     if team_data:
-        return flask.jsonify(team_data)
+        return team_data
     else:
         abort(404)
 
@@ -103,9 +104,9 @@ def team_schedule(team_name):
     # Requests all games filtered by home_team OR away_team 
     # equal team_name. Done with SQLAlchemy filter(_or..
 
-    schedule = team_schedule_handler(team_name) 
+    schedule = api_handlers.team_schedule_handler(team_name) 
     if schedule:
-        return flask.jsonify(schedule)
+        return schedule
     else:
         abort(404)
 
