@@ -21,18 +21,18 @@ def teams_collection_handler(a):
     return json.dumps([i.serialize for i in Team.query.filter_by(**a).all()])
 
 def team_by_name_handler(tn):
-    return json.dumps([i.serialize for i in Team.query.filter_by(name = tn)])
+    return json.dumps(Team.query.filter_by(name = tn).first().serialize)
 
 def team_schedule_handler(tn):
-    return json.dumps([i.serialize for i in Game.query.filter(_or(home_team == tn, away_team == tn)).all()])
+    return json.dumps({i.serialize for i in Game.query.filter(_or(home_team == tn, away_team == tn)).all()})
 
 def team_top_starters_handler(tn):
     data = [i.serialize for i in Player.query.filter_by(current_team = tn).all()]
     data = sorted(data, key='season_GS')
-    return json.dumps(data[:5])
+    return json.dumps(set(data[:5]))
 
 def team_wins_handler(tn):
-    return json.dumps([i.serialize for i in Games.query.filter(_or(_and(home_team == tn, home_score > away_score), \
-                                 (_and(away_team == tn, away_score > home_score)))).all()])
+    return json.dumps({i.serialize for i in Games.query.filter(_or(_and(home_team == tn, home_score > away_score), \
+                                 (_and(away_team == tn, away_score > home_score)))).all()})
 
 
