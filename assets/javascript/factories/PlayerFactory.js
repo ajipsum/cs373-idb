@@ -6,7 +6,7 @@ app.factory("playerFactory", function($http, $q, host) {
     };
 
     factory.getPlayerDetail = function(id) {
-        return $http.get(host +"/resources/players/" + id, {cache: true});
+        return $http.get(host +"/resources/player/" + id, {cache: true});
     };
 
     return factory;
