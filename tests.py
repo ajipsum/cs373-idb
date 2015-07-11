@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from unittest import TestCase, main
-from models_tests import Player, Team, Game, team_game, player_game
+from models_tests import Player, Team, Game, player_game, team_game
 from flask import Flask
 from __init__ import app, db_tests
 
@@ -196,6 +196,106 @@ class TestAPI (TestCase) :
          self.assertEqual(g.away_score, "90")
          self.assertEqual(g.date, "January 11, 2015")
 
+      def test_player_game_create_1(self):
+         p_g = player_game(
+             player_id = "",
+             game_id = ""
+         )
+         db_tests.session.add(p_g)
+         db_tests.session.commit()
+         pg = player_game.query.filter_by(player_id='').first()
+         self.assertEqual(pg.player_id, "") 
+         self.assertEqual(pg.game_id "")
+
+      def test_player_game_create_2(self):
+         p_g = player_game(
+             player_id = "45",
+             game_id = "33"
+         )
+         db_tests.session.add(p_g)
+         db_tests.session.commit()
+         pg = player_game.query.filter_by(player_id='33').first()
+         self.assertEqual(pg.player_id, "45") 
+         self.assertEqual(pg.game_id "33")
+
+      def test_player_game_create_3(self):
+         p_g = player_game(
+             player_id = "455",
+             game_id = "331"
+         )
+         db_tests.session.add(p_g)
+         db_tests.session.commit()
+         p_g = player_game(
+             player_id = "341",
+             game_id = "331"
+         )
+         db_tests.session.add(p_g)
+         db_tests.session.commit()
+         pgs = player_game.query.filter_by(game_id='331')
+         self.assertEqual(len(pgs) == 2)
+         first_pg = pgs[0]
+         self.assertEqual(first_pg.player_id, "455") 
+         self.assertEqual(first_pg.game_id "331")
+         second_pg = pgs[1]
+         self.assertEqual(first_pg.player_id, "341") 
+         self.assertEqual(first_pg.game_id "331")
+
+     #  def test_team_game_create_1(self):
+     #     player = Player(
+     #         name = "Dwyane Wade",
+     #         position = "SG",
+     #         player_number = "3",
+     #         current_team = "Miami Heat",
+     #         age = "33",
+     #         weight = "220",
+     #     )
+     #     db_tests.session.add(player)
+     #     db_tests.session.commit()
+     #     p = Player.query.filter_by(name='Dwyane Wade').first()
+     #     self.assertEqual(p.name, "Dwyane Wade") 
+     #     self.assertEqual(p.position, "SG")
+     #     self.assertEqual(p.player_number, "3")
+     #     self.assertEqual(p.current_team, "Miami Heat")
+     #     self.assertEqual(p.age, "33")
+     #     self.assertEqual(p.weight, "220")
+
+     # def test_team_game_create_2(self):
+     #     player = Player(
+     #         name = "Dwyane Wade",
+     #         position = "SG",
+     #         player_number = "3",
+     #         current_team = "Miami Heat",
+     #         age = "33",
+     #         weight = "220",
+     #     )
+     #     db_tests.session.add(player)
+     #     db_tests.session.commit()
+     #     p = Player.query.filter_by(name='Dwyane Wade').first()
+     #     self.assertEqual(p.name, "Dwyane Wade") 
+     #     self.assertEqual(p.position, "SG")
+     #     self.assertEqual(p.player_number, "3")
+     #     self.assertEqual(p.current_team, "Miami Heat")
+     #     self.assertEqual(p.age, "33")
+     #     self.assertEqual(p.weight, "220")
+
+     # def test_team_game_create_3(self):
+     #     player = Player(
+     #         name = "Dwyane Wade",
+     #         position = "SG",
+     #         player_number = "3",
+     #         current_team = "Miami Heat",
+     #         age = "33",
+     #         weight = "220",
+     #     )
+     #     db_tests.session.add(player)
+     #     db_tests.session.commit()
+     #     p = Player.query.filter_by(name='Dwyane Wade').first()
+     #     self.assertEqual(p.name, "Dwyane Wade") 
+     #     self.assertEqual(p.position, "SG")
+     #     self.assertEqual(p.player_number, "3")
+     #     self.assertEqual(p.current_team, "Miami Heat")
+     #     self.assertEqual(p.age, "33")
+     #     self.assertEqual(p.weight, "220")
 
 if __name__ == '__main__':
     main()
