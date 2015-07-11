@@ -37,6 +37,7 @@ def populate():
     # print(len(teams))
     # sys.exit()
 
+    t = 1
     for team_id in teams:
         team = teams[team_id]
         team_entry = Team(
@@ -49,10 +50,14 @@ def populate():
                 mascot = team['mascot'],
                 twitter = team['twitter'],
                 citation = team['citation'],
+                google_maps = team['google_maps'],
             )
         db.session.add(team_entry)
         db.session.commit()
+        print(t)
+        t += 1
 
+    # sys.exit()
 
     # i = 1
     # print(len(players))
@@ -61,7 +66,7 @@ def populate():
         player_career_stats = player['career_stats_avg_per_game']
         player_season_stats = player['stats_avg_per_game']
         # print(type(player_season_stats))
-        # print(player_name)
+        print(player_name)
         # sys.exit()
         # print(player['current_team'][player['current_team'].rfind(" ") + 1:])
         # sys.exit()
