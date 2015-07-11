@@ -1,3 +1,5 @@
+
+
 from __init__ import db
 
 class Player(db.Model):
