@@ -1,4 +1,5 @@
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.sqlalchemy import SQLAlchemy 
+from sqlalchemy import or_, and_
 from models import Player, Team, Game
 import json
 
@@ -7,7 +8,7 @@ import json
 
 def player_by_id_handler(id):
     data = Player.query.filter_by(id = id).first().serialize
-    data["schedule"] = team_schedule_handler(data["current_team"]);
+    data["schedule"] = sorted(team_schedule_handler(data["team_name"]), key=lambda k: k["date"]);
     return json.dumps(data)
 
 def players_collection_handler(a):
@@ -24,15 +25,15 @@ def team_by_name_handler(tn):
     return json.dumps(Team.query.filter_by(name = tn).first().serialize)
 
 def team_schedule_handler(tn):
-    return json.dumps([i.serialize for i in Game.query.filter(or_(home_team == tn, away_team == tn)).all()])
+    return json.dumps([i.serialize for i in Game.query.filter(or_(Game.home_team == tn, Game.away_team == tn)).all()])
 
 def team_top_starters_handler(tn):
     data = [i.serialize for i in Player.query.filter_by(current_team = tn).all()]
-    data = sorted(data, key='season_GS')
+    data = sorted(data, key= lambda k: k['season_GS'])
     return json.dumps(set(data[:5]))
 
 def team_wins_handler(tn):
-    return json.dumps([i.serialize for i in Games.query.filter(or_(and_(home_team == tn, home_score > away_score), \
-                                 (and_(away_team == tn, away_score > home_score)))).all()])
+    return json.dumps([i.serialize for i in Games.query.filter(or_(and_(Game.home_team == tn, Game.home_score > Game.away_score), \
+                                 (and_(Game.away_team == tn, Game.away_score > Game.home_score)))).all()])
 
 
