@@ -1,5 +1,5 @@
-[
-  {
+{
+  "1610612737": {
     "team_id": "atlanta-hawks",
     "abbreviation": "ATL",
     "active": true,
@@ -10,9 +10,12 @@
     "site_name": "Philips Arena",
     "city": "Atlanta",
     "state": "Georgia",
-    "full_name": "Atlanta Hawks"
+    "full_name": "Atlanta Hawks",
+    "twitter": "https://twitter.com/ATLHawks",
+    "mascot": "Harry the Hawk",
+    "citation": "http://espn.go.com/nba/team/_/name/atl/atlanta-hawks"
   },
-  {
+  "1610612738": {
     "team_id": "boston-celtics",
     "abbreviation": "BOS",
     "active": true,
@@ -23,9 +26,12 @@
     "site_name": "TD Garden",
     "city": "Boston",
     "state": "Massachusetts",
-    "full_name": "Boston Celtics"
+    "full_name": "Boston Celtics",
+    "twitter": "https://twitter.com/celtics",
+    "mascot": "Lucky the Leprechaun",
+    "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics"
   },
-  {
+  "1610612751": {
     "team_id": "brooklyn-nets",
     "abbreviation": "BKN",
     "active": true,
@@ -36,9 +42,12 @@
     "site_name": "Barclays Center",
     "city": "Brooklyn",
     "state": "New York",
-    "full_name": "Brooklyn Nets"
+    "full_name": "Brooklyn Nets",
+    "twitter": "https://twitter.com/BrooklynNets",
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets"
   },
-  {
+  "1610612766": {
     "team_id": "charlotte-hornets",
     "abbreviation": "CHA",
     "active": true,
@@ -49,9 +58,12 @@
     "site_name": "Time Warner Cable Arena",
     "city": "Charlotte",
     "state": "North Carolina",
-    "full_name": "Charlotte Hornets"
+    "full_name": "Charlotte Hornets",
+    "twitter": "https://twitter.com/hornets",
+    "mascot": "Hugo the Hornet",
+    "citation": "http://espn.go.com/nba/team/_/name/cha/charlotte-hornets"
   },
-  {
+  "1610612741": {
     "team_id": "chicago-bulls",
     "abbreviation": "CHI",
     "active": true,
@@ -62,9 +74,12 @@
     "site_name": "United Center",
     "city": "Chicago",
     "state": "Illinois",
-    "full_name": "Chicago Bulls"
+    "full_name": "Chicago Bulls",
+    "twitter": "https://twitter.com/chicagobulls",
+    "mascot": "Benny the Bull",
+    "citation": "http://espn.go.com/nba/team/_/name/chi/chicago-bulls"
   },
-  {
+  "1610612739": {
     "team_id": "cleveland-cavaliers",
     "abbreviation": "CLE",
     "active": true,
@@ -75,9 +90,12 @@
     "site_name": "Quicken Loans Arena",
     "city": "Cleveland",
     "state": "Ohio",
-    "full_name": "Cleveland Cavaliers"
+    "full_name": "Cleveland Cavaliers",
+    "twitter": "https://twitter.com/cavs",
+    "mascot": "Moondog",
+    "citation": "http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers"
   },
-  {
+  "1610612742": {
     "team_id": "dallas-mavericks",
     "abbreviation": "DAL",
     "active": true,
@@ -88,9 +106,12 @@
     "site_name": "American Airlines Center",
     "city": "Dallas",
     "state": "Texas",
-    "full_name": "Dallas Mavericks"
+    "full_name": "Dallas Mavericks",
+    "twitter": "https://twitter.com/dallasmavs",
+    "mascot": "Mavs Man and Champ",
+    "citation": "http://espn.go.com/nba/team/_/name/dal/dallas-mavericks"
   },
-  {
+  "1610612743": {
     "team_id": "denver-nuggets",
     "abbreviation": "DEN",
     "active": true,
@@ -101,9 +122,12 @@
     "site_name": "Pepsi Center",
     "city": "Denver",
     "state": "Colorado",
-    "full_name": "Denver Nuggets"
+    "full_name": "Denver Nuggets",
+    "twitter": "https://twitter.com/nuggets",
+    "mascot": "Rocky the Mountain Lion",
+    "citation": "http://espn.go.com/nba/team/_/name/den/denver-nuggets"
   },
-  {
+  "1610612765": {
     "team_id": "detroit-pistons",
     "abbreviation": "DET",
     "active": true,
@@ -114,9 +138,12 @@
     "site_name": "The Palace of Auburn Hills",
     "city": "Auburn Hills",
     "state": "Michigan",
-    "full_name": "Detroit Pistons"
+    "full_name": "Detroit Pistons",
+    "twitter": "https://twitter.com/detroitpistons",
+    "mascot": "Sir Slam A Lot",
+    "citation": "http://espn.go.com/nba/team/_/name/det/detroit-pistons"
   },
-  {
+  "1610612744": {
     "team_id": "golden-state-warriors",
     "abbreviation": "GS",
     "active": true,
@@ -127,9 +154,12 @@
     "site_name": "Oracle Arena",
     "city": "Oakland",
     "state": "California",
-    "full_name": "Golden State Warriors"
+    "full_name": "Golden State Warriors",
+    "twitter": "https://twitter.com/warriors",
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/gs/golden-state-warriors"
   },
-  {
+  "1610612745": {
     "team_id": "houston-rockets",
     "abbreviation": "HOU",
     "active": true,
@@ -140,9 +170,12 @@
     "site_name": "Toyota Center",
     "city": "Houston",
     "state": "Texas",
-    "full_name": "Houston Rockets"
+    "full_name": "Houston Rockets",
+    "twitter": "https://twitter.com/HoustonRockets",
+    "mascot": "Clutch",
+    "citation": "http://espn.go.com/nba/team/_/name/hou/houston-rockets"
   },
-  {
+  "1610612754": {
     "team_id": "indiana-pacers",
     "abbreviation": "IND",
     "active": true,
@@ -153,9 +186,12 @@
     "site_name": "Bankers Life Fieldhouse",
     "city": "Indianapolis",
     "state": "Indiana",
-    "full_name": "Indiana Pacers"
+    "full_name": "Indiana Pacers",
+    "twitter": "https://twitter.com/Pacers",
+    "mascot": "Boomer",
+    "citation": "http://espn.go.com/nba/team/_/name/ind/indiana-pacers"
   },
-  {
+  "1610612746": {
     "team_id": "los-angeles-clippers",
     "abbreviation": "LAC",
     "active": true,
@@ -166,9 +202,12 @@
     "site_name": "Staples Center",
     "city": "Los Angeles",
     "state": "California",
-    "full_name": "Los Angeles Clippers"
+    "full_name": "Los Angeles Clippers",
+    "twitter": "https://twitter.com/LAClippers",
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers"
   },
-  {
+  "1610612747": {
     "team_id": "los-angeles-lakers",
     "abbreviation": "LAL",
     "active": true,
@@ -179,9 +218,12 @@
     "site_name": "Staples Center",
     "city": "Los Angeles",
     "state": "California",
-    "full_name": "Los Angeles Lakers"
+    "full_name": "Los Angeles Lakers",
+    "twitter": "https://twitter.com/Lakers",
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers"
   },
-  {
+  "1610612763": {
     "team_id": "memphis-grizzlies",
     "abbreviation": "MEM",
     "active": true,
@@ -192,9 +234,12 @@
     "site_name": "FedExForum",
     "city": "Memphis",
     "state": "Tennessee",
-    "full_name": "Memphis Grizzlies"
+    "full_name": "Memphis Grizzlies",
+    "twitter": "https://twitter.com/memgrizz",
+    "mascot": "Grizz",
+    "citation": "http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies"
   },
-  {
+  "1610612748": {
     "team_id": "miami-heat",
     "abbreviation": "MIA",
     "active": true,
@@ -205,9 +250,12 @@
     "site_name": "AmericanAirlines Arena",
     "city": "Miami",
     "state": "Florida",
-    "full_name": "Miami Heat"
+    "full_name": "Miami Heat",
+    "twitter": "https://twitter.com/MiamiHEAT",
+    "mascot": "Burnie",
+    "citation": "http://espn.go.com/nba/team/_/name/mia/miami-heat"
   },
-  {
+  "1610612749": {
     "team_id": "milwaukee-bucks",
     "abbreviation": "MIL",
     "active": true,
@@ -218,9 +266,12 @@
     "site_name": "BMO Harris Bradley Center",
     "city": "Milwaukee",
     "state": "Wisconsin",
-    "full_name": "Milwaukee Bucks"
+    "full_name": "Milwaukee Bucks",
+    "twitter": "https://twitter.com/Bucks",
+    "mascot": "Bango",
+    "citation": "http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks"
   },
-  {
+  "1610612750": {
     "team_id": "minnesota-timberwolves",
     "abbreviation": "MIN",
     "active": true,
@@ -231,9 +282,12 @@
     "site_name": "Target Center",
     "city": "Minneapolis",
     "state": "Minnesota",
-    "full_name": "Minnesota Timberwolves"
+    "full_name": "Minnesota Timberwolves",
+    "twitter": "https://twitter.com/MNTimberwolves",
+    "mascot": "Crunch the Wolf",
+    "citation": "http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves"
   },
-  {
+  "1610612740": {
     "team_id": "new-orleans-pelicans",
     "abbreviation": "NO",
     "active": true,
@@ -244,9 +298,12 @@
     "site_name": "Smoothie King Center",
     "city": "New Orleans",
     "state": "Louisiana",
-    "full_name": "New Orleans Pelicans"
+    "full_name": "New Orleans Pelicans",
+    "twitter": "https://twitter.com/PelicansNBA",
+    "mascot": "Pierre the Pelican",
+    "citation": "http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans"
   },
-  {
+  "1610612752": {
     "team_id": "new-york-knicks",
     "abbreviation": "NY",
     "active": true,
@@ -257,9 +314,12 @@
     "site_name": "Madison Square Garden",
     "city": "New York",
     "state": "New York",
-    "full_name": "New York Knicks"
+    "full_name": "New York Knicks",
+    "twitter": "https://twitter.com/nyknicks",
+    "mascot": "N/A",
+    "citation": "http://espn.go.com/nba/team/_/name/ny/new-york-knicks"
   },
-  {
+  "1610612760": {
     "team_id": "oklahoma-city-thunder",
     "abbreviation": "OKC",
     "active": true,
@@ -270,9 +330,12 @@
     "site_name": "Chesapeake Energy Arena",
     "city": "Oklahoma City",
     "state": "Oklahoma",
-    "full_name": "Oklahoma City Thunder"
+    "full_name": "Oklahoma City Thunder",
+    "twitter": "https://twitter.com/okcthunder",
+    "mascot": "Rumble the Bison",
+    "citation": "http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder"
   },
-  {
+  "1610612753": {
     "team_id": "orlando-magic",
     "abbreviation": "ORL",
     "active": true,
@@ -283,9 +346,12 @@
     "site_name": "Amway Center",
     "city": "Orlando",
     "state": "Florida",
-    "full_name": "Orlando Magic"
+    "full_name": "Orlando Magic",
+    "twitter": "https://twitter.com/OrlandoMagic",
+    "mascot": "Stuff the Magic Dragon",
+    "citation": "http://espn.go.com/nba/team/_/name/orl/orlando-magic"
   },
-  {
+  "1610612755": {
     "team_id": "philadelphia-76ers",
     "abbreviation": "PHI",
     "active": true,
@@ -296,9 +362,12 @@
     "site_name": "Wachovia Center",
     "city": "Philadelphia",
     "state": "Pennsylvania",
-    "full_name": "Philadelphia 76ers"
+    "full_name": "Philadelphia 76ers",
+    "twitter": "https://twitter.com/Sixers",
+    "mascot": "Franklin",
+    "citation": "http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers"
   },
-  {
+  "1610612756": {
     "team_id": "phoenix-suns",
     "abbreviation": "PHO",
     "active": true,
@@ -309,9 +378,12 @@
     "site_name": "US Airways Center",
     "city": "Phoenix",
     "state": "Arizona",
-    "full_name": "Phoenix Suns"
+    "full_name": "Phoenix Suns",
+    "twitter": "https://twitter.com/Suns",
+    "mascot": "Go the Gorilla",
+    "citation": "http://espn.go.com/nba/team/_/name/phx/phoenix-suns"
   },
-  {
+  "1610612757": {
     "team_id": "portland-trail-blazers",
     "abbreviation": "POR",
     "active": true,
@@ -322,9 +394,12 @@
     "site_name": "Moda Center",
     "city": "Portland",
     "state": "Oregon",
-    "full_name": "Portland Trail Blazers"
+    "full_name": "Portland Trail Blazers",
+    "twitter": "https://twitter.com/trailblazers",
+    "mascot": "Blaze the Trail Cat",
+    "citation": "http://espn.go.com/nba/team/_/name/por/portland-trail-blazers"
   },
-  {
+  "1610612758": {
     "team_id": "sacramento-kings",
     "abbreviation": "SAC",
     "active": true,
@@ -335,9 +410,12 @@
     "site_name": "Sleep Train Arena",
     "city": "Sacramento",
     "state": "California",
-    "full_name": "Sacramento Kings"
+    "full_name": "Sacramento Kings",
+    "twitter": "https://twitter.com/SacramentoKings",
+    "mascot": "Slamson the Lion",
+    "citation": "http://espn.go.com/nba/team/_/name/sac/sacramento-kings"
   },
-  {
+  "1610612759": {
     "team_id": "san-antonio-spurs",
     "abbreviation": "SA",
     "active": true,
@@ -348,9 +426,12 @@
     "site_name": "AT&T Center",
     "city": "San Antonio",
     "state": "Texas",
-    "full_name": "San Antonio Spurs"
+    "full_name": "San Antonio Spurs",
+    "twitter": "https://twitter.com/spurs",
+    "mascot": "The Coyote",
+    "citation": "http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs"
   },
-  {
+  "1610612761": {
     "team_id": "toronto-raptors",
     "abbreviation": "TOR",
     "active": true,
@@ -361,9 +442,12 @@
     "site_name": "Air Canada Centre",
     "city": "Toronto",
     "state": "Ontario",
-    "full_name": "Toronto Raptors"
+    "full_name": "Toronto Raptors",
+    "twitter": "https://twitter.com/Raptors",
+    "mascot": "Stripes, the Raptor",
+    "citation": "http://espn.go.com/nba/team/_/name/tor/toronto-raptors"
   },
-  {
+  "1610612762": {
     "team_id": "utah-jazz",
     "abbreviation": "UTA",
     "active": true,
@@ -374,9 +458,12 @@
     "site_name": "EnergySolutions Arena",
     "city": "Salt Lake City",
     "state": "Utah",
-    "full_name": "Utah Jazz"
+    "full_name": "Utah Jazz",
+    "twitter": "https://twitter.com/utahjazz",
+    "mascot": "Jazz Bear",
+    "citation": "http://espn.go.com/nba/team/_/name/utah/utah-jazz"
   },
-  {
+  "1610612764": {
     "team_id": "washington-wizards",
     "abbreviation": "WAS",
     "active": true,
@@ -387,6 +474,9 @@
     "site_name": "Verizon Center",
     "city": "Washington",
     "state": "District of Columbia",
-    "full_name": "Washington Wizards"
+    "full_name": "Washington Wizards",
+    "twitter": "https://twitter.com/washwizards",
+    "mascot": "G-Wiz, G-Man",
+    "citation": "http://espn.go.com/nba/team/_/name/wsh/washington-wizards"
   }
-]
+}

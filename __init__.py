@@ -6,8 +6,15 @@ app = Flask(__name__)
 
 # Load config.py
 #app.config.from_object('config')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
 db = SQLAlchemy(app)
+
+app_tests = Flask(__name__)
+app_tests.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
+db_tests = SQLAlchemy(app_tests)
+
+
 
 # Allows for any URL to be handled by AngularJS
 # http://flask.pocoo.org/snippets/57/

@@ -1,5 +1,5 @@
-[
-  {
+{
+  "1610612737": {
     "team_id": 1610612737,
     "city": "Atlanta",
     "team_name": "Hawks",
@@ -8,7 +8,7 @@
     "mascot": "Harry the Hawk",
     "citation": "http://espn.go.com/nba/team/_/name/atl/atlanta-hawks"
   },
-  {
+  "1610612738": {
     "team_id": 1610612738,
     "city": "Boston",
     "team_name": "Celtics",
@@ -17,7 +17,7 @@
     "mascot": "Lucky the Leprechaun",
     "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics"
   },
-  {
+  "1610612739": {
     "team_id": 1610612739,
     "city": "Cleveland",
     "team_name": "Cavaliers",
@@ -26,7 +26,7 @@
     "mascot": "Moondog",
     "citation": "http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers"
   },
-  {
+  "1610612740": {
     "team_id": 1610612740,
     "city": "New Orleans",
     "team_name": "Pelicans",
@@ -35,7 +35,7 @@
     "mascot": "Pierre the Pelican",
     "citation": "http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans"
   },
-  {
+  "1610612741": {
     "team_id": 1610612741,
     "city": "Chicago",
     "team_name": "Bulls",
@@ -44,7 +44,7 @@
     "mascot": "Benny the Bull",
     "citation": "http://espn.go.com/nba/team/_/name/chi/chicago-bulls"
   },
-  {
+  "1610612742": {
     "team_id": 1610612742,
     "city": "Dallas",
     "team_name": "Mavericks",
@@ -53,7 +53,7 @@
     "mascot": "Mavs Man and Champ",
     "citation": "http://espn.go.com/nba/team/_/name/dal/dallas-mavericks"
   },
-  {
+  "1610612743": {
     "team_id": 1610612743,
     "city": "Denver",
     "team_name": "Nuggets",
@@ -62,7 +62,7 @@
     "mascot": "Rocky the Mountain Lion",
     "citation": "http://espn.go.com/nba/team/_/name/den/denver-nuggets"
   },
-  {
+  "1610612744": {
     "team_id": 1610612744,
     "city": "Golden State",
     "team_name": "Warriors",
@@ -71,7 +71,7 @@
     "mascot": "N/A",
     "citation": "http://espn.go.com/nba/team/_/name/gs/golden-state-warriors"
   },
-  {
+  "1610612745": {
     "team_id": 1610612745,
     "city": "Houston",
     "team_name": "Rockets",
@@ -80,16 +80,16 @@
     "mascot": "Clutch",
     "citation": "http://espn.go.com/nba/team/_/name/hou/houston-rockets"
   },
-  {
+  "1610612746": {
     "team_id": 1610612746,
     "city": "Los Angeles",
     "team_name": "Clippers",
     "abbreviation": "LAC",
     "twitter": "https://twitter.com/LAClippers",
     "mascot": "N/A",
-    "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics"
+    "citation": "http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers"
   },
-  {
+  "1610612747": {
     "team_id": 1610612747,
     "city": "Los Angeles",
     "team_name": "Lakers",
@@ -98,7 +98,7 @@
     "mascot": "N/A",
     "citation": "http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers"
   },
-  {
+  "1610612748": {
     "team_id": 1610612748,
     "city": "Miami",
     "team_name": "Heat",
@@ -107,7 +107,7 @@
     "mascot": "Burnie",
     "citation": "http://espn.go.com/nba/team/_/name/mia/miami-heat"
   },
-  {
+  "1610612749": {
     "team_id": 1610612749,
     "city": "Milwaukee",
     "team_name": "Bucks",
@@ -116,7 +116,7 @@
     "mascot": "Bango",
     "citation": "http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks"
   },
-  {
+  "1610612750": {
     "team_id": 1610612750,
     "city": "Minnesota",
     "team_name": "Timberwolves",
@@ -125,7 +125,7 @@
     "mascot": "Crunch the Wolf",
     "citation": "http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves"
   },
-  {
+  "1610612751": {
     "team_id": 1610612751,
     "city": "Brooklyn",
     "team_name": "Nets",
@@ -134,7 +134,7 @@
     "mascot": "N/A",
     "citation": "http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets"
   },
-  {
+  "1610612752": {
     "team_id": 1610612752,
     "city": "New York",
     "team_name": "Knicks",
@@ -143,7 +143,7 @@
     "mascot": "N/A",
     "citation": "http://espn.go.com/nba/team/_/name/ny/new-york-knicks"
   },
-  {
+  "1610612753": {
     "team_id": 1610612753,
     "city": "Orlando",
     "team_name": "Magic",
@@ -152,7 +152,7 @@
     "mascot": "Stuff the Magic Dragon",
     "citation": "http://espn.go.com/nba/team/_/name/orl/orlando-magic"
   },
-  {
+  "1610612754": {
     "team_id": 1610612754,
     "city": "Indiana",
     "team_name": "Pacers",
@@ -161,7 +161,7 @@
     "mascot": "Boomer",
     "citation": "http://espn.go.com/nba/team/_/name/ind/indiana-pacers"
   },
-  {
+  "1610612755": {
     "team_id": 1610612755,
     "city": "Philadelphia",
     "team_name": "76ers",
@@ -170,7 +170,7 @@
     "mascot": "Franklin",
     "citation": "http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers"
   },
-  {
+  "1610612756": {
     "team_id": 1610612756,
     "city": "Phoenix",
     "team_name": "Suns",
@@ -179,7 +179,7 @@
     "mascot": "Go the Gorilla",
     "citation": "http://espn.go.com/nba/team/_/name/phx/phoenix-suns"
   },
-  {
+  "1610612757": {
     "team_id": 1610612757,
     "city": "Portland",
     "team_name": "Trail Blazers",
@@ -188,7 +188,7 @@
     "mascot": "Blaze the Trail Cat",
     "citation": "http://espn.go.com/nba/team/_/name/por/portland-trail-blazers"
   },
-  {
+  "1610612758": {
     "team_id": 1610612758,
     "city": "Sacramento",
     "team_name": "Kings",
@@ -197,7 +197,7 @@
     "mascot": "Slamson the Lion",
     "citation": "http://espn.go.com/nba/team/_/name/sac/sacramento-kings"
   },
-  {
+  "1610612759": {
     "team_id": 1610612759,
     "city": "San Antonio",
     "team_name": "Spurs",
@@ -206,7 +206,7 @@
     "mascot": "The Coyote",
     "citation": "http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs"
   },
-  {
+  "1610612760": {
     "team_id": 1610612760,
     "city": "Oklahoma City",
     "team_name": "Thunder",
@@ -215,7 +215,7 @@
     "mascot": "Rumble the Bison",
     "citation": "http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder"
   },
-  {
+  "1610612761": {
     "team_id": 1610612761,
     "city": "Toronto",
     "team_name": "Raptors",
@@ -224,7 +224,7 @@
     "mascot": "Stripes, the Raptor",
     "citation": "http://espn.go.com/nba/team/_/name/tor/toronto-raptors"
   },
-  {
+  "1610612762": {
     "team_id": 1610612762,
     "city": "Utah",
     "team_name": "Jazz",
@@ -233,7 +233,7 @@
     "mascot": "Jazz Bear",
     "citation": "http://espn.go.com/nba/team/_/name/utah/utah-jazz"
   },
-  {
+  "1610612763": {
     "team_id": 1610612763,
     "city": "Memphis",
     "team_name": "Grizzlies",
@@ -242,7 +242,7 @@
     "mascot": "Grizz",
     "citation": "http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies"
   },
-  {
+  "1610612764": {
     "team_id": 1610612764,
     "city": "Washington",
     "team_name": "Wizards",
@@ -251,7 +251,7 @@
     "mascot": "G-Wiz, G-Man",
     "citation": "http://espn.go.com/nba/team/_/name/wsh/washington-wizards"
   },
-  {
+  "1610612765": {
     "team_id": 1610612765,
     "city": "Detroit",
     "team_name": "Pistons",
@@ -260,7 +260,7 @@
     "mascot": "Sir Slam A Lot",
     "citation": "http://espn.go.com/nba/team/_/name/det/detroit-pistons"
   },
-  {
+  "1610612766": {
     "team_id": 1610612766,
     "city": "Charlotte",
     "team_name": "Hornets",
@@ -269,4 +269,4 @@
     "mascot": "Hugo the Hornet",
     "citation": "http://espn.go.com/nba/team/_/name/cha/charlotte-hornets"
   }
-]
+}
