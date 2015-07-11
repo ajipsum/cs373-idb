@@ -230,7 +230,7 @@ def populate():
         for player in players_home:
             # print("player id: " + str(player.id) + "game id: " + str(game.id))
             # print(player.name)
-            print(b)
+            # print(b)
             # sys.exit()
             db.session.execute(player_game.insert().values([(player.id, game.id)]))
             db.session.commit()
