@@ -2,6 +2,7 @@
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask import Flask, send_file, send_from_directory, safe_join, request
 from jinja2 import TemplateNotFound
+
 app = Flask(__name__)
 
 # Load config.py
@@ -15,6 +16,7 @@ app_tests.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.
 db_tests = SQLAlchemy(app_tests)
 
 
+from api_handlers import player_by_name_handler
 
 # Allows for any URL to be handled by AngularJS
 # http://flask.pocoo.org/snippets/57/
@@ -48,7 +50,7 @@ def players_collection():
     # so we can simply unpack the request params and pass them along
     # Since this isn't raw SQL we don't need to sanitize the request, 
     # it'll be handled internally.
-    return flask.jsonify(db.Player.query.filter_by(**request.args))
+    return flask.jsonify(players_collection_handler(request.args))
 
 
 @app.route('/resources/player/<name>')
@@ -59,7 +61,7 @@ def player_by_name(name):
     based on the provided attribute request arguments (HTTP request
     object).
     """
-    player_data = db.Player.query.filter_by(name = name);
+    player_data = player_by_name_handler(name) 
     if player_data:
         return flask.jsonify(player_data)
     else:
@@ -76,7 +78,7 @@ def teams_collection():
         return 'Not yet implemented'
 
     # GET
-    return flask.jsonify(db.Team.query.filter_by(**request.args))
+    return flask.jsonify(teams_collection_handler(request.args))
 
 
 @app.route('/resources/team/<team_name>')
@@ -86,7 +88,7 @@ def team_by_name(team_name):
     the given team_name and will further filter that request 
     based on optional parameters in the HTTP request object.
     """
-    team_data = db.Team.query.filter_by(name = team_name)
+    team_data = team_by_name_handler(team_name) 
     if team_data:
         return flask.jsonify(team_data)
     else:
@@ -98,13 +100,22 @@ def team_schedule(team_name):
     This function will return the schedule of games played
     by the team given by team_name.
     """
-    
+    # Requests all games filtered by home_team OR away_team 
+    # equal team_name. Done with SQLAlchemy filter(_or..
+
+    schedule = team_schedule_handler(team_name) 
+    if schedule:
+        return flask.jsonify(schedule)
+    else:
+        abort(404)
+
 @app.route('/resources/team/<team_name>/top_starters')
 def team_top_starters(team_name):
     """
     This function will return the top five players of given 
     team_name based on number of games started.
     """
+
     pass
 
 @app.route('/resources/team/<team_name>/wins')
