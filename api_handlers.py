@@ -2,6 +2,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy import or_, and_
 from models import Player, Team, Game
 import json
+import datetime
 
 # Purposely avoiding pulling in Flask modules here
 # in order to maintain some separation of concern
@@ -63,11 +64,22 @@ def game_by_id_handler(id):
     return json.dumps(Game.query.filter_by(id = id).first().serialize)
 
 def game_by_month_handler(month_id):
-    return json.dumps([])
+    # This is probably a bad way to do this, I'm loading up ALL
+    # games and then searching through because I have to reformat the 
+    # date with the datetime object before I can compare against the 
+    # month ID. Unfortunately I don't think there is a way to refine 
+    # the query with this comparison since processing is needed on 
+    # each object before the predicate can be evaluated, hence 
+    # each object must be pulled from the database.
+    games = Game.query
+    games = filter(lambda g, m = month_id: datetime.datetime.fromtimestamp(int(g.date)).month == int(m), games)
+    games = sorted(games, key=lambda g: g.date)
+    return json.dumps([i.serialize for i in games])
+
 
 def game_by_site_handler(site):
-    site_team = Team.query.filter_by(site_name = site)
-    return json.dumps([i.serialize for i in Game.query.filter_by(home_team = site_team["name"]).all()])
+    site_team = Team.query.filter_by(site_name = site).first()
+    return json.dumps([i.serialize for i in Game.query.filter_by(home_team = site_team.name).all()])
 
 
 

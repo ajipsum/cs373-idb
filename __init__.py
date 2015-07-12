@@ -146,21 +146,22 @@ def game_by_id(game_id):
     """
     This function will return a game object by ID.
     """
-    return api_handler.game_by_id_handler(game_id)
+    return api_handlers.game_by_id_handler(game_id)
 
-@app.route('/resources/game/<month_id>')
+@app.route('/resources/game/month/<month_id>')
 def games_by_month(month_id):
     """
     This function will return all games played in a given month.
     """
-    pass
+    return api_handlers.game_by_month_handler(month_id)
 
-@app.route('/resources/game/<site>')
+
+@app.route('/resources/game/site/<site>')
 def games_by_site(site):
     """
     This function will return all games played at a given arena.
     """
-    pass
+    return api_handlers.game_by_site_handler(site)
 
 if __name__ == "__main__":
     app.debug = True
