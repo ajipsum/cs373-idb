@@ -40,11 +40,11 @@
                     <th>Opp</th>
                     <th>Score</th>
                 </tr>
-                <div ng-repeat="(gameId, gameDate, opponentShort, homeScore, awayScore) in gameObj">
+                <div ng-repeat="game in gameObj">
                     <tr>
-                      <td><a href="/{{ gameId }}">{{ gameDate }}</a></td>
-                      <td>VS {{ opponentShort}} </td>
-                      <td>{{ homeScore }} - {{ awayScore }}</td>
+                      <td><a href="/{{ game.id }}">{{ game.date }}</a></td>
+                      <td>VS {{ game.home_team}} </td>
+                      <td>{{ game.home_score }} - {{ game.away_score }}</td>
                   </tr>
               </div>
           </tbody>

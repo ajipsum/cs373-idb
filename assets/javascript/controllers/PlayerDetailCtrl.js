@@ -9,7 +9,7 @@ app.controller('PlayerDetailCtrl', ['$scope', 'player', function ($scope, player
 	$scope.twitterAccount=player.twitter;
 	$scope.age=player.age;
 	$scope.weight=player.weight;
-	$scope.gameObj='gameObj_from_json';
+	$scope.gameObj=player.schedule; //schedule is a list of game objects
 	$scope.playerVideo=player.youtube_link_1;
 	$scope.playerMapSource='playerMapSource_from_json';
 	$scope.playerCitation=player.citation;
