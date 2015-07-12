@@ -117,21 +117,21 @@ def team_top_starters(team_name):
     This function will return the top five players of given 
     team_name based on number of games started.
     """
-    return team_top_starters_handler(team_name)
+    return api_handlers.team_top_starters_handler(team_name)
 
 @app.route('/resources/team/<team_name>/wins')
 def team_wins(team_name):
     """
     Returns the list of games won by team_name
     """
-    pass
+    return api_handlers.team_wins_handler(team_name)
 
 @app.route('/resources/team/<team_name>/losses')
 def team_losses(team_name):
     """
     Returns the list of games lost by team_name
     """
-    pass
+    return api_handlers.team_losses_handler(team_name)
 
 @app.route('/resources/games', methods=['GET','POST'])
 def games_collection():
@@ -139,14 +139,14 @@ def games_collection():
     This function will return all games, filtered by the parameters
     provided in the HTTP request object.
     """
-    pass
+    return api_handlers.games_collection_handler(request.args)
 
 @app.route('/resources/game/<game_id>')
 def game_by_id(game_id):
     """
     This function will return a game object by ID.
     """
-    pass
+    return api_handler.game_by_id_handler(game_id)
 
 @app.route('/resources/game/<month_id>')
 def games_by_month(month_id):
