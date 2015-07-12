@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from unittest import TestCase, main
-from models_tests import Player, Team, Game, team_game, player_game
+from models_tests import Player, Team, Game, player_game, team_game
 from flask import Flask
 from __init__ import app, db_tests
 
@@ -187,6 +187,14 @@ class TestAPI (TestCase) :
              away_score = "90",
              date = "January 11, 2015",
          )
+         player = Player(
+             name = "",
+             position = "",
+             player_number = "",
+             current_team = "",
+             age = "",
+             weight = "",
+         )
          db_tests.session.add(game)
          db_tests.session.commit()
          g = Game.query.filter_by(id=21400559).first()
@@ -196,6 +204,129 @@ class TestAPI (TestCase) :
          self.assertEqual(g.away_score, "90")
          self.assertEqual(g.date, "January 11, 2015")
 
+    def test_player_game_create_1(self):
+        game = Game(
+            id = 54,
+        )
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        player = Player(
+            id = 7979,
+        )
+        db_tests.session.add(player)
+        db_tests.session.commit()
+        db_tests.session.execute(player_game.insert().values([(7979, 54)]))
+        db_tests.session.commit()
+        pg = db_tests.session.query(player_game).filter_by(player_id=7979).first()
+        self.assertEqual(pg.player_id, 7979) 
+        self.assertEqual(pg.game_id, 54)
+
+    def test_player_game_create_2(self):
+        game = Game(
+            id = 9999,
+        )
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        player = Player(
+            id = 88,
+        )
+        db_tests.session.add(player)
+        db_tests.session.commit()
+        db_tests.session.execute(player_game.insert().values([(88, 9999)]))
+        db_tests.session.commit()
+        pg = db_tests.session.query(player_game).filter_by(game_id=9999).first()
+        self.assertEqual(pg.player_id, 88) 
+        self.assertEqual(pg.game_id, 9999)
+
+    def test_player_game_create_3(self):
+        game = Game(
+            id = 323,
+        )
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        player = Player(
+            id = 55,
+        )
+        db_tests.session.add(player)
+        db_tests.session.commit()
+        player = Player(
+            id = 56,
+        )
+        db_tests.session.add(player)
+        db_tests.session.commit()
+        db_tests.session.execute(player_game.insert().values([(55, 323)]))
+        db_tests.session.commit()
+        db_tests.session.execute(player_game.insert().values([(56, 323)]))
+        db_tests.session.commit()
+        pg_list = db_tests.session.query(player_game).filter_by(game_id=323)
+        self.assertEqual(pg_list[0].player_id, 55) 
+        self.assertEqual(pg_list[0].game_id, 323)
+        self.assertEqual(pg_list[1].player_id, 56) 
+        self.assertEqual(pg_list[1].game_id, 323)
+
+
+    def test_team_game_create_1(self):
+        game = Game(
+            id = 6767,
+        )
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        team = Team(
+            name = 'Flyers',
+        )
+        db_tests.session.add(team)
+        db_tests.session.commit()
+        db_tests.session.execute(team_game.insert().values([('Flyers', 6767)]))
+        db_tests.session.commit()
+        tg = db_tests.session.query(team_game).filter_by(team_name='Flyers').first()
+        self.assertEqual(tg.team_name, 'Flyers') 
+        self.assertEqual(tg.game_id, 6767)
+
+    def test_team_game_create_2(self):
+        game = Game(
+            id = 6768,
+        )
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        team = Team(
+            name = 'Cinnamon Buns',
+        )
+        db_tests.session.add(team)
+        db_tests.session.commit()
+        db_tests.session.execute(team_game.insert().values([('Cinnamon Buns', 6768)]))
+        db_tests.session.commit()
+        tg = db_tests.session.query(team_game).filter_by(game_id=6768).first()
+        self.assertEqual(tg.team_name, 'Cinnamon Buns') 
+        self.assertEqual(tg.game_id, 6768)
+
+    def test_team_game_create_3(self):
+        game = Game(
+            id = 7000,
+        )
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        team = Team(
+            name = 'Mozzarella Cheese',
+        )
+        db_tests.session.add(team)
+        db_tests.session.commit()
+
+        db_tests.session.add(game)
+        db_tests.session.commit()
+        team = Team(
+            name = 'Bob',
+        )
+        db_tests.session.add(team)
+        db_tests.session.commit()
+        db_tests.session.execute(team_game.insert().values([('Mozzarella Cheese', 7000)]))
+        db_tests.session.commit()
+        db_tests.session.execute(team_game.insert().values([('Bob', 7000)]))
+        db_tests.session.commit()
+        tg_list = db_tests.session.query(team_game).filter_by(game_id=7000)
+        self.assertEqual(tg_list[0].team_name, 'Mozzarella Cheese') 
+        self.assertEqual(tg_list[0].game_id, 7000)
+        self.assertEqual(tg_list[1].team_name, 'Bob') 
+        self.assertEqual(tg_list[1].game_id, 7000)
 
 if __name__ == '__main__':
     main()

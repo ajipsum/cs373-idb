@@ -13,7 +13,8 @@
     "full_name": "Atlanta Hawks",
     "twitter": "https://twitter.com/ATLHawks",
     "mascot": "Harry the Hawk",
-    "citation": "http://espn.go.com/nba/team/_/name/atl/atlanta-hawks"
+    "citation": "http://espn.go.com/nba/team/_/name/atl/atlanta-hawks",
+    "google_maps": "1d3317.130668857986!2d-84.3963244!3d33.7572891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5037f9142496d%3A0xb060d5dcce275ffb!2sPhilips+Arena!5e0!3m2!1sen!2sus!4v1436649028290"
   },
   "1610612738": {
     "team_id": "boston-celtics",
@@ -29,7 +30,8 @@
     "full_name": "Boston Celtics",
     "twitter": "https://twitter.com/celtics",
     "mascot": "Lucky the Leprechaun",
-    "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics"
+    "citation": "http://espn.go.com/nba/team/_/name/bos/boston-celtics", 
+    "google_maps": "1d2947.889319082115!2d-71.062146!3d42.366198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708e162d05cb%3A0x32d335fe5ed797a8!2sTD+Garden!5e0!3m2!1sen!2sus!4v1436649417033"
   },
   "1610612751": {
     "team_id": "brooklyn-nets",
@@ -45,7 +47,8 @@
     "full_name": "Brooklyn Nets",
     "twitter": "https://twitter.com/BrooklynNets",
     "mascot": "N/A",
-    "citation": "http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets"
+    "citation": "http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets",
+    "google_maps": "1d3025.611712049553!2d-73.9750134!3d40.682523599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bae694479a3%3A0xb9949385da52e69e!2sBarclays+Center!5e0!3m2!1sen!2sus!4v1436649463589"
   },
   "1610612766": {
     "team_id": "charlotte-hornets",
@@ -61,7 +64,8 @@
     "full_name": "Charlotte Hornets",
     "twitter": "https://twitter.com/hornets",
     "mascot": "Hugo the Hornet",
-    "citation": "http://espn.go.com/nba/team/_/name/cha/charlotte-hornets"
+    "citation": "http://espn.go.com/nba/team/_/name/cha/charlotte-hornets",
+    "google_maps": "1d1629.6381408990874!2d-80.83878435!3d35.22449185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a0243e9c7d45%3A0xdf2cbef0b9849600!2sCharlotte+Hornets!5e0!3m2!1sen!2sus!4v1436649799154"
   },
   "1610612741": {
     "team_id": "chicago-bulls",
@@ -77,7 +81,8 @@
     "full_name": "Chicago Bulls",
     "twitter": "https://twitter.com/chicagobulls",
     "mascot": "Benny the Bull",
-    "citation": "http://espn.go.com/nba/team/_/name/chi/chicago-bulls"
+    "citation": "http://espn.go.com/nba/team/_/name/chi/chicago-bulls",
+    "google_maps": "1d2970.5656456287534!2d-87.6741759!3d41.880690799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d3ecaa9b54f%3A0x9b93f0068cf00344!2sUnited+Center!5e0!3m2!1sen!2sus!4v1436649864213"
   },
   "1610612739": {
     "team_id": "cleveland-cavaliers",
@@ -93,7 +98,8 @@
     "full_name": "Cleveland Cavaliers",
     "twitter": "https://twitter.com/cavs",
     "mascot": "Moondog",
-    "citation": "http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers"
+    "citation": "http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers",
+    "google_maps": "1d2988.352241288829!2d-81.68820889999999!3d41.496641000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fa81ba7c99b5%3A0x53fafe5c51529920!2sQuicken+Loans+Arena!5e0!3m2!1sen!2sus!4v1436649958954"
   },
   "1610612742": {
     "team_id": "dallas-mavericks",
@@ -109,7 +115,8 @@
     "full_name": "Dallas Mavericks",
     "twitter": "https://twitter.com/dallasmavs",
     "mascot": "Mavs Man and Champ",
-    "citation": "http://espn.go.com/nba/team/_/name/dal/dallas-mavericks"
+    "citation": "http://espn.go.com/nba/team/_/name/dal/dallas-mavericks",
+    "google_maps": "1d3354.065940686521!2d-96.81020890000003!3d32.790510799999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9939a52632fb%3A0x389e5ab1553876ca!2sAmerican+Airlines+Center!5e0!3m2!1sen!2sus!4v1436650244464"
   },
   "1610612743": {
     "team_id": "denver-nuggets",
@@ -125,7 +132,8 @@
     "full_name": "Denver Nuggets",
     "twitter": "https://twitter.com/nuggets",
     "mascot": "Rocky the Mountain Lion",
-    "citation": "http://espn.go.com/nba/team/_/name/den/denver-nuggets"
+    "citation": "http://espn.go.com/nba/team/_/name/den/denver-nuggets",
+    "google_maps": "1d3067.598906600134!2d-105.0077103!3d39.74865969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78b866687b77%3A0x7bec273737d47786!2sKroenke+Sports+%26+Entertainment!5e0!3m2!1sen!2sus!4v1436650462957"
   },
   "1610612765": {
     "team_id": "detroit-pistons",
@@ -141,7 +149,8 @@
     "full_name": "Detroit Pistons",
     "twitter": "https://twitter.com/detroitpistons",
     "mascot": "Sir Slam A Lot",
-    "citation": "http://espn.go.com/nba/team/_/name/det/detroit-pistons"
+    "citation": "http://espn.go.com/nba/team/_/name/det/detroit-pistons",
+    "google_maps": "1d2932.3228139337402!2d-83.2457929!3d42.696884999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824ead10931bec9%3A0x31eea373fb107ab!2sThe+Palace+of+Auburn+Hills!5e0!3m2!1sen!2sus!4v1436650513980"
   },
   "1610612744": {
     "team_id": "golden-state-warriors",
@@ -157,7 +166,8 @@
     "full_name": "Golden State Warriors",
     "twitter": "https://twitter.com/warriors",
     "mascot": "N/A",
-    "citation": "http://espn.go.com/nba/team/_/name/gs/golden-state-warriors"
+    "citation": "http://espn.go.com/nba/team/_/name/gs/golden-state-warriors",
+    "google_maps": "1d2988.352241288829!2d-81.68820889999999!3d41.496641000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fa81ba7c99b5%3A0x53fafe5c51529920!2sQuicken+Loans+Arena!5e0!3m2!1sen!2sus!4v1436650551077"
   },
   "1610612745": {
     "team_id": "houston-rockets",
@@ -173,7 +183,8 @@
     "full_name": "Houston Rockets",
     "twitter": "https://twitter.com/HoustonRockets",
     "mascot": "Clutch",
-    "citation": "http://espn.go.com/nba/team/_/name/hou/houston-rockets"
+    "citation": "http://espn.go.com/nba/team/_/name/hou/houston-rockets",
+    "google_maps": "1d3463.9284587009424!2d-95.3620845!3d29.7507836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bee56015ad33%3A0x4b3b6ccb1295ba8b!2sHouston+Toyota+Center!5e0!3m2!1sen!2sus!4v1436650578089"
   },
   "1610612754": {
     "team_id": "indiana-pacers",
@@ -189,7 +200,8 @@
     "full_name": "Indiana Pacers",
     "twitter": "https://twitter.com/Pacers",
     "mascot": "Boomer",
-    "citation": "http://espn.go.com/nba/team/_/name/ind/indiana-pacers"
+    "citation": "http://espn.go.com/nba/team/_/name/ind/indiana-pacers",
+    "google_maps": "1d3066.9132098006035!2d-86.15549279999999!3d39.764056999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bd4ff3a44b%3A0x4a7a5f3f9d0d8ea9!2sBankers+Life+Fieldhouse%2C+E+Georgia+St%2C+Indianapolis%2C+IN+46204!5e0!3m2!1sen!2sus!4v1436650633898"
   },
   "1610612746": {
     "team_id": "los-angeles-clippers",
@@ -205,7 +217,8 @@
     "full_name": "Los Angeles Clippers",
     "twitter": "https://twitter.com/LAClippers",
     "mascot": "N/A",
-    "citation": "http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers"
+    "citation": "http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers",
+    "google_maps": "1d3306.0332763569513!2d-118.2672541!3d34.0430175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES+Center!5e0!3m2!1sen!2sus!4v1436650667039"
   },
   "1610612747": {
     "team_id": "los-angeles-lakers",
@@ -221,7 +234,8 @@
     "full_name": "Los Angeles Lakers",
     "twitter": "https://twitter.com/Lakers",
     "mascot": "N/A",
-    "citation": "http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers"
+    "citation": "http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers",
+    "google_maps": "1d3306.0332763569513!2d-118.2672541!3d34.0430175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES+Center!5e0!3m2!1sen!2sus!4v1436650720045"
   },
   "1610612763": {
     "team_id": "memphis-grizzlies",
@@ -237,7 +251,8 @@
     "full_name": "Memphis Grizzlies",
     "twitter": "https://twitter.com/memgrizz",
     "mascot": "Grizz",
-    "citation": "http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies"
+    "citation": "http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies",
+    "google_maps": "1d1631.371698352293!2d-90.0510461!3d35.13807655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57e97345bb629%3A0xd52fcb315b8b7c4e!2sFedExForum!5e0!3m2!1sen!2sus!4v1436650760857"
   },
   "1610612748": {
     "team_id": "miami-heat",
@@ -253,7 +268,8 @@
     "full_name": "Miami Heat",
     "twitter": "https://twitter.com/MiamiHEAT",
     "mascot": "Burnie",
-    "citation": "http://espn.go.com/nba/team/_/name/mia/miami-heat"
+    "citation": "http://espn.go.com/nba/team/_/name/mia/miami-heat",
+    "google_maps": "1d1796.3397599935215!2d-80.18779265!3d25.781147049999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6a009729195%3A0x13ad0552284f5b6c!2sAmericanAirlines+Arena!5e0!3m2!1sen!2sus!4v1436650811580"
   },
   "1610612749": {
     "team_id": "milwaukee-bucks",
@@ -269,7 +285,8 @@
     "full_name": "Milwaukee Bucks",
     "twitter": "https://twitter.com/Bucks",
     "mascot": "Bango",
-    "citation": "http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks"
+    "citation": "http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks",
+    "google_maps": "1d2915.8928028248447!2d-87.9172088!3d43.0436869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880519748afe3d71%3A0xc34841a20c7519a!2sBMO+Harris+Bradley+Center!5e0!3m2!1sen!2sus!4v1436650843097"
   },
   "1610612750": {
     "team_id": "minnesota-timberwolves",
@@ -285,7 +302,8 @@
     "full_name": "Minnesota Timberwolves",
     "twitter": "https://twitter.com/MNTimberwolves",
     "mascot": "Crunch the Wolf",
-    "citation": "http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves"
+    "citation": "http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves",
+    "google_maps": "1d2822.2349579602983!2d-93.2761792!3d44.9795379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b33291bbf6587b%3A0xd85d3dd117998fec!2sTarget+Center!5e0!3m2!1sen!2sus!4v1436650906030"
   },
   "1610612740": {
     "team_id": "new-orleans-pelicans",
@@ -301,7 +319,8 @@
     "full_name": "New Orleans Pelicans",
     "twitter": "https://twitter.com/PelicansNBA",
     "mascot": "Pierre the Pelican",
-    "citation": "http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans"
+    "citation": "http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans",
+    "google_maps": "1d3457.0571370102844!2d-90.08205679999999!3d29.9490351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a5dddbc5a271%3A0x5572ede5e0a7ea6f!2sSmoothie+King+Center!5e0!3m2!1sen!2sus!4v1436650943972"
   },
   "1610612752": {
     "team_id": "new-york-knicks",
@@ -317,7 +336,8 @@
     "full_name": "New York Knicks",
     "twitter": "https://twitter.com/nyknicks",
     "mascot": "N/A",
-    "citation": "http://espn.go.com/nba/team/_/name/ny/new-york-knicks"
+    "citation": "http://espn.go.com/nba/team/_/name/ny/new-york-knicks",
+    "google_maps": "1d3022.5237212653933!2d-73.9934387!3d40.750504500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21fb011c85%3A0x33df10e49762f8e4!2sMadison+Square+Garden!5e0!3m2!1sen!2sus!4v1436650981312"
   },
   "1610612760": {
     "team_id": "oklahoma-city-thunder",
@@ -333,7 +353,8 @@
     "full_name": "Oklahoma City Thunder",
     "twitter": "https://twitter.com/okcthunder",
     "mascot": "Rumble the Bison",
-    "citation": "http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder"
+    "citation": "http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder",
+    "google_maps": "1d1624.8260741817908!2d-97.51465004999999!3d35.46340525000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b217281cbe6d99%3A0xa5375eb4651d9445!2sChesapeake+Energy+Arena!5e0!3m2!1sen!2sus!4v1436651019059"
   },
   "1610612753": {
     "team_id": "orlando-magic",
@@ -349,7 +370,8 @@
     "full_name": "Orlando Magic",
     "twitter": "https://twitter.com/OrlandoMagic",
     "mascot": "Stuff the Magic Dragon",
-    "citation": "http://espn.go.com/nba/team/_/name/orl/orlando-magic"
+    "citation": "http://espn.go.com/nba/team/_/name/orl/orlando-magic",
+    "google_maps": "1d1752.516465141319!2d-81.38389635!3d28.5387299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77b000783a509%3A0xa9cccb9e26f81d86!2sAmway+Center!5e0!3m2!1sen!2sus!4v1436651066109"
   },
   "1610612755": {
     "team_id": "philadelphia-76ers",
@@ -365,7 +387,8 @@
     "full_name": "Philadelphia 76ers",
     "twitter": "https://twitter.com/Sixers",
     "mascot": "Franklin",
-    "citation": "http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers"
+    "citation": "http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers",
+    "google_maps": "1d3060.795908594053!2d-75.17197949999999!3d39.901201500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c5ec0fe3b147%3A0x529f31b23f45ba2d!2sWells+Fargo+Center!5e0!3m2!1sen!2sus!4v1436651104474"
   },
   "1610612756": {
     "team_id": "phoenix-suns",
@@ -381,7 +404,8 @@
     "full_name": "Phoenix Suns",
     "twitter": "https://twitter.com/Suns",
     "mascot": "Go the Gorilla",
-    "citation": "http://espn.go.com/nba/team/_/name/phx/phoenix-suns"
+    "citation": "http://espn.go.com/nba/team/_/name/phx/phoenix-suns",
+    "google_maps": "1d3329.123447174247!2d-112.07123475!3d33.4460902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b121f8913ad39%3A0x8093f61e7b03fd19!2sU.S+Airways+Center!5e0!3m2!1sen!2sus!4v1436651140133"
   },
   "1610612757": {
     "team_id": "portland-trail-blazers",
@@ -397,7 +421,8 @@
     "full_name": "Portland Trail Blazers",
     "twitter": "https://twitter.com/trailblazers",
     "mascot": "Blaze the Trail Cat",
-    "citation": "http://espn.go.com/nba/team/_/name/por/portland-trail-blazers"
+    "citation": "http://espn.go.com/nba/team/_/name/por/portland-trail-blazers",
+    "google_maps": "1d2794.9324388272576!2d-122.6668423!3d45.531565099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a752d90af2bd%3A0xac4da428b0c0c9a7!2sModa+Center!5e0!3m2!1sen!2sus!4v1436651169295"
   },
   "1610612758": {
     "team_id": "sacramento-kings",
@@ -413,7 +438,8 @@
     "full_name": "Sacramento Kings",
     "twitter": "https://twitter.com/SacramentoKings",
     "mascot": "Slamson the Lion",
-    "citation": "http://espn.go.com/nba/team/_/name/sac/sacramento-kings"
+    "citation": "http://espn.go.com/nba/team/_/name/sac/sacramento-kings",
+    "google_maps": "1d3115.992098955507!2d-121.51806140000001!3d38.649062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad619206f6bdb%3A0x5ebe2d8ce894cdda!2sSleep+Train+Arena!5e0!3m2!1sen!2sus!4v1436651207996"
   },
   "1610612759": {
     "team_id": "san-antonio-spurs",
@@ -429,7 +455,8 @@
     "full_name": "San Antonio Spurs",
     "twitter": "https://twitter.com/spurs",
     "mascot": "The Coyote",
-    "citation": "http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs"
+    "citation": "http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs",
+    "google_maps": "1d3475.0615101086773!2d-98.4374636!3d29.4269986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf681b490e335%3A0xaad3c1cc2b98e0a4!2sAT%26T+Center!5e0!3m2!1sen!2sus!4v1436651238913"
   },
   "1610612761": {
     "team_id": "toronto-raptors",
@@ -445,7 +472,8 @@
     "full_name": "Toronto Raptors",
     "twitter": "https://twitter.com/Raptors",
     "mascot": "Stripes, the Raptor",
-    "citation": "http://espn.go.com/nba/team/_/name/tor/toronto-raptors"
+    "citation": "http://espn.go.com/nba/team/_/name/tor/toronto-raptors",
+    "google_maps": "1d2887.226000501752!2d-79.3790989!3d43.6434661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2b5935bf09%3A0x5842d0e7d5669410!2sAir+Canada+Centre!5e0!3m2!1sen!2sus!4v1436651270849"
   },
   "1610612762": {
     "team_id": "utah-jazz",
@@ -461,7 +489,8 @@
     "full_name": "Utah Jazz",
     "twitter": "https://twitter.com/utahjazz",
     "mascot": "Jazz Bear",
-    "citation": "http://espn.go.com/nba/team/_/name/utah/utah-jazz"
+    "citation": "http://espn.go.com/nba/team/_/name/utah/utah-jazz",
+    "google_maps": "1d3021.7161192451645!2d-111.9010874!3d40.7682681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f50103ebf04d%3A0xf0e545531f11b120!2sEnergySolutions+Arena!5e0!3m2!1sen!2sus!4v1436651301113"
   },
   "1610612764": {
     "team_id": "washington-wizards",
@@ -477,6 +506,7 @@
     "full_name": "Washington Wizards",
     "twitter": "https://twitter.com/washwizards",
     "mascot": "G-Wiz, G-Man",
-    "citation": "http://espn.go.com/nba/team/_/name/wsh/washington-wizards"
+    "citation": "http://espn.go.com/nba/team/_/name/wsh/washington-wizards",
+    "google_maps": "1d3105.134427428797!2d-77.02091135!3d38.89804115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b78e4f5f6873%3A0x75cc04db1e11f711!2sVerizon+Center!5e0!3m2!1sen!2sus!4v1436651353160"
   }
 }

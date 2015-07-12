@@ -138,6 +138,7 @@ class Team(db.Model):
   mascot = db.Column(db.String(256))
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
+  google_maps = db.Column(db.String(256))
 
   @property
   def serialize(self):
