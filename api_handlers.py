@@ -8,7 +8,7 @@ import json
 
 def player_by_id_handler(id):
     data = Player.query.filter_by(id = id).first().serialize
-    data["schedule"] = sorted(team_schedule_handler(data["team_name"]), key=lambda k: k["date"]);
+    data["schedule"] = sorted(json.loads(team_schedule_handler(data["team_name"])), key=lambda k : k["date"])
     return json.dumps(data)
 
 def players_collection_handler(a):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.json import jsonify
-from flask import Flask, send_file, send_from_directory, safe_join, request
+from flask import Flask, send_file, send_from_directory, safe_join, request, Response
 from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
@@ -63,8 +63,9 @@ def player_by_id(id):
     object).
     """
     player_data = api_handlers.player_by_id_handler(id) 
+    resp = Response(player_data, status=200, mimetype='application/json')
     if player_data:
-        return player_data
+        return resp
     else:
         abort(404)
 
@@ -116,8 +117,7 @@ def team_top_starters(team_name):
     This function will return the top five players of given 
     team_name based on number of games started.
     """
-
-    pass
+    return team_top_starters_handler(team_name)
 
 @app.route('/resources/team/<team_name>/wins')
 def team_wins(team_name):
