@@ -42,7 +42,7 @@ for game in nbaGames:
 			# youtube_links_list += ['https://www.youtube.com' + v['href']]
 			temp_link = 'https://www.youtube.com' + v['href']
 			embed_link = "https://www.youtube.com/embed/" + temp_link[temp_link.index('=') + 1:]
-			youtube_links_list += [temp_link]
+			youtube_links_list += [embed_link]
 			num_count += 1
 
 		game_info['youtube_links'] = youtube_links_list

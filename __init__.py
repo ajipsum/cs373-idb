@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.json import jsonify
-from flask import Flask, send_file, send_from_directory, safe_join, request
+from flask import Flask, send_file, send_from_directory, safe_join, request, Response
 from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
@@ -63,8 +63,9 @@ def player_by_id(id):
     object).
     """
     player_data = api_handlers.player_by_id_handler(id) 
+    resp = Response(player_data, status=200, mimetype='application/json')
     if player_data:
-        return player_data
+        return resp
     else:
         abort(404)
 
@@ -116,22 +117,21 @@ def team_top_starters(team_name):
     This function will return the top five players of given 
     team_name based on number of games started.
     """
-
-    pass
+    return api_handlers.team_top_starters_handler(team_name)
 
 @app.route('/resources/team/<team_name>/wins')
 def team_wins(team_name):
     """
     Returns the list of games won by team_name
     """
-    pass
+    return api_handlers.team_wins_handler(team_name)
 
 @app.route('/resources/team/<team_name>/losses')
 def team_losses(team_name):
     """
     Returns the list of games lost by team_name
     """
-    pass
+    return api_handlers.team_losses_handler(team_name)
 
 @app.route('/resources/games', methods=['GET','POST'])
 def games_collection():
@@ -139,28 +139,29 @@ def games_collection():
     This function will return all games, filtered by the parameters
     provided in the HTTP request object.
     """
-    pass
+    return api_handlers.games_collection_handler(request.args)
 
 @app.route('/resources/game/<game_id>')
 def game_by_id(game_id):
     """
     This function will return a game object by ID.
     """
-    pass
+    return api_handlers.game_by_id_handler(game_id)
 
-@app.route('/resources/game/<month_id>')
+@app.route('/resources/game/month/<month_id>')
 def games_by_month(month_id):
     """
     This function will return all games played in a given month.
     """
-    pass
+    return api_handlers.game_by_month_handler(month_id)
 
-@app.route('/resources/game/<site>')
+
+@app.route('/resources/game/site/<site>')
 def games_by_site(site):
     """
     This function will return all games played at a given arena.
     """
-    pass
+    return api_handlers.game_by_site_handler(site)
 
 if __name__ == "__main__":
     app.debug = True

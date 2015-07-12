@@ -138,11 +138,12 @@ class Team(db.Model):
   mascot = db.Column(db.String(256))
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
+  google_maps = db.Column(db.String(256))
 
   @property
   def serialize(self):
       return {
-            "players" : self.players, 
+            "players" : [i.serialize for i in self.players], 
             "name" : self.name, 
             "conference" : self.conference, 
             "division" : self.division, 
@@ -152,6 +153,7 @@ class Team(db.Model):
             "mascot" : self.mascot, 
             "twitter" : self.twitter, 
             "citation" : self.citation, 
+            "google_maps" : self.google_maps,
         }
 
 team_game = db.Table('team_game',
