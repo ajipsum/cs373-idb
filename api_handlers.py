@@ -22,7 +22,7 @@ def teams_collection_handler(a):
     return json.dumps([i.serialize for i in Team.query.filter_by(**a).all()])
 
 def games_collection_handler(a):
-    return json.sumps([i.serialize for i in Game.query.filter_by(**a).all()])
+    return json.dumps([i.serialize for i in Game.query.filter_by(**a).all()])
 
 # ----------------
 # Player Endpoints
