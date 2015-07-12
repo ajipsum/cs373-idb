@@ -39,11 +39,9 @@
                     <tr>
                         <th class="text-center">Away Players</th>
                     </tr>
-                    <div ng-repeat="(awayPlayerId, awayPlayerName) in awayPlayerObj">
-                       <tr>
-                         <td><a href="/{{ awayPlayerId }}">{{ awayPlayerName }}</a></td>
+                       <tr ng-repeat="awayPlayer in awayPlayerObj">
+                         <td><a href="/{{ awayPlayer.id }}">{{ awayPlayer.name }}</a></td>
                      </tr>
-                 </div>
              </tbody>
          </table>
      </div>
@@ -53,11 +51,9 @@
                 <tr>
                     <th class="text-center">Home Players</th>
                 </tr>
-                <div ng-repeat="(homePlayerId, homePlayerName) in homePlayerObj">
-                 <tr>
-                   <td><a href="/{{ homePlayerId }}">{{ homePlayerName }}</a></td>
+                 <tr ng-repeat="homePlayer in homePlayerObj">
+                   <td><a href="/{{ homePlayer.id }}">{{ homePlayer.name }}</a></td>
                </tr>
-           </div>
        </tbody>
    </table>
 </div>
