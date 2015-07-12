@@ -7,8 +7,8 @@ with open("nbaGames_highlights.json") as json_file:
 with open("nba_players_data.json") as json_file:
   nbaPlayers = json.load(json_file)
 
-need_to_add_games = False
 for v in nbaGames:
+	need_to_add_games = False
 	game = nbaGames[v]
 	if game['season'] == '2014':
 		youtube_links_list = game['youtube_links']
@@ -24,8 +24,8 @@ for v in nbaGames:
 with open('nbaGames_highlights.json', 'w+') as outfile:
     json.dump(nbaGames, outfile)
 
-need_to_add_players = False
 for v in nbaPlayers:
+	need_to_add_players = False
 	player = nbaPlayers[v]
 	youtube_links_list = player['youtube_links']
 	new_list = []
