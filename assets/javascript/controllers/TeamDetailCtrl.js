@@ -1,11 +1,12 @@
-app.controller('TeamDetailCtrl', ['$scope', function ($scope, team) {
+app.controller('TeamDetailCtrl', ['$scope', 'team', '$sce', function ($scope, team, $sce) {
 
-	$scope.teamName='team_name_from_json';
-	$scope.conference='conference_from_json';
-	$scope.division='division_from_json';
-	$scope.playerObj='playerObj_from_json';
-	$scope.gameObj='gameObj_from_json';
-	$scope.playerMapSource='player_map_link_from_json';
-	$scope.playerCitation='player_citation_from_json';
+	$scope.teamLogo='/assets/images/teamlogos/' + team.name + '.png';
+	$scope.teamName=team.name;
+	$scope.conference=team.conference;
+	$scope.division=team.division;
+	$scope.playerObj=team.players;
+	$scope.gameObj='gameObj_from_json'; //not implemented yet
+	$scope.teamMapSource=$sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + team.google_maps);
+	$scope.teamCitation=team.citation;
 
 }]);

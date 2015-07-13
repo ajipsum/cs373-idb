@@ -9,7 +9,7 @@ app.controller('GamesCtrl', function($scope, games) {
             {
                 field:'id', 
                 displayName:'Game ID',
-                cellTemplate: '<div class="ngCellText"><a href="/{{ row.entity.id }}">{{ COL_FIELD }}</a></div>'
+                cellTemplate: '<div class="ngCellText"><a href="/game/{{ row.entity.id }}">{{ COL_FIELD }}</a></div>'
             },
             {
                 field:'home_team', 

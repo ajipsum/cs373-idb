@@ -9,7 +9,7 @@ app.controller('TeamsCtrl', function($scope, teams) {
             {
                field:'name', 
                displayName:'Name',
-               cellTemplate: '<div class="ngCellText"><a href="/{{ row.entity.name }}">{{ COL_FIELD }}</a></div>'
+               cellTemplate: '<div class="ngCellText"><a href="/teams/{{ row.entity.name }}">{{ COL_FIELD }}</a></div>'
             },
             {
                field:'city', 

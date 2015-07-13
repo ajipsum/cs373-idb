@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2">
         <div class="gameAwayTeamLogo">
-            <a href="/{{ awayId }}"><img class="img-responsive" alt="Responsive image" src="{{ awayLogo }}"></a>
+            <a href="/team/{{ awayId }}"><img class="img-responsive" alt="Responsive image" src="{{ awayLogo }}"></a>
         </div>
     </div>
     <div class="col-md-1 col-xs-1">
@@ -15,7 +15,7 @@
     </div>
     <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">
         <div class="gameHomeTeamLogo">
-            <a href="/{{ homeId }}"><img class="img-responsive" alt="Responsive image" src="{{ homeLogo }}"></a>
+            <a href="/team/{{ homeId }}"><img class="img-responsive" alt="Responsive image" src="{{ homeLogo }}"></a>
         </div>
     </div>
 </div>
@@ -24,10 +24,10 @@
     <!-- links to teams -->
     <div class="gameStats">
         <div class="col-md-6 col-xs-6">
-            <h1><a href="/{{ awayId }}">{{ awayName }}</a> {{ awayScore }}</h1>
+            <h1><a href="/teams/{{ awayId }}">{{ awayName }}</a> {{ awayScore }}</h1>
         </div>
         <div class="col-md-6 col-xs-6">
-            <h1><a href="/{{ homeId }}">{{ homeName }}</a> {{ homeScore }}</h1>
+            <h1><a href="/teams/{{ homeId }}">{{ homeName }}</a> {{ homeScore }}</h1>
         </div>
     </div>
     
@@ -40,7 +40,7 @@
                         <th class="text-center">Away Players</th>
                     </tr>
                        <tr ng-repeat="awayPlayer in awayPlayerObj">
-                         <td><a href="/{{ awayPlayer.id }}">{{ awayPlayer.name }}</a></td>
+                         <td><a href="/player/{{ awayPlayer.id }}">{{ awayPlayer.name }}</a></td>
                      </tr>
              </tbody>
          </table>
@@ -52,7 +52,7 @@
                     <th class="text-center">Home Players</th>
                 </tr>
                  <tr ng-repeat="homePlayer in homePlayerObj">
-                   <td><a href="/{{ homePlayer.id }}">{{ homePlayer.name }}</a></td>
+                   <td><a href="/player/{{ homePlayer.id }}">{{ homePlayer.name }}</a></td>
                </tr>
        </tbody>
    </table>
