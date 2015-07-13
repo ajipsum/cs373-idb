@@ -1,6 +1,6 @@
 app.controller('GameDetailCtrl', ['$scope', 'game', '$http', '$sce', function ($scope, game, $http, $sce) {
 
-	$scope.gameDate=game.date;
+	$scope.gameDate=parseInt(game.date);
 	$scope.awayId=game.away_team;
 	$scope.awayLogo="/assets/images/teamlogos/" + game.away_team + ".png";
 	$scope.homeId=game.home_team;
@@ -14,6 +14,7 @@ app.controller('GameDetailCtrl', ['$scope', 'game', '$http', '$sce', function ($
 	$http.get("/resources/team/" + game.home_team).success(function(response) {
 		$scope.gameMapSource = $sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + response.google_maps)
 	});
-	$scope.gameCitation=game.citation; //not implemented, need citation from team
+	$scope.gameAwayCitation=game.citation.away;
+	$scope.gameHomeCitation=game.citation.home;
 
 }]);
