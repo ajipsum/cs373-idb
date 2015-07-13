@@ -28,14 +28,22 @@ def games_collection_handler(a):
 # Player Endpoints
 # ----------------
 
-def player_by_id_handler(id):
+def player_view_by_id_handler(id):
     data = Player.query.filter_by(id = id).first().serialize
     data["schedule"] = sorted(json.loads(team_schedule_handler(data["team_name"])), key=lambda k : k["date"])
+    data["google_maps"] = Team.query.filter_by(name = data["team_name"]).first().google_maps
     return json.dumps(data)
+    
+def player_by_id_handler(id):
+    return json.dumps(Player.query.filter_by(id = id).first().serialize)
 
 # --------------
 # Team Endpoints
 # --------------
+
+def team_view_by_name_handler(tn):
+    data = Team.query.filter_by(name = tn).first().serialize
+    data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"])
 
 def team_by_name_handler(tn):
     data = Team.query.filter_by(name = tn).first().serialize
@@ -59,6 +67,13 @@ def team_losses_handler(tn):
 # --------------
 # Game Endpoints
 # --------------
+
+def game_view_by_id_handler(id):
+    data = Game.query.filter_by(id = id).first().serialize
+    home_team_obj = Team.query.filter_by(name = data["home_team"]).first()
+    away_team_obj = Team.query.filter_by(name = data["away_team"]).first()
+    data["citation"] = { "home" : home_team_obj.citation, "away" : away_team_obj.citation}
+    return json.dumps(data)
 
 def game_by_id_handler(id):
     return json.dumps(Game.query.filter_by(id = id).first().serialize)

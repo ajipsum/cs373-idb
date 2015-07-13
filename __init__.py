@@ -54,6 +54,14 @@ def players_collection():
     return api_handlers.players_collection_handler(request.args)
 
 
+@app.route('/resources/player/view/<id>')
+def player_view_by_id(id):
+    view = api_handlers.player_view_by_id_handler(id)
+    if view:
+        return view
+    else:
+        abort(404)
+
 @app.route('/resources/player/<id>')
 def player_by_id(id):
     """
@@ -82,6 +90,13 @@ def teams_collection():
     # GET
     return api_handlers.teams_collection_handler(request.args)
 
+@app.route('/resources/team/view/<team_name>')
+def team_view_by_id(team_name):
+    view = api_handlers.team_view_by_name_handler(team_name)
+    if view:
+        return view
+    else:
+        abort(404)
 
 @app.route('/resources/team/<team_name>')
 def team_by_name(team_name):
@@ -140,6 +155,14 @@ def games_collection():
     provided in the HTTP request object.
     """
     return api_handlers.games_collection_handler(request.args)
+
+@app.route('/resources/game/view/<game_id>')
+def game_view_by_id(game_id):
+    view = api_handlers.game_view_by_id_handler(game_id)
+    if view:
+        return view
+    else:
+        abort(404)
 
 @app.route('/resources/game/<game_id>')
 def game_by_id(game_id):
