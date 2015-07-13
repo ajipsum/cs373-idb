@@ -98,7 +98,7 @@ class Game(db.Model):
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
-  date = db.Column(db.String(256))
+  date = db.Column(db.Integer)
   home_score = db.Column(db.String(256))
   away_score = db.Column(db.String(256))
   home_box_fgm = db.Column(db.String(256))
