@@ -1,18 +1,19 @@
-app.controller('PlayerDetailCtrl', ['$scope', 'player', function ($scope, player) {
-    
-    console.log(player);
+app.controller('PlayerDetailCtrl', ['$scope', 'player', '$http', '$sce', function ($scope, player, $http, $sce) {
+
 	$scope.playerHeadshot = player.picture;
 	$scope.playerName= player.name;
-	$scope.playerNumber='playerNumber_from_json';
-	$scope.playerPosition='playerPosition_from_json';
-	$scope.teamId='teamId_from_json';
-	$scope.teamName='teamName_from_json';
-	$scope.twitterAccount='twitterAccount_from_json';
-	$scope.age='age_from_json';
-	$scope.weight='weight_from_json';
-	$scope.gameObj='gameObj_from_json';
-	$scope.playerVideo='playerVideo_from_json';
-	$scope.playerMapSource='playerMapSource_from_json';
-	$scope.playerCitation='playerCitation_from_json';
+	$scope.playerNumber=player.playerNumber;
+	$scope.playerPosition=player.position;
+	$scope.teamId=player.team_name;
+	$scope.teamName=player.current_team;
+	$scope.twitterAccount=player.twitter;
+	$scope.age=player.age;
+	$scope.weight=player.weight;
+	$scope.gameObj=player.schedule; //schedule is a list of game objects
+	$scope.playerVideo=$sce.trustAsResourceUrl(player.youtube_link_1);
+	$http.get("/resources/team/" + player.team_name).success(function(response) {
+		$scope.playerMapSource = $sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + response.google_maps)
+	});
+	$scope.playerCitation=player.citation;
 
 }]);
