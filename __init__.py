@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.json import jsonify
-from flask import Flask, send_file, send_from_directory, safe_join, request, Response
+from flask import Flask, send_file, send_from_directory, safe_join, request, Response, abort
 from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
