@@ -2,7 +2,7 @@ app.controller('PlayerDetailCtrl', ['$scope', 'player', '$http', '$sce', functio
 
 	$scope.playerHeadshot = player.picture;
 	$scope.playerName= player.name;
-	$scope.playerNumber=player.playerNumber;
+	$scope.playerNumber=player.player_number;
 	$scope.playerPosition=player.position;
 	$scope.teamId=player.team_name;
 	$scope.teamName=player.current_team;
