@@ -39,7 +39,7 @@
                     <tr>
                         <th class="text-center">Away Players</th>
                     </tr>
-                       <tr ng-repeat="awayPlayer in awayPlayerObj">
+                       <tr ng-repeat="awayPlayer in awayRoster">
                          <td><a href="/player/{{ awayPlayer.id }}">{{ awayPlayer.name }}</a></td>
                      </tr>
              </tbody>
@@ -51,7 +51,7 @@
                 <tr>
                     <th class="text-center">Home Players</th>
                 </tr>
-                 <tr ng-repeat="homePlayer in homePlayerObj">
+                 <tr ng-repeat="homePlayer in homeRoster">
                    <td><a href="/player/{{ homePlayer.id }}">{{ homePlayer.name }}</a></td>
                </tr>
        </tbody>
@@ -70,8 +70,7 @@
     <h2>Citations</h2>
     <div>
         Away: <a href="{{ gameAwayCitation }}">{{ gameAwayCitation }}</a>
-    </div>
-    <div>
+        <br>
         Home: <a href="{{ gameHomeCitation }}"> {{ gameHomeCitation }}</a>
     </div>
 </div>
