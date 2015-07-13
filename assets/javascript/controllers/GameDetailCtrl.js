@@ -1,6 +1,6 @@
 app.controller('GameDetailCtrl', ['$scope', 'game', '$http', '$sce', function ($scope, game, $http, $sce) {
 
-	$scope.gameDate=parseInt(game.date);
+	$scope.gameDate=parseInt(game.date*1000);
 	$scope.awayId=game.away_team;
 	$scope.awayLogo="/assets/images/teamlogos/" + game.away_team + ".png";
 	$scope.homeId=game.home_team;
