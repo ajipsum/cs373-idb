@@ -6,7 +6,7 @@ app.factory("gameFactory", function($http, $q, host) {
     };
 
     factory.getGameDetail = function(id) {
-        return $http.get(host +"/resources/game/" + id, {cache: true});
+        return $http.get(host +"/resources/game/view/" + id, {cache: true});
     };
 
     return factory;

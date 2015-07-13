@@ -44,6 +44,7 @@ def player_by_id_handler(id):
 def team_view_by_name_handler(tn):
     data = Team.query.filter_by(name = tn).first().serialize
     data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"])
+    return json.dumps(data)
 
 def team_by_name_handler(tn):
     data = Team.query.filter_by(name = tn).first().serialize

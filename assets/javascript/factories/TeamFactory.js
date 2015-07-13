@@ -6,7 +6,7 @@ app.factory("teamFactory", function($http, $q, host) {
     };
 
     factory.getTeamDetail = function(id) {
-        return $http.get(host +"/resources/team/" + id, {cache: true});
+        return $http.get(host +"/resources/team/view/" + id, {cache: true});
     };
 
     return factory;
