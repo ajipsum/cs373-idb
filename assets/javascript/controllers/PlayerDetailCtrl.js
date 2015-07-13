@@ -12,9 +12,7 @@ app.controller('PlayerDetailCtrl', ['$scope', 'player', '$http', '$sce', functio
 	$scope.weight=player.weight;
 	$scope.gameObj=player.schedule; //schedule is a list of game objects
 	$scope.playerVideo=$sce.trustAsResourceUrl(player.youtube_link_1);
-	$http.get("/resources/team/" + player.team_name).success(function(response) {
-		$scope.playerMapSource = $sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + response.google_maps)
-	});
+	$scope.playerMapSource=$sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + player.google_maps);
 	$scope.playerCitation=player.citation;
 
 }]);

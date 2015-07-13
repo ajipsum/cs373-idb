@@ -11,9 +11,7 @@ app.controller('GameDetailCtrl', ['$scope', 'game', '$http', '$sce', function ($
 	$scope.homeScore=game.home_score;
 	$scope.awayRoster=game.roster.away;
 	$scope.homeRoster=game.roster.home;
-	$http.get("/resources/team/" + game.home_team).success(function(response) {
-		$scope.gameMapSource = $sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + response.google_maps)
-	});
+	$scope.gameMapSource=$sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + game.google_maps);
 	$scope.gameAwayCitation=game.citation.away;
 	$scope.gameHomeCitation=game.citation.home;
 
