@@ -14,7 +14,7 @@
         </div>
         <div class="playerTwitter">
             <!-- Social Media -->
-            <a href="https://twitter.com/{{ twitterAccount }}"><h4>@{{ twitterAccount }}</h4></a>
+            <a href="{{ twitterAccount }}"><h4>@{{ twitterDisplay }}</h4></a>
         </div>
         <div class="playerBio">
             <div>
@@ -40,13 +40,11 @@
                     <th>Opp</th>
                     <th>Score</th>
                 </tr>
-                <div ng-repeat="(gameId, gameDate, opponentShort, homeScore, awayScore) in gameObj">
-                    <tr>
-                      <td><a href="/{{ gameId }}">{{ gameDate }}</a></td>
-                      <td>VS {{ opponentShort}} </td>
-                      <td>{{ homeScore }} - {{ awayScore }}</td>
+                    <tr ng-repeat="game in gameObj">
+                      <td><a href='/game/{{ game.id }}'>{{ game.date }}</a></td>
+                      <td>{{ game.away_team }} vs {{ game.home_team}} </td>
+                      <td>{{ game.away_score }} - {{ game.home_score }}</td>
                   </tr>
-              </div>
           </tbody>
       </table>
   </div>

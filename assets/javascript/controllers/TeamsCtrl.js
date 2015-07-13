@@ -1,47 +1,15 @@
-app.controller('TeamsCtrl', function($scope) {
-    $scope.teamData = [
-        {
-            "last_name": "Spurs",
-            "city": "San Antonio",
-            "state": "Texas",
-            "site_name": "AT&T Center",
-            "conference": "West",
-            "division": "Southwest",
-            "mascot": "The Coyote",
-            "tag": "sas"
-        },
-        {
-            "last_name": "Heat",
-            "city": "Miami",
-            "state": "Florida",
-            "site_name": "AmericanAirlines Arena",
-            "conference": "East",
-            "division": "Southeast",
-            "mascot": "Burnie",
-            "tag": "mia"
-        },
-        {
-            "last_name": "Clippers",
-            "city": "Los Angeles",
-            "state": "California",
-            "site_name": "Staples Center",
-            "conference": "West",
-            "division": "Pacific",
-            "mascot": "Clippy",
-            "tag": "lac"
-        }
-    ];
+app.controller('TeamsCtrl', function($scope, teams) {
 
     $scope.teamOptions = {
-        data: 'teamData',
+        data: teams,
         paginationPageSizes: [5, 10, 15, 30],
         paginationPageSize: 15,
         columnDefs: 
         [
             {
-               field:'last_name', 
+               field:'name', 
                displayName:'Name',
-               cellTemplate: '<div class="ngCellText"><a href="/{{ row.entity.tag }}">{{ COL_FIELD }}</a></div>'
+               cellTemplate: '<div class="ngCellText"><a href="/teams/{{ row.entity.name }}">{{ COL_FIELD }}</a></div>'
             },
             {
                field:'city', 
@@ -69,5 +37,4 @@ app.controller('TeamsCtrl', function($scope) {
             }
         ]
     };
-
 });
