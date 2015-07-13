@@ -2,11 +2,12 @@ app.controller('PlayerDetailCtrl', ['$scope', 'player', '$http', '$sce', functio
 
 	$scope.playerHeadshot = player.picture;
 	$scope.playerName= player.name;
-	$scope.playerNumber=player.playerNumber;
+	$scope.playerNumber=player.player_number;
 	$scope.playerPosition=player.position;
 	$scope.teamId=player.team_name;
 	$scope.teamName=player.current_team;
 	$scope.twitterAccount=player.twitter;
+	$scope.twitterDisplay=player.twitter.replace("https://twitter.com/", "");
 	$scope.age=player.age;
 	$scope.weight=player.weight;
 	$scope.gameObj=player.schedule; //schedule is a list of game objects

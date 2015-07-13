@@ -74,6 +74,8 @@ def game_view_by_id_handler(id):
     home_team_obj = Team.query.filter_by(name = data["home_team"]).first()
     away_team_obj = Team.query.filter_by(name = data["away_team"]).first()
     data["citation"] = { "home" : home_team_obj.citation, "away" : away_team_obj.citation}
+    data["roster"] = { "home" : [i.serialize for i in home_team_obj.players], "away" : [i.serialize for i in away_team_obj.players]}
+    data["google_maps"] = home_team_obj.google_maps
     return json.dumps(data)
 
 def game_by_id_handler(id):
