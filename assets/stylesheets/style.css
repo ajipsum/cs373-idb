@@ -6,11 +6,6 @@
     background-color: white;
 }
 
-.testingbg {
-
-    background-image: url("/assets/images/teambgs/clippers.png");
-}
-
 body {
     padding-top: 65px;
     background-color: #0D0600;
@@ -129,6 +124,10 @@ video#bgvid { transition: 1s opacity; }
 
 .playerHeading {
     background-color: white;
+}
+
+.playerPicBG {
+    background-size: cover;
 }
 
 .playerTwitter h4{
