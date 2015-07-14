@@ -9,7 +9,7 @@ from urllib.request import urlopen
 class TestAPI (TestCase) :
     # app = Flask(__name__)
     
-    host = "http://127.0.0.1:5000/"
+    api_host = "http://127.0.0.1:5000/"
 
     @classmethod
     def setUpClass(models):
@@ -88,7 +88,7 @@ class TestAPI (TestCase) :
          self.assertEqual(t.mascot, "Burnie")
 
     def test_RESTful_team(self):
-        url = urlopen(self.host + "resources/team/Heat")
+        url = urlopen(self.api_host + "resources/team/Heat")
         t = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
         self.assertEqual(t["name"], "Heat") 
         self.assertEqual(t["conference"], "East")
@@ -157,7 +157,7 @@ class TestAPI (TestCase) :
          self.assertEqual(p.weight, "250")
 
     def test_RESTful_player(self):
-        url = urlopen(self.host + "resources/player/341")
+        url = urlopen(self.api_host + "resources/player/341")
         p = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
         self.assertEqual(p["name"], "Tim Duncan") 
         self.assertEqual(p["position"], "PF")
@@ -230,7 +230,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.date, 1420934400)
 
     def test_RESTful_game(self):
-        url = urlopen(self.host + "resources/game/1151")
+        url = urlopen(self.api_host + "resources/game/1151")
         g = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
         self.assertEqual(g["home_team"], "Clippers") 
         self.assertEqual(g["home_score"], "104")
