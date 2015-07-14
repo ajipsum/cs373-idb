@@ -20,7 +20,6 @@ FILES :=                              						\
 	assets/javascript/app.js 						\
 	assets/javascript/controllers/HomeCtrl.js		\
 	assets/javascript/controllers/NavbarCtrl.js		\
-	assets/javascript/controllers/TableCtrl.js		\
 	assets/stylesheets/style.css						
 
 all:
