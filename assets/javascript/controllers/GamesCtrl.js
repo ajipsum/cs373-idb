@@ -28,8 +28,9 @@ app.controller('GamesCtrl', function($scope, games) {
                 displayName:'Away Score'
             },
             {
-                field: 'date',
-                displayName:'Date'
+                field:'date',
+                displayName:'Date',
+                cellFilter:'date:\'MM-dd-yyyy\''
             }
         ]
     };
