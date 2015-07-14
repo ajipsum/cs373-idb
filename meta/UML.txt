@@ -1,0 +1,7 @@
+[Game|game_id (int);home_team (varchar(256));home_score (varchar(256));away_team (varchar(256));away_score (varchar(256));date (varchar(256));], 
+
+[Player|player_id (int);name (varchar(256));position (varchar(256));player_number (varchar(256));current_team (varchar(256));age (varchar(256));weight (varchar(256));], 
+
+[Team|name (varchar(256));conference (varchar(256));division(varchar(256));site_name (varchar(256));city (varchar(256));state (varchar(256));mascot (varchar(256))], 
+
+[Game]*-2[Team], [Team]1-*[Player]
