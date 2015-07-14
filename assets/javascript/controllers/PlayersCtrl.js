@@ -2,8 +2,9 @@ app.controller('PlayersCtrl', function($scope, players) {
 
     $scope.playerOptions = {
         data: players,
-        paginationPageSizes: [10, 25, 50, 75, 100],
+        paginationPageSizes: [15, 25, 50, 75, 100],
         paginationPageSize: 25,
+        minRowsToShow: 16,
         columnDefs: 
         [
             {

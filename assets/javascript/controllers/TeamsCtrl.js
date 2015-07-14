@@ -2,8 +2,9 @@ app.controller('TeamsCtrl', function($scope, teams) {
 
     $scope.teamOptions = {
         data: teams,
-        paginationPageSizes: [5, 10, 15, 30],
+        paginationPageSizes: [15, 30],
         paginationPageSize: 15,
+        minRowsToShow: 16,
         columnDefs: 
         [
             {
