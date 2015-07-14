@@ -61,6 +61,7 @@ class Player(db_tests.Model):
   season_3PM_A = db_tests.Column(db_tests.String(256))
   citation = db_tests.Column(db_tests.String(256))
   team_name = db_tests.Column(db_tests.String(256), db_tests.ForeignKey('team.name'))
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
 
 class Team(db_tests.Model):
@@ -68,8 +69,7 @@ class Team(db_tests.Model):
   Information about Team 
   Information includes name, conference, division, site_name, city, state, mascot
   '''
-
-  players = db_tests. relationship('Player', backref='team', lazy='dynamic')
+  players = db_tests.relationship('Player', backref='team', lazy='dynamic')
   name = db_tests.Column(db_tests.String(256), primary_key=True,unique=True,index=True)
   conference = db_tests.Column(db_tests.String(256))
   division = db_tests.Column(db_tests.String(256))
@@ -80,15 +80,17 @@ class Team(db_tests.Model):
   twitter = db_tests.Column(db_tests.String(256))
   citation = db_tests.Column(db_tests.String(256))
   google_maps = db_tests.Column(db_tests.String(256))
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+
 
 team_game = db_tests.Table('team_game',
   db_tests.Column('team_name', db_tests.String(256), db_tests.ForeignKey('team.name')),
-  db_tests.Column('game_id', db_tests.Integer, db_tests.ForeignKey('game.id'))
+  db_tests.Column('game_id', db_tests.Integer, db_tests.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
 player_game = db_tests.Table('player_game',
   db_tests.Column('player_id', db_tests.Integer, db_tests.ForeignKey('player.id')),
-  db_tests.Column('game_id', db_tests.Integer, db_tests.ForeignKey('game.id'))
+  db_tests.Column('game_id', db_tests.Integer, db_tests.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
 class Game(db_tests.Model):
@@ -96,7 +98,6 @@ class Game(db_tests.Model):
   Information about Game
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
-
   id = db_tests.Column(db_tests.Integer, primary_key=True)
   home_team = db_tests.Column(db_tests.String(256))
   away_team = db_tests.Column(db_tests.String(256))
@@ -136,6 +137,8 @@ class Game(db_tests.Model):
   youtube_link_1 = db_tests.Column(db_tests.String(256))
   youtube_link_2 = db_tests.Column(db_tests.String(256))
   youtube_link_3 = db_tests.Column(db_tests.String(256))
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+
 
   #many to many team game relationship
   team_game = db_tests.relationship('Team', secondary=team_game,

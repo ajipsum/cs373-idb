@@ -61,6 +61,8 @@ class Player(db.Model):
   season_3PM_A = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+
 
   @property 
   def serialize(self) :
@@ -127,7 +129,6 @@ class Team(db.Model):
   Information about Team 
   Information includes name, conference, division, site_name, city, state, mascot
   '''
-
   players = db. relationship('Player', backref='team', lazy='dynamic')
   name = db.Column(db.String(256), primary_key=True)
   conference = db.Column(db.String(256))
@@ -139,6 +140,8 @@ class Team(db.Model):
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   google_maps = db.Column(db.String(256))
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+
 
   @property
   def serialize(self):
@@ -158,12 +161,12 @@ class Team(db.Model):
 
 team_game = db.Table('team_game',
   db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
+  db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
 player_game = db.Table('player_game',
   db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
+  db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
 class Game(db.Model):
@@ -171,7 +174,6 @@ class Game(db.Model):
   Information about Game
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
-
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
@@ -211,6 +213,8 @@ class Game(db.Model):
   youtube_link_1 = db.Column(db.String(256))
   youtube_link_2 = db.Column(db.String(256))
   youtube_link_3 = db.Column(db.String(256))
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+
 
   @property
   def serialize(self):
