@@ -28,7 +28,6 @@ before_script:
     - sudo chmod +x init_db.sh
     - sudo ./init_db.sh
     - python3 createDB.py
-    - python3 tests.py
 script:
     - date
     - ls -al
@@ -39,3 +38,4 @@ script:
     - make check
     # Data base issue needs to be resolved before test.
     #- make test
+    - python3 tests.py
