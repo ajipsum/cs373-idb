@@ -2,7 +2,7 @@ var app = angular.module('api2k15', [
     'ngTouch',
     'ui.grid',
     'ui.router',
-    'ui.grid.pagination'    
+    'ui.grid.pagination'   
 ])
 
 .constant('host', 'http://127.0.0.1:5000')

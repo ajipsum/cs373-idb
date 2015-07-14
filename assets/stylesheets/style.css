@@ -148,6 +148,11 @@ video#bgvid { transition: 1s opacity; }
     margin-top: 0;
 }
 
+.playerGameLog {
+    height: 400px;
+    overflow:auto;
+}
+
 .playerVideos iframe {
     width: 100%;
     height: 600px;
