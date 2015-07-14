@@ -149,7 +149,7 @@ class TestAPI (TestCase) :
              home_score = "89",
              away_team = "San Antonio Spurs",
              away_score = "85",
-             date = "November 10, 2014",
+             date = 23523523,
          )
          db_tests.session.add(game)
          db_tests.session.commit()
@@ -158,7 +158,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.home_score, "89")
          self.assertEqual(g.away_team, "San Antonio Spurs")
          self.assertEqual(g.away_score, "85")
-         self.assertEqual(g.date, "November 10, 2014")
+         self.assertEqual(g.date, 23523523)
 
     def test_game_create_2(self):
          game = Game(
@@ -167,7 +167,7 @@ class TestAPI (TestCase) :
              home_score = "",
              away_team = "",
              away_score = "",
-             date = "",
+             date = 0,
          )
          db_tests.session.add(game)
          db_tests.session.commit()
@@ -176,7 +176,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.home_score, "")
          self.assertEqual(g.away_team, "")
          self.assertEqual(g.away_score, "")
-         self.assertEqual(g.date, "")
+         self.assertEqual(g.date, 0)
 
     def test_game_create_3(self):
          game = Game(
@@ -185,7 +185,7 @@ class TestAPI (TestCase) :
              home_score = "104",
              away_team = "Miami Heat",
              away_score = "90",
-             date = "January 11, 2015",
+             date = 2222,
          )
          player = Player(
              name = "",
@@ -202,7 +202,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.home_score, "104")
          self.assertEqual(g.away_team, "Miami Heat")
          self.assertEqual(g.away_score, "90")
-         self.assertEqual(g.date, "January 11, 2015")
+         self.assertEqual(g.date, 2222)
 
     def test_player_game_create_1(self):
         game = Game(
