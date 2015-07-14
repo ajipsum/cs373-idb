@@ -57,6 +57,7 @@ var app = angular.module('api2k15', [
                                     deferred.resolve(data.data);
                                 }, function(error) {
                                     console.log("Can't resolve teams", error);
+                                    window.location.href = '/';
                                 });
                             return deferred.promise;
                         }
@@ -78,6 +79,7 @@ var app = angular.module('api2k15', [
                                     deferred.resolve(data.data);
                                 }, function(error) {
                                     console.log("Can't resolve team details", error);
+                                    window.location.href = '/';
                                 });
                             return deferred.promise;
                         }
@@ -99,6 +101,7 @@ var app = angular.module('api2k15', [
                                     deferred.resolve(data.data);
                                 }, function(error) {
                                     console.log("Can't resolve players", error);
+                                    window.location.href = '/';
                                 });
                             return deferred.promise;
                         }
@@ -120,6 +123,7 @@ var app = angular.module('api2k15', [
                                     deferred.resolve(data.data);
                                 }, function(error) {
                                     console.log("Can't resolve player details", error);
+                                    window.location.href = '/';
                                 });
                             return deferred.promise;
                         }
@@ -141,6 +145,7 @@ var app = angular.module('api2k15', [
                                     deferred.resolve(data.data);
                                 }, function(error) {
                                     console.log("Can't resolve games", error);
+                                    window.location.href = '/';
                                 });
                             return deferred.promise;
                         }
@@ -162,6 +167,7 @@ var app = angular.module('api2k15', [
                                     deferred.resolve(data.data);
                                 }, function(error) {
                                     console.log("Can't resolve game details", error);
+                                    window.location.href = '/';
                                 });
                             return deferred.promise;
                         }
