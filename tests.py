@@ -3,9 +3,13 @@ from unittest import TestCase, main
 from models_tests import Player, Team, Game, player_game, team_game
 from flask import Flask
 from __init__ import app, db_tests
+import json
+from urllib.request import urlopen
 
 class TestAPI (TestCase) :
     # app = Flask(__name__)
+    
+    host = "http://127.0.0.1:5000/"
 
     @classmethod
     def setUpClass(models):
@@ -83,6 +87,18 @@ class TestAPI (TestCase) :
          self.assertEqual(t.state, "Florida")
          self.assertEqual(t.mascot, "Burnie")
 
+    def test_RESTful_team(self):
+        url = urlopen(self.host + "resources/team/Heat")
+        t = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
+        self.assertEqual(t["name"], "Heat") 
+        self.assertEqual(t["conference"], "East")
+        self.assertEqual(t["division"], "Southeast")
+        self.assertEqual(t["site_name"], "AmericanAirlines Arena")
+        self.assertEqual(t["city"], "Miami")
+        self.assertEqual(t["state"], "Florida")
+        self.assertEqual(t["mascot"], "Burnie")
+        
+
     def test_player_create_1(self):
          player = Player(
              name = "Dwyane Wade",
@@ -121,7 +137,6 @@ class TestAPI (TestCase) :
          self.assertEqual(p.age, "")
          self.assertEqual(p.weight, "")
 
-
     def test_player_create_3(self):
          player = Player(
              name = "Tim Duncan",
@@ -141,6 +156,16 @@ class TestAPI (TestCase) :
          self.assertEqual(p.age, "39")
          self.assertEqual(p.weight, "250")
 
+    def test_RESTful_player(self):
+        url = urlopen(self.host + "resources/player/341")
+        p = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
+        self.assertEqual(p["name"], "Tim Duncan") 
+        self.assertEqual(p["position"], "PF")
+        self.assertEqual(p["player_number"], "21")
+        self.assertEqual(p["current_team"], "San Antonio Spurs")
+        self.assertEqual(p["age"], "39")
+        self.assertEqual(p["weight"], "250")
+
 
     def test_game_create_1(self):
          game = Game(
@@ -149,7 +174,7 @@ class TestAPI (TestCase) :
              home_score = "89",
              away_team = "San Antonio Spurs",
              away_score = "85",
-             date = "November 10, 2014",
+             date = 1436832000,
          )
          db_tests.session.add(game)
          db_tests.session.commit()
@@ -158,7 +183,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.home_score, "89")
          self.assertEqual(g.away_team, "San Antonio Spurs")
          self.assertEqual(g.away_score, "85")
-         self.assertEqual(g.date, "November 10, 2014")
+         self.assertEqual(g.date, 1436832000)
 
     def test_game_create_2(self):
          game = Game(
@@ -167,7 +192,7 @@ class TestAPI (TestCase) :
              home_score = "",
              away_team = "",
              away_score = "",
-             date = "",
+             date = None,
          )
          db_tests.session.add(game)
          db_tests.session.commit()
@@ -176,7 +201,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.home_score, "")
          self.assertEqual(g.away_team, "")
          self.assertEqual(g.away_score, "")
-         self.assertEqual(g.date, "")
+         self.assertEqual(g.date, None)
 
     def test_game_create_3(self):
          game = Game(
@@ -185,7 +210,7 @@ class TestAPI (TestCase) :
              home_score = "104",
              away_team = "Miami Heat",
              away_score = "90",
-             date = "January 11, 2015",
+             date = 1420934400,
          )
          player = Player(
              name = "",
@@ -202,7 +227,17 @@ class TestAPI (TestCase) :
          self.assertEqual(g.home_score, "104")
          self.assertEqual(g.away_team, "Miami Heat")
          self.assertEqual(g.away_score, "90")
-         self.assertEqual(g.date, "January 11, 2015")
+         self.assertEqual(g.date, 1420934400)
+
+    def test_RESTful_game(self):
+        url = urlopen(self.host + "resources/game/1151")
+        g = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
+        self.assertEqual(g["home_team"], "Clippers") 
+        self.assertEqual(g["home_score"], "104")
+        self.assertEqual(g["away_team"], "Heat")
+        self.assertEqual(g["away_score"], "90")
+        self.assertEqual(g["date"], 1420952400000)
+
 
     def test_player_game_create_1(self):
         game = Game(
@@ -327,6 +362,8 @@ class TestAPI (TestCase) :
         self.assertEqual(tg_list[0].game_id, 7000)
         self.assertEqual(tg_list[1].team_name, 'Bob') 
         self.assertEqual(tg_list[1].game_id, 7000)
+
+
 
 if __name__ == '__main__':
     main()
