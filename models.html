@@ -2,6 +2,81 @@
 <head>
 </head>
 <body>
+<h4>
+<a id="user-content-api-endpoints" class="anchor" href="#api-endpoints" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Endpoints</h4>
+
+<p><strong>Player</strong></p>
+
+<pre><code>/resources/players?{args} [GET, POST]
+</code></pre>
+
+<p><strong>GET:</strong> Requests to this API endpoint will filter the players in the database against the arguments provided. If no filter arguments are provided the entire list will be returned as a JSON object.</p>
+
+<p><strong>POST:</strong> A post request to the collection target with a JSON player object as the message body will add that object to the database.</p>
+
+<pre><code>/resources/player/{name}?{attribute} [GET]
+</code></pre>
+
+<p>Requests to this API target will return the player with {name} or 404 if the resources does not exist. If multiple resources are found, they are returned as a list. If the optional attribute query is included, only the attributes requested for the given player {name} will be returned.</p>
+
+<p><strong>Team</strong></p>
+
+<pre><code>/resources/teams?{args} [GET, POST]
+</code></pre>
+
+<p><strong>GET:</strong> This API target will return all teams in the database, filtered by attribute provided as query arguments. If no arguments are provided all team objects will be returned. Integer arguments may be provided as a single value or a range tuple indicated an inclusive range.</p>
+
+<p><strong>POST:</strong> A post request to this target with a JSON object as the message body will add that object to the database. </p>
+
+<pre><code>/resources/team/{team_name}?{attribute} [GET]
+</code></pre>
+
+<p>Requests will return the team object specified by {team_name} or 404 if not found. If the {attribute} argument is provided the specified attribute will be returned singly instead of the entire team object. </p>
+
+<pre><code>/resources/team/{team_name}/schedule [GET]
+</code></pre>
+
+<p>Requests will return the list of games played by {team_name} during the season.</p>
+
+<pre><code>/resources/team/{team_name}/top_starters [GET]
+</code></pre>
+
+<p>Requests will return a list of five players for {team_name} who started the most games during the season.</p>
+
+<pre><code>/resources/team/{team_name}/wins [GET]
+</code></pre>
+
+<p>Requests will return a list of all games won by {team_name} during the season.</p>
+
+<pre><code>/resources/team/{team_name}/losses [GET]
+</code></pre>
+
+<p>Requests will return a list of all games lost by {team_name} during the season.</p>
+
+<p><strong>Game</strong></p>
+
+<pre><code>/resources/games?{args} [GET, POST]
+</code></pre>
+
+<p><strong>GET:</strong> Collection API endpoint, this target will return game objects stored in the database filtered by the query parameters. If no parameters are provided all games will be returned. Requests may be filtered by any attribute of the Game model, where integer attributes may be provided singly or as an inclusive tuple range value.</p>
+
+<p><strong>POST:</strong> A post request with a JSON Game data model object in the message body will add the object to the database.</p>
+
+<pre><code>/resources/game/{id} [GET]
+</code></pre>
+
+<p>Requests will return the JSON game object associated with game {id}.</p>
+
+<pre><code>/resources/game/{month_id} [GET]
+</code></pre>
+
+<p>Requests will return a list of all games played during {month_id} where the value corresponds to the numerical month (1-12).</p>
+
+<pre><code>/resources/game/{site} [GET]
+</code></pre>
+
+<p>Request will return a list of all games played at {site} during the year. </p>
+
 <h3>
 <a id="user-content-models" class="anchor" href="#models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Models</h3>
 
@@ -100,7 +175,7 @@ id = db.Column(db.Integer, primary_key=True) - The identifying number of the gam
 <ul>
 <li>home_team = db.Column(db.String(256)) - The name of the home team.</li>
 <li>away_team = db.Column(db.String(256)) - The name of the away team.</li>
-<li>date = db.Column(db.String(256)) - The date on which the game was played.</li>
+<li>date = db.Column(BIGINT(unsigned=True)) - The date on which the game was played in epoch format.</li>
 <li>home_score = db.Column(db.String(256)) - The home team's final score.</li>
 <li>away_score = db.Column(db.String(256)) - The away team's final score.</li>
 <li>home_box_fgm = db.Column(db.String(256))</li>
@@ -138,10 +213,11 @@ id = db.Column(db.Integer, primary_key=True) - The identifying number of the gam
 <h4>
 <a id="user-content-relationships" class="anchor" href="#relationships" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relationships</h4>
 
-<p>Many-to-many between teams and games</p>
-<p>teams = db.relationship('Team', secondary=teams, backref=db.backref('games', lazy='dynamic'))</p>
+<p>Many-to-many between teams and games
+teams = db.relationship('Team', secondary=teams, backref=db.backref('games', lazy='dynamic'))</p>
 
-<p>Many-to-many between players and games</p>
-<p>players = db.relationship('Player', secondary=players, backref=db.backref('games', lazy='dynamic'))</p>
+<p>Many-to-many between players and games
+players = db.relationship('Player', secondary=players, backref=db.backref('games', lazy='dynamic'))</p>
+
 </body>
 </html>
