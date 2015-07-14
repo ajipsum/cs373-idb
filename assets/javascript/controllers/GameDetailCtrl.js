@@ -1,4 +1,4 @@
-app.controller('GameDetailCtrl', ['$scope', 'game', '$http', '$sce', function ($scope, game, $http, $sce) {
+app.controller('GameDetailCtrl', ['$scope', 'game', '$sce', function ($scope, game, $sce) {
 
 	$scope.gameDate=game.date;
 	$scope.awayId=game.away_team;

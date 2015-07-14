@@ -1,4 +1,4 @@
-app.controller('PlayerDetailCtrl', ['$scope', 'player', '$http', '$sce', function ($scope, player, $http, $sce) {
+app.controller('PlayerDetailCtrl', ['$scope', 'player', '$sce', function ($scope, player, $sce) {
 
 	$scope.playerHeadshot = player.picture;
 	$scope.playerHeadshotBG = {'background': "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/teambgs/" + player.team_name + ".png') #000 no-repeat center center"};
@@ -8,7 +8,10 @@ app.controller('PlayerDetailCtrl', ['$scope', 'player', '$http', '$sce', functio
 	$scope.teamId=player.team_name;
 	$scope.teamName=player.current_team;
 	$scope.twitterAccount=player.twitter;
-	$scope.twitterDisplay=player.twitter.replace("https://twitter.com/", "");
+    if (player.twitter != "N/A")
+	    $scope.twitterDisplay="@" + player.twitter.replace("https://twitter.com/", "");
+    else
+        $scope.twitterDisplay = "";
 	$scope.age=player.age;
 	$scope.weight=player.weight;
 	$scope.gameObj=player.schedule; //schedule is a list of game objects
