@@ -1,3 +1,1243 @@
+commit 3bfcacc5e22b16c29bf95d1e7222c51e733bdab3
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 23:27:13 2015 +0000
+
+    resolved #110
+
+commit 9881845183ef73f75c737886d96eec8c4c748c82
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 23:10:59 2015 +0000
+
+    fixing tests...again
+
+commit aef3b205b544af102fb56efae0faeca2622f1a3c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 22:52:25 2015 +0000
+
+    fixing tests
+
+commit e50219ee1a02d641de9388e8f5ae7e5107137057
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 22:44:30 2015 +0000
+
+    preparing for launch
+
+commit 949c6a95cc331d63dcafb8394c9128237351b41c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 17:27:56 2015 -0500
+
+    resolved #125
+
+commit 9edd1aa690802afc6c8bed41efa85fb717002db3
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 17:25:03 2015 -0500
+
+    sorted rosters on game and team pages
+
+commit 35d928a5c8ec67426e76b8dc51de16b76c9b7c6f
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jul 14 17:18:24 2015 -0500
+
+    removed tablectrl.js from makefile
+
+commit 5a9f546dab46d3025054c3ff2b186036e777656a
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jul 14 17:17:10 2015 -0500
+
+    removed tablectrl.js
+
+commit 8feb7596cee74a73a5973c123282a8a980446746
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 17:05:24 2015 -0500
+
+    resolved #123
+
+commit 4118879c818d02c0ea55df17571ebf28e19ee315
+Merge: f2e23f6 9a12fd9
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 16:41:46 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit f2e23f62f6400470e7ec663450c3bb6dc467f72b
+Merge: 608e84b 8055629
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:51:36 2015 -0500
+
+    fixed merge conflicts
+
+commit 9a12fd913db199bd791b475bb4b01b7f6ae87bfc
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 16:41:25 2015 -0500
+
+    resolved #92
+
+commit 80556299590cebf8fcdda6f5bab39a97873e76b0
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:41:13 2015 -0500
+
+    moved python3 tests.py from before_script to script
+
+commit d7025a035c1802f7fcd070cd5659fd2005c04ff9
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:37:15 2015 -0500
+
+    removed comments about not working travis yml. travis yml now works.
+
+commit 3a12fa49ca922ebb00ca970f6150b65d91613104
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:34:33 2015 -0500
+
+    added python3 tests.py to yml
+
+commit 304c52fa0145db12f10658e735a36dc3d612aec0
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:30:24 2015 -0500
+
+    hopefully fixed travis yml
+
+commit ed8feeaf3fc6c8a22e743a2cd14ec7f8be02c866
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:14:22 2015 -0500
+
+    hopefully fixed travis
+
+commit 608e84b8b820890cebbffa0e133f875bacd4f9df
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 16:03:26 2015 -0500
+
+    resolved #96
+
+commit d11506b115699495be184570e7e247f548a43afb
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 16:00:12 2015 -0500
+
+    hopefully fixed travis yml
+
+commit d7fdf177c2371ff95e9a26cc426f84625db49ada
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 15:55:24 2015 -0500
+
+    hopefully fixed travis.yml
+
+commit e954eb02b024b22f9a05f3b267eecf16f090177c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 15:54:57 2015 -0500
+
+    resolved #104
+
+commit 3ca74081cdcbb197478996631201894c0c38d7b4
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 15:42:53 2015 -0500
+
+    adjusting player and game default rows
+
+commit 303e5a624ae13bff6ed4a9ea5c7e4df6b9dd407d
+Merge: 6713f2b 653f4bd
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 15:39:27 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 6713f2b6c247ec550efe790a7daf2493927876c9
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 15:39:14 2015 -0500
+
+    setting tables to display 15 rows + 1 header row
+
+commit 653f4bdcdd1cb07e3ad9b9780ffd0e8a5d7fdcc4
+Merge: af4ef95 136f59c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 15:22:01 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit 136f59c5edf6006f640f5d9168eca656f67651d9
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 15:21:05 2015 -0500
+
+    resolved #113
+
+commit af4ef957058e6f051b40f967238d2f1b7978819e
+Merge: ff907a9 e9bd0ef
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 15:18:18 2015 -0500
+
+    Merge branch 'dev' of https://github.com/jrpeden/cs373-idb into dev
+
+commit ff907a9796fa031539dec1def295d496502b6d47
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 15:18:07 2015 -0500
+
+    fixed spacing in game citations
+
+commit e9bd0ef8e457b8544192d6a67860a5b11c5ae0df
+Merge: 2fa3ad6 5c47ce7
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 14 15:12:37 2015 -0500
+
+    Merge branch 'dev' of https://github.com/jrpeden/cs373-idb into dev
+
+commit 2fa3ad61f78b9760a1e9433718d67a9e580b8fac
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 14 15:12:24 2015 -0500
+
+    Update UML
+
+commit 5c47ce707425c78c2ebdabff79aae98797ab19fb
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 15:09:54 2015 -0500
+
+    done #121
+
+commit cae7db06bb77e9bf55ff00852e03fb29393cb0d0
+Merge: 0cca0be 467f240
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 14:58:28 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 0cca0beaee74bcb5ea59b720a425f9748d30318a
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 14:58:06 2015 -0500
+
+    resolved #122
+
+commit 467f2402851b3058ddaf053f80ec755775c3d3d9
+Merge: 5446b0d f059514
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 14:47:45 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit f059514aa2f54b3a3ba6d1eb0edb17b6c12ac13f
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 14:47:24 2015 -0500
+
+    resolved #109
+
+commit 5446b0d0124dc476aa8114ea9ca69311940a8dde
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 13:43:46 2015 -0500
+
+    closes #119
+
+commit df55258c90e8fc1eb4805d29f8bfafdfa32a8f90
+Merge: cb5678c fb37907
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 13:40:38 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit cb5678c5f63f2cf1d8b3bdcc61be1900b8be90c1
+Author: John Peden <john.peden@utexas.edu>
+Date:   Tue Jul 14 13:40:01 2015 -0500
+
+    closes #111
+
+commit 9fbdae7db940b5ae4b1524c4a24541715d7f6223
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 13:37:19 2015 -0500
+
+    updated travis.yml
+
+commit 3d8f5e4854b7f63c5b87e9ca587aca8647cc796b
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 14 13:34:21 2015 -0500
+
+    installing mysql-server 5.5 might fix issue.
+
+commit fb37907e257c41756b884ce7d0013fd2a4e0592a
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 14 11:19:57 2015 -0500
+
+    Reorganized file structure. Updated UML.pdf. Closes 67. Closes 87.
+
+commit 630fab83aa9c6ad616c0bf2db3c2637ee0dac221
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Tue Jul 14 11:14:53 2015 -0500
+
+    UML.txt contains input for yuml.me
+
+commit a5b4c371052005d91e2643592a12c23d5ea5d23c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 20:22:22 2015 -0500
+
+    messing with background images
+
+commit 0a6718809935d7f4340b63385ff23180c93d0e51
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 00:48:03 2015 +0000
+
+    updating Trail Blazers filename
+
+commit ce5188d0d35d0de64670dc468e82a941b2581706
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 19:43:43 2015 -0500
+
+    moving back folder to fix casings
+
+commit 615e4e357885e173b2cbf2bf5b37b8dd83c160bb
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 19:43:14 2015 -0500
+
+    fixing casing on files
+
+commit a77ea215cb0cc3d0acc7aef9875b44a3c13f118a
+Merge: c3ba2de c16ffdb
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 19:23:07 2015 -0500
+
+    Merge branch 'dev' of github.com:jrpeden/cs373-idb into dev
+
+commit c3ba2de95dfa1cafa65bc4dd1969f063f7471278
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 19:19:25 2015 -0500
+
+    resolved #117
+
+commit c16ffdb1626460f0d596bd55cacbcf592109afd8
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 19:02:43 2015 -0500
+
+    date string to int
+
+commit d5dad4b1a1ea36e8311b8acb42b75d84e6a887a8
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 18:57:17 2015 -0500
+
+    date string to int
+
+commit 47d823f663e4e3d7951ceb52684418ab8f2509db
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 18:53:11 2015 -0500
+
+    changed game varchar to int
+
+commit 53da68d64b22ac8152dd66283d648bed9d510426
+Merge: 3b89ddb a5d2378
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 18:48:54 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 3b89ddbb6242089862fc3196e9507b558c22fa41
+Merge: 3786678 7784519
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 18:48:18 2015 -0500
+
+    Merge branch 'perry' of https://github.com/jrpeden/cs373-idb into perry
+
+commit 3786678d786d96724e4ee38e66a0a52a61174707
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 18:48:03 2015 -0500
+
+    changed date to int
+
+commit d1a40e7b20cc91277925eb299eb43aab0ec42ba2
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jul 13 18:47:39 2015 -0500
+
+    changed date to int
+
+commit a5d2378d5faf0313d3cfeab51f4187ea08399ca8
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 18:15:36 2015 -0500
+
+    closes #107, closes #101
+
+commit 41b31c24c33147427c75cbcb73a4f46bdeaab214
+Merge: 660540c 101cfd7
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 18:10:01 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 660540c3760a45cac47e7d0576113e91f7558fd5
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 18:09:43 2015 -0500
+
+    work in progress
+
+commit ace20e1f143faa5383f27e7783a82af42cb0795f
+Merge: 0cc7415 101cfd7
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 18:09:19 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit 101cfd7f836491a22453f68088f39e05719236e9
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Mon Jul 13 18:07:25 2015 -0500
+
+    Added home_team google_maps url to game data object under game.google_maps
+
+commit 0cc74154d18881f1a649a95212235b4f3053d7ee
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 17:58:43 2015 -0500
+
+    removing old static files
+
+commit 101566f479bd0ff26209a23241d5dd2e8f9f597d
+Merge: 4565b91 ebf40d1
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:58:36 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 4565b9119eb42b1af4f999d0dffca5dccc3d6bb7
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:58:21 2015 -0500
+
+    small changes
+
+commit ebf40d1b3cf8aafd7ae33fb33a352536051ea1c7
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Mon Jul 13 17:57:58 2015 -0500
+
+    Updated roster to serialize the list of player objects to fit JSON reqs
+
+commit 85118900bb10b22821bd46ee67ac481b6fcef355
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:57:28 2015 -0500
+
+    small fix
+
+commit 217e15a1b2bf8939ebb1cb9320914ce8cd3ff86e
+Merge: 79193f9 b239d63
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:53:27 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 79193f9d658830531496aa2b398cd6c4143de88f
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:53:07 2015 -0500
+
+    work in progress
+
+commit b61e8ed0a15ef02ef9da57e840f274a15f1ef96d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 17:51:52 2015 -0500
+
+    lowering file size for image
+
+commit b239d634dda1fb711d59f51066b52524bde80a2d
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Mon Jul 13 17:51:09 2015 -0500
+
+    Updated game view to include roster.home and roster.away
+
+commit 9738e4dcd3d5018655f9e1b8e0d6d9eced5c735c
+Merge: 2fe0e94 5907fc4
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:40:48 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 5907fc437050415f76f13e1ca981f825e1081568
+Merge: 50a2b7e 19044df
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 17:40:18 2015 -0500
+
+    Merge branch 'brandong' into dev
+
+commit 19044dfd7804e99e9d9ab8e48b2db8a50061f44c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 17:39:44 2015 -0500
+
+    finishing touches to api calls
+
+commit 4faa13b78a4f74b8feab05096a32d214f28a119c
+Merge: f128111 4b95414
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 17:20:49 2015 -0500
+
+    Merge branch 'api_imp' into brandong
+
+commit f128111255a5fb0c8ee179b44926bee4ec57fb3d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 17:20:22 2015 -0500
+
+    updating init
+
+commit 2fe0e94c50114cb96a02a65da1aaf27cafa17daf
+Merge: f6aa72a 4b95414
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:18:20 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit f6aa72ae56182d91c7d8d478d2c5dbb6e1668496
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:14:04 2015 -0500
+
+    work in progress on date format
+
+commit 4b954143b53124e1627825b3ad096d89a98b7c8c
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Mon Jul 13 17:09:43 2015 -0500
+
+    Updated api with three custom targets player/view, team/view, game/view
+
+commit 48faceab9de37ed18146acb8e79e137d03ab503f
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 17:07:47 2015 -0500
+
+    adjusting for incoming API changes
+
+commit 7784519f8bebdebc1db1ceee6b263c98f6dfcacb
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 21:49:39 2015 +0000
+
+    hopefully fixed travis ci issue
+
+commit 50a2b7ef1e59fc0252548bed941e2b22b9638481
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 16:44:14 2015 -0500
+
+    resolved #103
+
+commit dec828bf5466ea263f65f1e7d5035bd71097e087
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 21:37:23 2015 +0000
+
+    hopefully fixed travis ci issue
+
+commit c86a4ece89a1fbfb26cad8a1fea1d68a74307c9f
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 21:32:01 2015 +0000
+
+    hopefully fixed travis ci issue
+
+commit b7657280b6f0d8d57a8ef3eef31fb9387777cfcf
+Merge: 10bf796 25228a6
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jul 13 16:10:14 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit f7f5977a8777d6c5fd3e6529d6a7554bf0b5e50d
+Author: John Peden <john.peden@utexas.edu>
+Date:   Mon Jul 13 15:30:17 2015 -0500
+
+    resolved #102
+
+commit 25228a64f134597533134bb65b5c5a67b0c74176
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 12 21:15:42 2015 -0500
+
+    dynmic content done, except for work that requires backend implementation
+
+commit 3b931e21809ad1e55066e12506dcf57296dfd576
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 12 19:26:22 2015 -0500
+
+    individual player page done
+
+commit 66cfba33166d57e3dbfbfe47fc558b5bb6ad2b05
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 12 18:26:04 2015 -0500
+
+    table populate and link now, plus some individual page work
+
+commit 32725f14116295e769b66bf3417c12421103b0ae
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 12 18:25:24 2015 -0500
+
+    fixing typo from .sumps to .dumps
+
+commit 485853dc601928ccc4467c917798c04eb39b439f
+Merge: 037fe64 303ee35
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 12 12:54:01 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit 037fe64746a6405af04538b3b840a8757d604245
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sun Jul 12 12:53:06 2015 -0500
+
+    working on dynamic serving
+
+commit 303ee35f648245c032f9310da3d92e40a6030a7f
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sun Jul 12 10:58:51 2015 -0500
+
+    All API endpoints are routing to handlers. All handlers have been implemented.
+
+commit a6029f31eae5be63869d067c4ce150a5f5341b02
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sun Jul 12 10:15:52 2015 -0500
+
+    Fixed issue with serialization of Team.players object in Team model.
+
+commit 54178a5aa9c73b2f0fe0145b9b3303bbfc3c86b6
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sun Jul 12 10:15:21 2015 -0500
+
+    Added handlers for all API Endpoints
+
+commit 9bd04432942eddff554fcae1695bcca7f308a6af
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sun Jul 12 09:34:39 2015 -0500
+
+    Fixed issue with sorting of game schedule in player request_by_id
+
+commit 6a7848fe43d97c25f4417af22e5479f1252d7ad7
+Merge: d82bf0a 11684b0
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sun Jul 12 08:02:45 2015 -0500
+
+    Merge branch 'dev' into api_imp
+
+commit 10bf796451c7a3ef31a0224165a1ca204436e65e
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jul 11 19:25:59 2015 -0500
+
+    added fav icon resolved #95
+
+commit 11684b015b456f789bcf2ff12d52718430c349ae
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Sat Jul 11 19:22:20 2015 -0500
+
+    edited watchToEmbedYoutube.py
+
+commit 90a69fb98f3cf3c8e2b33c2771bde0dabfb5d1b9
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Sat Jul 11 19:14:10 2015 -0500
+
+    tests.py now working
+
+commit d82bf0ae54b4b5b1742c953116d36a660a903277
+Merge: e438d53 b9c231c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jul 11 18:53:39 2015 -0500
+
+    Merge branch 'api_imp' into brandong
+
+commit e438d53000454febfd47233bb2a6a174ff19ebc7
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jul 11 18:52:38 2015 -0500
+
+    cleaning up JS plugins
+
+commit 20133f13825169a3561fe3ebbb768ef38a6b3226
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Sat Jul 11 18:18:49 2015 -0500
+
+    updated tests.py, not tested yet.
+
+commit bc686be1bbc693bb34ed2964cef7296a7b92689d
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Sat Jul 11 18:00:17 2015 -0500
+
+    updated populate, now includes google_maps
+
+commit d361272219ec2b65db4397d056e303505baf5f09
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Sat Jul 11 17:45:03 2015 -0500
+
+    updated models
+
+commit 532e7e7c3ea614192f0d926d683caedcdbaa6e20
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sat Jul 11 17:22:05 2015 -0500
+
+    added google maps and  changed watch to embed
+
+commit b9c231c5aeb9e3d75659dcdbf42e05d4b0865712
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:59:09 2015 -0500
+
+    Updated the schedule attribute of player to sort the schedule
+
+commit acbc030fb85adfca62c866be00ef24d74ed76128
+Merge: 15e6031 f3ac59f
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:52:04 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit f3ac59f7a2558977de7b00b2199c8d4d52d4152a
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:51:32 2015 -0500
+
+    Updated current_team -> team_name. Using foreign key to seach Game database properly
+
+commit 15e6031ea2afe94fbe5ab8b05658163e7c66fc81
+Merge: 14a1737 0c3f554
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:49:12 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit 0c3f5544c53505078c444d2ae5dbb5991c9bc1e5
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:46:21 2015 -0500
+
+    Added model qualifier to SQL Query request
+
+commit 14a173718390ab9c4976d062550af0adef8a932e
+Merge: bdddf64 d05c478
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:40:38 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit d05c4787c8c63e8db722cc42f20648fd25370413
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:40:20 2015 -0500
+
+    Updated import
+
+commit bdddf648b07db16869ab7ab2f39f3edcf91a322f
+Merge: 10ffe9f 96dd356
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:37:26 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit 96dd3568d6c306cb928dca15799bbd00c754b3cc
+Merge: 627ad09 13d4daf
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:36:39 2015 -0500
+
+    Merge branch 'api_imp' of https://github.com/jrpeden/cs373-idb into api_imp
+
+commit 627ad092c73575eb4abfa89b3d423ba316b8744a
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:36:27 2015 -0500
+
+    Added or_ and and_ as imports from SQLAlchemy, because apparently that's a thing.
+
+commit 10ffe9f14be144c2cffc456e18a0d59bed392872
+Merge: 8cfc21f 13d4daf
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:34:17 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit 13d4daf773a5e772f9ebd24baa88cab986119f69
+Merge: c604f79 fcd96c3
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:32:19 2015 -0500
+
+    Merge branch 'api_imp' of https://github.com/jrpeden/cs373-idb into api_imp
+
+commit fcd96c3a9b38bd5c904366ca57b3a9fd4562c6fe
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:31:48 2015 -0500
+
+    Fixed _or -> or_
+
+commit 8cfc21f705be8392749ae3065736fff88788dbc5
+Merge: 32e61f7 c604f79
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:30:02 2015 -0500
+
+    Merge branch 'api_imp' into jack
+
+commit c604f797c777e8f127f9e6f8d9dea16facc3506f
+Merge: a76dd41 b489e45
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:29:24 2015 -0500
+
+    Merge branch 'api_imp' of https://github.com/jrpeden/cs373-idb into api_imp
+
+commit 32e61f771e7dc9b471e519ed5a08e217b7fab08d
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 16:29:03 2015 -0500
+
+    adding dynamic serving
+
+commit b489e4594a96827ea155d0f01fd128b9700ace6e
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:28:44 2015 -0500
+
+    Added games schedule to the player object that is returned from API
+
+commit 1e63c81fbae49d82eee381ccf097fcb2976a3ef4
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 16:11:51 2015 -0500
+
+    Updated back end to return sets of objects for iterables
+
+commit a76dd41940bb670105e4b7005b203265e1dd8a6a
+Merge: 33bb59d 8f8fd6b
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 15:54:24 2015 -0500
+
+    Merge branch 'api_imp' of https://github.com/jrpeden/cs373-idb into api_imp
+
+commit 8f8fd6bb995612ef62f304f959126761034dd42f
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 15:51:24 2015 -0500
+
+    Controller updates to handle incoming json data. Brandon/Jack
+
+commit 1b85fc9cf935d07b957c6c27824d79cacff0abaf
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Sat Jul 11 15:50:26 2015 -0500
+
+    Updated backend to serve json data properly.
+
+commit 33bb59de31bd03610ee3a81cb63375e7d90cab0c
+Merge: 6d84226 51b1d5d
+Author: John Peden <john.peden@utexas.edu>
+Date:   Sat Jul 11 15:39:37 2015 -0500
+
+    Merge branch 'api_imp' of https://github.com/jrpeden/cs373-idb into api_imp
+
+commit 51b1d5d71c7a0e173b14d2f8eea93fbe42042ec3
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jul 11 13:25:55 2015 -0500
+
+    testing
+
+commit 6e647137886940373173c9caa9cfc1fcb0a1b973
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jul 11 13:13:48 2015 -0500
+
+    Test commit for user name change again
+
+commit ea7b64040b248ea2d19a2cb4aab7015256f4ba8b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jul 11 13:11:52 2015 -0500
+
+    Test commit for user name change
+
+commit 0d008d8e9fed5cc718d14cd31ffd405f2a222099
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sat Jul 11 11:42:47 2015 -0500
+
+    Updated files but no real changes, still not working currently because of cicular dependencies
+
+commit 743bdcce7fc944b9261a0b4280adf3a2fdee48ce
+Merge: f2ee9f8 4eefd44
+Author: Josh Tiras <tiras.j@gmail.com>
+Date:   Sat Jul 11 09:53:58 2015 -0500
+
+    Merge branch 'perry' into api_imp
+
+commit 4eefd448350a185ab917a7d6a9e310077194a4b0
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 20:22:28 2015 -0500
+
+    removed a print in populateDB
+
+commit f2ee9f8801a5752effa930628b25d38f87ae6900
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 10 18:51:26 2015 -0500
+
+    Added some more skeleton logic. This will be moved to the new API Logic file soon
+
+commit 4403bb99d3d8fad851ada182d623b93e32a1149a
+Merge: 5713d2a 037c812
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 18:05:42 2015 -0500
+
+    Merge branch 'perry' into dev
+
+commit 037c812f711b8e228c41a8d440f96a6b5e471729
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 18:05:25 2015 -0500
+
+    tests.py now passing. fixed.
+
+commit 6d84226c42cb625b10f65e87ab49a13eb5016e45
+Merge: bd048c2 5713d2a
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 10 17:40:07 2015 -0500
+
+    Merge branch 'dev' into api_imp
+
+commit bd048c224202c270146f7379dfbcda2a80e90f5e
+Author: tiras-j <joshua.tiras@utexas.edu>
+Date:   Fri Jul 10 17:17:50 2015 -0500
+
+    Updated with some api logic. Still need to determin SQLAlchemy's interface for queries and what type of objects are returned
+
+commit 5713d2a6ec0c660a2e6a6c70db66de749224a82e
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 10 16:54:40 2015 -0500
+
+    fixed typo that broke splash page logo
+
+commit 1168bf23fb8c4523ddadb49a3ccea2fe2be0e7c5
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 10 16:00:28 2015 -0500
+
+    finished bracketization for game and player templates #82
+
+commit ec66714e5ce599450a97c2484a24aada4eafdaf7
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 09:03:05 2015 -0500
+
+    finished populateDB.py. run populateDB.py to populate database. populating database takes time.
+
+commit 85c5448e05d727ee8775952389003ab37cc023b6
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 08:01:23 2015 -0500
+
+    a lot of db stuff done
+
+commit a1ce0427dcdd2e719c3735c3d05ca773f8121a77
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 06:55:55 2015 -0500
+
+    finished populating database with team and players.
+
+commit 1ef452655e6e7d1974be6a250afe7429133fad5e
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 06:53:20 2015 -0500
+
+    updated nba_player_data chris babb only guy who didn't play in the nba
+
+commit 5595ef2d6d9ad58a8243cdd94102f04029348603
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 10 06:10:57 2015 -0500
+
+    edited nba_teams_data.json
+
+commit cc28e475d8a02c678139eac4a4cb6f5108ea4964
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 10 06:27:36 2015 -0500
+
+    added db stuff
+
+commit 97befdea5c0c0841557ef3b13a7c6125318127c2
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 10 03:42:10 2015 -0500
+
+    fixed bg images.
+
+commit 0ee6911185b8ddceb6b477cbf5276c9e185ddbb0
+Merge: aa677c5 c2aa525
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 10 03:38:50 2015 -0500
+
+    Merge branch 'perry' into dev
+
+commit c2aa52530fd4dbde54d6c9d0be2b9911fdd168bd
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 10 03:28:39 2015 -0500
+
+    fixed bg images
+
+commit aa677c594aed27a38f46574096b6ad62a3d6e621
+Merge: 03e0eb5 db4d00b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jul 10 02:29:37 2015 -0500
+
+    Merge branch 'movie_hp' into dev
+
+commit db4d00b4a88c9be652242e576daa99fa9ffac855
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jul 10 02:29:11 2015 -0500
+
+    adding some spice to this shiznet
+
+commit 03e0eb52912f75936568048c238573f4e34cafbf
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 10 01:58:03 2015 -0500
+
+    pretified nbagames_highlights.json
+
+commit c47a191221aa309dffb59cbb675270c8a264286b
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 10 01:54:20 2015 -0500
+
+    fixed nbaTeams json. added youtube highlights to every game, put that into a new file called nbaGames_highlights.json, same info as nbaGames.json but now has youtube_links added to it.
+
+commit 501d18cee160885893b8f2000e331347f4c2b4c6
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 21:36:18 2015 -0500
+
+    resolved #85
+
+commit a1793570db15f7eb29ce8a1ae285a48d07ecf376
+Merge: f65f8dc 304f494
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 20:55:22 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit f65f8dc5884964b8299e0ac673d574adb934a0f2
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 20:54:26 2015 -0500
+
+    working on pulling teams dynamically
+
+commit 304f494ce9d27ac5082d445d7dac97d615ffa7d6
+Merge: 82e4ebf 4638cf2
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 19:46:42 2015 -0500
+
+    Merge branch 'perry' into dev
+
+commit 4638cf292c32e77832ce4eb5f05d6fbd2a480fb8
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 19:45:51 2015 -0500
+
+    prettified nba players json
+
+commit 82e4ebf199aafab741be4181cfac239428172bc4
+Merge: 2921801 783856b
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 19:19:00 2015 -0500
+
+    Merge branch 'perry' into dev
+
+commit 783856b3e4cdb5998f5f4aee7b02d7fd12de00a3
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 19:16:45 2015 -0500
+
+    updated nba_players_data and nba_teams with citation
+
+commit 38f101c93ea3f7f2e33a85682ff1ba1ccd57cbd4
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 18:57:15 2015 -0500
+
+    added user bg image, and espnscraper.py
+
+commit fef950cb52b8fe9ff66330228014c875420a5845
+Merge: 4d461e9 2921801
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 17:20:16 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit 292180194879ba349c79021547f758d70ac9929b
+Merge: 4d44380 4aff834
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 17:19:48 2015 -0500
+
+    Merge branch 'jack' into dev
+
+commit 4d461e9039a81fe1d0354f8cba02db77bb16d516
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 17:13:04 2015 -0500
+
+    creating routes for dynamic templates
+
+commit 4d44380fffe8fff70d542f50386072bdf0c059c2
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 16:34:43 2015 -0500
+
+    merging with dev
+
+commit 664672c1c4dd317f80eb3df6a3a1ad19c2df2a40
+Merge: 8a9d2d0 e1716d8
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 16:32:36 2015 -0500
+
+    Merge branch 'dev' into brandong
+
+commit 4aff83441df8f64c67c883f5838fbeb56497526a
+Author: John Peden <john.peden@utexas.edu>
+Date:   Thu Jul 9 16:04:19 2015 -0500
+
+    empty files for dynamic shift plus filled player-detail #82
+
+commit 68888508d4d9f1f14e3dfccdf83e034902119d13
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Thu Jul 9 15:24:37 2015 -0500
+
+    added citation for teams.
+
+commit e2ed5b66edba416e961f9f27f83e790177287053
+Merge: 9a69ec4 65d9f71
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Thu Jul 9 15:02:53 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 9a69ec4a09f189c5dbcbb12778c9f698733d4acc
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Thu Jul 9 15:02:13 2015 -0500
+
+    changed youtube links to embed.
+
+commit e1716d874c4dfa55d2552320d1359cce39561beb
+Merge: 4b3ae43 e2ed5b6
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 14:48:13 2015 -0500
+
+    Merge branch 'dev' into zach
+
+commit 4b3ae433d7d9e51601efb0f15b54d523833e3b53
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 14:47:39 2015 -0500
+
+    Navbar: home button closes expanded navbar as well now
+
+commit 8a9d2d0e13a059a9d523fc31dee5f85072f9d809
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 14:43:03 2015 -0500
+
+    segmented teams table into respective controller
+
+commit 65d9f7140ae4d42bf4eb3a0c0b45e4e3ec3b35b6
+Merge: ee9de6c 40566bc
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 14:42:29 2015 -0500
+
+    Merge branch 'dev' into zach
+
+commit ee9de6c9558862ee04d30472f5a944df0f645495
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 14:41:50 2015 -0500
+
+    navbar automatically closes on selection. close 79
+
+commit d4eb0a8446362080ef4791782f5eb044dad49567
+Merge: 63febc5 40566bc
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Thu Jul 9 14:34:07 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 63febc52abd86a1f44636bea2f222c8e7e49f981
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Thu Jul 9 14:33:45 2015 -0500
+
+    finish tests.py
+
+commit c65f949b932a12225e1ac057a03ae607f348ce00
+Merge: 6ef7c04 40566bc
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 14:29:18 2015 -0500
+
+    merging with dev
+
+commit 57571a393a153e828bab940064513d5c56787838
+Merge: 42b4afc d71dc6d
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Thu Jul 9 14:19:21 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 40566bcd9fc522f86aa1e35a8f702b6d16fec03b
+Merge: 2d8e8bd d71dc6d
+Author: John Peden <john.peden@utexas.edu>
+Date:   Thu Jul 9 14:13:32 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit 2d8e8bd9ca9e33a3ae6e1c93d9613a102209c43c
+Author: John Peden <john.peden@utexas.edu>
+Date:   Thu Jul 9 14:13:08 2015 -0500
+
+    added pagination to all three tables
+
+commit 6ef7c048c84a75ee152e20c201775ddbbcd88dbb
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 14:04:34 2015 -0500
+
+    resolved #75
+
+commit 4ff7015a97dd2e6a830acd85bd6def0cfc6f9a2e
+Merge: 360d415 d71dc6d
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 14:00:35 2015 -0500
+
+    Merge branch 'dev' into zach
+
+commit d71dc6dcf50a243847fe3743b4332478e2d2f634
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 14:00:10 2015 -0500
+
+    Update navbar to remove dropdown close 70 close 72
+
+commit 42b4afc135ebf2121d1e4ae932e780528161f150
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 13:59:12 2015 -0500
+
+    edited models.py for the indices
+
+commit e4929764397ab6945a31a610ebbda573cda88705
+Merge: fc99ede f15f260
+Author: John Peden <john.peden@utexas.edu>
+Date:   Thu Jul 9 13:55:38 2015 -0500
+
+    Merge branch 'dev' into jack
+
+commit fc99ede7be620dfe30956f53f5eea5fbccb8ff1f
+Author: John Peden <john.peden@utexas.edu>
+Date:   Thu Jul 9 13:54:50 2015 -0500
+
+    added pagination to player table
+
+commit 360d4150dfa6bb15c0921f3e02ef3ca11557c0ca
+Merge: 2440083 f15f260
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 13:53:53 2015 -0500
+
+    Merge branch 'dev' into zach
+
+commit 244008388567b17e22c34bd3acf1a44b59996716
+Author: okruhlik <ezokruhlik@gmail.com>
+Date:   Thu Jul 9 13:53:02 2015 -0500
+
+    Update navbar to remove dropdown close 71 close 72
+
+commit ebf6289a4d8fe85ee9894fc38b81b5959f87dadb
+Merge: 4f7c261 f15f260
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 9 13:51:27 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit f15f260237beabcf4d5896f200d376b8668f46a1
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 13:37:16 2015 -0500
+
+    moved templates folder. resolved #69
+
+commit 05e745fcc5d9b256908c6f51127a5ee04fe04f9b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 9 13:18:33 2015 -0500
+
+    removed static folder. resolved #65
+
+commit 4f7c261bc368b381834c5fea3f8c4916fcd98ce8
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Wed Jul 8 00:57:31 2015 -0500
+
+    trying again fix init.db
+
+commit 2faf1010f3a8aa1c9cf54e82ac196c9127825152
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Wed Jul 8 00:45:59 2015 -0500
+
+    trying to fix .travis.yml
+
+commit 9931b489cbf718a81e6b5c1cf6b0855a09e0c58e
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 21:35:21 2015 -0500
+
+    hopefully fixed mysql, yml
+
+commit 897172f6ffadf4d1c74e016c6d7c78fafe7555fd
+Merge: 45e2abf 78cfbda
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 21:20:39 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 45e2abf56cdbd107c3ac6043422e2ea647dbfb34
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Tue Jul 7 21:18:27 2015 -0500
+
+    fixed init bash file
+
+commit 85f776f1326f8952a91475bd5a902cc095021cd8
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 7 21:11:07 2015 -0500
+
+    adding log
+
 commit 398061e054d6d3a188dc5d73655ab430241cf445
 Author: Brandon Gottesman <brandon.gottesman@gmail.com>
 Date:   Tue Jul 7 21:09:47 2015 -0500
