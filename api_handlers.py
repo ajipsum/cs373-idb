@@ -44,6 +44,7 @@ def player_by_id_handler(id):
 def team_view_by_name_handler(tn):
     data = Team.query.filter_by(name = tn).first().serialize
     data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"], reverse=True)
+    data["players"] = sorted(data["players"], key=lambda k : k["name"])
     return json.dumps(data)
 
 def team_by_name_handler(tn):
@@ -74,7 +75,7 @@ def game_view_by_id_handler(id):
     home_team_obj = Team.query.filter_by(name = data["home_team"]).first()
     away_team_obj = Team.query.filter_by(name = data["away_team"]).first()
     data["citation"] = { "home" : home_team_obj.citation, "away" : away_team_obj.citation}
-    data["roster"] = { "home" : [i.serialize for i in home_team_obj.players], "away" : [i.serialize for i in away_team_obj.players]}
+    data["roster"] = { "home" : sorted([i.serialize for i in home_team_obj.players], key= lambda k: k['name']), "away" : sorted([i.serialize for i in away_team_obj.players], key= lambda k: k['name'])}
     data["google_maps"] = home_team_obj.google_maps
     return json.dumps(data)
 
