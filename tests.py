@@ -9,7 +9,7 @@ from urllib.request import urlopen
 class TestAPI (TestCase) :
     # app = Flask(__name__)
     
-    api_host = "http://127.0.0.1:5000/"
+    api_host = "http://api2k15.me/"
 
     @classmethod
     def setUpClass(models):
