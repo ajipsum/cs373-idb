@@ -1,4 +1,4 @@
-[Game|game_id (int);home_team (varchar(256));home_score (varchar(256));away_team (varchar(256));away_score (varchar(256));date (varchar(256));], 
+[Game|game_id (int);home_team (varchar(256));home_score (varchar(256));away_team (varchar(256));away_score (varchar(256));date (bigint);], 
 
 [Player|player_id (int);name (varchar(256));position (varchar(256));player_number (varchar(256));current_team (varchar(256));age (varchar(256));weight (varchar(256));], 
 
