@@ -1,4 +1,6 @@
 from __init__ import db_tests
+from sqlalchemy.dialects.mysql import BIGINT
+
 
 class Player(db_tests.Model):
   '''
@@ -98,7 +100,7 @@ class Game(db_tests.Model):
   id = db_tests.Column(db_tests.Integer, primary_key=True)
   home_team = db_tests.Column(db_tests.String(256))
   away_team = db_tests.Column(db_tests.String(256))
-  date = db_tests.Column(db_tests.Integer)
+  date = db_tests.Column(BIGINT(unsigned=True))
   home_score = db_tests.Column(db_tests.String(256))
   away_score = db_tests.Column(db_tests.String(256))
   home_box_fgm = db_tests.Column(db_tests.String(256))
