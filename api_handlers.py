@@ -30,7 +30,7 @@ def games_collection_handler(a):
 
 def player_view_by_id_handler(id):
     data = Player.query.filter_by(id = id).first().serialize
-    data["schedule"] = sorted(json.loads(team_schedule_handler(data["team_name"])), key=lambda k : k["date"])
+    data["schedule"] = sorted(json.loads(team_schedule_handler(data["team_name"])), key=lambda k : k["date"], reverse=True)
     data["google_maps"] = Team.query.filter_by(name = data["team_name"]).first().google_maps
     return json.dumps(data)
     
@@ -43,7 +43,7 @@ def player_by_id_handler(id):
 
 def team_view_by_name_handler(tn):
     data = Team.query.filter_by(name = tn).first().serialize
-    data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"])
+    data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"], reverse=True)
     return json.dumps(data)
 
 def team_by_name_handler(tn):
