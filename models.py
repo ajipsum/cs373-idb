@@ -7,6 +7,8 @@ class Player(db.Model):
   Information about player
   Information includes name, picture, position, player number, weight etc.
   '''
+
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   name = db.Column(db.String(256))
   picture = db.Column(db.String(256), unique=True)
@@ -128,6 +130,7 @@ class Team(db.Model):
   Information includes name, conference, division, site_name, city, state, mascot
   '''
 
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
   players = db. relationship('Player', backref='team', lazy='dynamic')
   name = db.Column(db.String(256), primary_key=True)
   conference = db.Column(db.String(256))
@@ -158,12 +161,12 @@ class Team(db.Model):
 
 team_game = db.Table('team_game',
   db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
+  db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
 player_game = db.Table('player_game',
   db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
+  db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
 class Game(db.Model):
@@ -172,6 +175,7 @@ class Game(db.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
+  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
