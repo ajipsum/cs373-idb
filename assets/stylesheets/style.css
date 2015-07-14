@@ -225,11 +225,15 @@ video#bgvid { transition: 1s opacity; }
 .teamRoster {
     margin: 20px 0;
     background-color: white;
+    height: 400px;
+    overflow: auto;
 }
 
 .teamGameLog {
     margin: 20px 0;
     background-color: white;
+    height: 400px;
+    overflow: auto;
 }
 
 .teamCitations {
