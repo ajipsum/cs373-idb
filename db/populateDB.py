@@ -5,6 +5,7 @@ from flask import Flask
 from __init__ import app, db
 import json
 import sys
+from sqlalchemy.dialects.mysql import BIGINT
 
 players = None
 teams = None
@@ -150,7 +151,7 @@ def populate():
                 game_entry = Game(
                         home_team = teams[str(game['home_id'])]['last_name'],
                         away_team = teams[str(game['away_id'])]['last_name'],
-                        date = game['date'],
+                        date = game['date'] * 1000,
                         home_score = game['home_score'],
                         away_score = game['away_score'],
                         home_box_fgm = home_team_stats['box_fgm'],

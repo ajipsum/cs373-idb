@@ -5,7 +5,7 @@ app.controller('TeamDetailCtrl', ['$scope', 'team', '$sce', function ($scope, te
 	$scope.conference=team.conference;
 	$scope.division=team.division;
 	$scope.playerObj=team.players;
-	$scope.gameObj='gameObj_from_json'; //not implemented yet
+	$scope.schedule=team.schedule;
 	$scope.teamMapSource=$sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" + team.google_maps);
 	$scope.teamCitation=team.citation;
 
