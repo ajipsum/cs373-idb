@@ -30,6 +30,7 @@ before_script:
     - sudo chmod +x init_db.sh
     - sudo ./init_db.sh
     - python3 createDB.py
+    - python3 tests.py
 script:
     - date
     - ls -al
