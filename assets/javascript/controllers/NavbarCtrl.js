@@ -7,12 +7,12 @@ app.controller('NavbarCtrl', function($scope, searchFactory){
         if ($scope.searchString !== '') {
             searchFactory.search($scope.searchString).then(
                 function(data) {
-                    $state.go('root.search', ('results': data.data.results, "query": searchString});
+                    $state.go('root.search', {'results': data.data.results, "query": searchString});
                 },
                 function(error) {
                     console.log(error)
                 }
-            };
+            );
         }
     }
 });

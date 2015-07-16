@@ -180,7 +180,7 @@ var app = angular.module('api2k15', [
             views: {
                 '@' : {
                     templateUrl: 'assets/templates/search/search.html',
-                    controller: 'SearchCtrl'
+                    controller: 'SearchCtrl',
                     params: {
                         results: null,
                         query: null
