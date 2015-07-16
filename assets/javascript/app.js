@@ -5,7 +5,7 @@ var app = angular.module('api2k15', [
     'ui.grid.pagination'   
 ])
 
-.constant('host', 'http://api2k15.me')
+.constant('host', 'http://127.0.0.1:5000')
 
 .run(function($rootScope, $state) {
     $rootScope.$on('$stateChangeSuccess', function() {
@@ -171,6 +171,19 @@ var app = angular.module('api2k15', [
                                 });
                             return deferred.promise;
                         }
+                    }
+                }
+            }
+        })
+        .state('root.search', {
+            url: "/search",
+            views: {
+                '@' : {
+                    templateUrl: 'assets/templates/search/search.html',
+                    controller: 'SearchCtrl'
+                    params: {
+                        results: null,
+                        query: null
                     }
                 }
             }
