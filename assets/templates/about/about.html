@@ -110,7 +110,8 @@
     <div class="container intro">
         <div class="featurette" id="services">
             <h1 class="featurette-heading">Unit Tests</h1>
-            <button onclick="javascript:buttonClicked();">Click here to run our unit tests!</button>
+            <button ng-click="buttonClicked(); showText=true">Click here to run our unit tests!</button>
+            <p class="errorbox" id="errorbox" ng-init="showText=false" ng-show="showText">You have not run any tests.</p>
         </div>
     </div>
     <div class="container intro">

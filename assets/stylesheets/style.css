@@ -80,6 +80,13 @@ video#bgvid { transition: 1s opacity; }
     background:rgba(255,130,28,.5)
 }
 
+/* About CSS */
+
+.errorbox {
+    height:200px;
+    overflow:auto;
+}
+
 
 /* Navbar CSS */
 

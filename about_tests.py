@@ -7,7 +7,6 @@ from io import StringIO
 def makeJSON():
 	
 	result = {}
-	result['message'] = "The command Completed Successfully"
 	suite = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
 	testStream = StringIO()
 	testStatus = unittest.TextTestRunner(stream=testStream, verbosity=2).run(suite)
