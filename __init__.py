@@ -3,6 +3,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 from flask.json import jsonify
 from flask import Flask, send_file, send_from_directory, safe_join, request, Response, abort
 from jinja2 import TemplateNotFound
+import about_tests
 
 app = Flask(__name__)
 
@@ -187,6 +188,10 @@ def games_by_site(site):
     This function will return all games played at a given arena.
     """
     return api_handlers.game_by_site_handler(site)
+
+@app.route('/unittestbutton')
+def test_results():
+    return about_tests.makeJSON()
 
 @app.route("/resources/search/<query>")
 def search(query):
