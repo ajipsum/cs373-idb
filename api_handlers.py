@@ -30,7 +30,7 @@ def games_collection_handler(a):
 
 def player_view_by_id_handler(id):
     data = Player.query.filter_by(id = id).first().serialize
-    data["schedule"] = sorted(json.loads(team_schedule_handler(data["team_name"])), key=lambda k : k["date"])
+    data["schedule"] = sorted(json.loads(team_schedule_handler(data["team_name"])), key=lambda k : k["date"], reverse=True)
     data["google_maps"] = Team.query.filter_by(name = data["team_name"]).first().google_maps
     return json.dumps(data)
     
@@ -43,7 +43,8 @@ def player_by_id_handler(id):
 
 def team_view_by_name_handler(tn):
     data = Team.query.filter_by(name = tn).first().serialize
-    data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"])
+    data["schedule"] = sorted(json.loads(team_schedule_handler(tn)), key=lambda k : k["date"], reverse=True)
+    data["players"] = sorted(data["players"], key=lambda k : k["name"])
     return json.dumps(data)
 
 def team_by_name_handler(tn):
@@ -74,7 +75,7 @@ def game_view_by_id_handler(id):
     home_team_obj = Team.query.filter_by(name = data["home_team"]).first()
     away_team_obj = Team.query.filter_by(name = data["away_team"]).first()
     data["citation"] = { "home" : home_team_obj.citation, "away" : away_team_obj.citation}
-    data["roster"] = { "home" : [i.serialize for i in home_team_obj.players], "away" : [i.serialize for i in away_team_obj.players]}
+    data["roster"] = { "home" : sorted([i.serialize for i in home_team_obj.players], key= lambda k: k['name']), "away" : sorted([i.serialize for i in away_team_obj.players], key= lambda k: k['name'])}
     data["google_maps"] = home_team_obj.google_maps
     return json.dumps(data)
 
@@ -99,6 +100,10 @@ def game_by_site_handler(site):
     site_team = Team.query.filter_by(site_name = site).first()
     return json.dumps([i.serialize for i in Game.query.filter_by(home_team = site_team.name).all()])
 
+# --------------
+# Search Handler
+# --------------
 
-
+def search_by_query(query):
+    return json.dumps({'results': query});
 

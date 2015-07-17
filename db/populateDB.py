@@ -76,6 +76,7 @@ def populate():
             player_current_team = 'Trail Blazers'
 
         player_entry = Player(
+                id = player['id'],
                 name = player_name,
                 picture = player['picture'],
                 experience_years = player['experience_years'],
@@ -149,6 +150,7 @@ def populate():
             # print("game id: " + game_id + "   home team " + str(game['home_id']) + "  away team: " + str(game['away_id']))
             if not home_team_stats == None:
                 game_entry = Game(
+                        id = game['id'],
                         home_team = teams[str(game['home_id'])]['last_name'],
                         away_team = teams[str(game['away_id'])]['last_name'],
                         date = game['date'] * 1000,

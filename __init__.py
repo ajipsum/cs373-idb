@@ -191,6 +191,10 @@ def games_by_site(site):
 def test_results():
     return about_tests.makeJSON()
 
+@app.route("/resources/search/<query>")
+def search(query):
+    return api_handlers.search_by_query(query)
+
 if __name__ == "__main__":
     app.debug = True
     app.run()

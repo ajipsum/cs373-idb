@@ -247,3 +247,10 @@ video#bgvid { transition: 1s opacity; }
     margin: 20px 0;
     padding: 3px 20px 20px;
 }
+
+
+/* Search CSS */
+
+.searchHeading {
+    background-color: white;
+}

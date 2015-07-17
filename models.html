@@ -90,7 +90,8 @@
 <p><strong>Attributes</strong></p>
 
 <ul>
-<li>name = db.Column(db.String(256), primary_key=True) - The player's name.</li>
+<li>id = db.Column(db.Integer, primary_key=True) - The id of the player</li>
+<li>name = db.Column(db.String(256)) - The player's name.</li>
 <li>picture = db.Column(db.String(256), unique=True) - A link to the player's picture.</li>
 <li>experience_years = db.Column(db.String(256))</li>
 <li>draft_info = db.Column(db.String(256))</li>
