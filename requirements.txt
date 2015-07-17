@@ -11,3 +11,6 @@ Flask-SQLAlchemy==2.0
 # Require PyMySQL for SQLAlchemy
 # connector for MySQL
 PyMySQL==0.6.6
+
+#Whoosh for search
+flask_whooshalchemy
