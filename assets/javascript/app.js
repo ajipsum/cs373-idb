@@ -5,7 +5,7 @@ var app = angular.module('api2k15', [
     'ui.grid.pagination'   
 ])
 
-.constant('host', 'http://api2k15.me')
+.constant('host', 'http://127.0.0.1:5000')
 
 .run(function($rootScope, $state) {
     $rootScope.$on('$stateChangeSuccess', function() {
