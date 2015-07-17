@@ -175,6 +175,19 @@ var app = angular.module('api2k15', [
                 }
             }
         })
+        .state('root.search', {
+            url: "/search?results&query",
+            views: {
+                '@' : {
+                    templateUrl: 'assets/templates/search/search.html',
+                    controller: 'SearchCtrl',
+                    params: {
+                        results: null,
+                        query: null
+                    }
+                }
+            }
+        })
         .state('root.about', {
             url: "/about",
             views : { 
