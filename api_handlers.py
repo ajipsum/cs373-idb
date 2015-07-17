@@ -100,6 +100,10 @@ def game_by_site_handler(site):
     site_team = Team.query.filter_by(site_name = site).first()
     return json.dumps([i.serialize for i in Game.query.filter_by(home_team = site_team.name).all()])
 
+# --------------
+# Search Handler
+# --------------
 
-
+def search_by_query(query):
+    return json.dumps({'results': query});
 

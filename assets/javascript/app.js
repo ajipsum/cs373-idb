@@ -176,7 +176,7 @@ var app = angular.module('api2k15', [
             }
         })
         .state('root.search', {
-            url: "/search",
+            url: "/search?results&query",
             views: {
                 '@' : {
                     templateUrl: 'assets/templates/search/search.html',
