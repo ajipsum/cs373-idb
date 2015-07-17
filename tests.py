@@ -9,7 +9,7 @@ from urllib.request import urlopen
 class TestAPI (TestCase) :
     # app = Flask(__name__)
     
-    host = "http://127.0.0.1:5000/"
+    api_host = "http://api2k15.me/"
 
     @classmethod
     def setUpClass(models):
@@ -88,7 +88,7 @@ class TestAPI (TestCase) :
          self.assertEqual(t.mascot, "Burnie")
 
     def test_RESTful_team(self):
-        url = urlopen(self.host + "resources/team/Heat")
+        url = urlopen(self.api_host + "resources/team/Heat")
         t = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
         self.assertEqual(t["name"], "Heat") 
         self.assertEqual(t["conference"], "East")
@@ -157,14 +157,14 @@ class TestAPI (TestCase) :
          self.assertEqual(p.weight, "250")
 
     def test_RESTful_player(self):
-        url = urlopen(self.host + "resources/player/341")
+        url = urlopen(self.api_host + "resources/player/341")
         p = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
-        self.assertEqual(p["name"], "Tim Duncan") 
-        self.assertEqual(p["position"], "PF")
-        self.assertEqual(p["player_number"], "21")
-        self.assertEqual(p["current_team"], "San Antonio Spurs")
-        self.assertEqual(p["age"], "39")
-        self.assertEqual(p["weight"], "250")
+        self.assertEqual(p["name"], "Phil Pressey") 
+        self.assertEqual(p["position"], "PG")
+        self.assertEqual(p["player_number"], "26")
+        self.assertEqual(p["current_team"], "Boston Celtics")
+        self.assertEqual(p["age"], "24")
+        self.assertEqual(p["weight"], "175")
 
 
     def test_game_create_1(self):
@@ -230,13 +230,13 @@ class TestAPI (TestCase) :
          self.assertEqual(g.date, 1420934400)
 
     def test_RESTful_game(self):
-        url = urlopen(self.host + "resources/game/1151")
+        url = urlopen(self.api_host + "resources/game/1151")
         g = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
-        self.assertEqual(g["home_team"], "Clippers") 
-        self.assertEqual(g["home_score"], "104")
+        self.assertEqual(g["home_team"], "Celtics") 
+        self.assertEqual(g["home_score"], "86")
         self.assertEqual(g["away_team"], "Heat")
-        self.assertEqual(g["away_score"], "90")
-        self.assertEqual(g["date"], 1420952400000)
+        self.assertEqual(g["away_score"], "93")
+        self.assertEqual(g["date"], 1427256000000)
 
 
     def test_player_game_create_1(self):
