@@ -1,25 +1,20 @@
 #!/usr/bin/env python3
 from flask.ext.sqlalchemy import SQLAlchemy
-from flask.json import jsonify
-from flask import Flask, send_file, send_from_directory, safe_join, request, Response, abort
+from flask import Flask, send_file, send_from_directory, safe_join
 from jinja2 import TemplateNotFound
-
 app = Flask(__name__)
 
 # Load config.py
 #app.config.from_object('config')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask'
-app.config['WHOOSH_BASE'] = 'path/to/whoosh/base'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
 db = SQLAlchemy(app)
 
 app_tests = Flask(__name__)
 app_tests.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
-app_tests.config['WHOOSH_BASE'] = 'path/to/whoosh/base'
 db_tests = SQLAlchemy(app_tests)
 
 
-import api_handlers
 
 # Allows for any URL to be handled by AngularJS
 # http://flask.pocoo.org/snippets/57/
@@ -45,40 +40,17 @@ def players_collection():
     on the provided request arguments (within the HTTP Request
     object). Optimally we will handle this async.
     """
-    if request.method == 'POST':
-        return 'Not yet implemented.'
+    pass
 
-    # GET request:
-    # So SQLAlchemy takes filter_by arguments for queries by dict,
-    # so we can simply unpack the request params and pass them along
-    # Since this isn't raw SQL we don't need to sanitize the request, 
-    # it'll be handled internally.
-    return api_handlers.players_collection_handler(request.args)
-
-
-@app.route('/resources/player/view/<id>')
-def player_view_by_id(id):
-    view = api_handlers.player_view_by_id_handler(id)
-    if view:
-        return view
-    else:
-        abort(404)
-
-@app.route('/resources/player/<id>')
-def player_by_id(id):
+@app.route('/resources/player/<name>')
+def player_by_name(name):
     """
     This function will query the database for a given player
     by name, and optionally will further filter the data 
     based on the provided attribute request arguments (HTTP request
     object).
     """
-    player_data = api_handlers.player_by_id_handler(id) 
-    resp = Response(player_data, status=200, mimetype='application/json')
-    if player_data:
-        return resp
-    else:
-        abort(404)
-
+    pass
 
 @app.route('/resources/teams', methods=['GET','POST'])
 def teams_collection():
@@ -86,19 +58,7 @@ def teams_collection():
     This function will query the database for all teams and 
     filter based on the provided HTTP Request arguments.
     """
-    if request.method == 'POST':
-        return 'Not yet implemented'
-
-    # GET
-    return api_handlers.teams_collection_handler(request.args)
-
-@app.route('/resources/team/view/<team_name>')
-def team_view_by_id(team_name):
-    view = api_handlers.team_view_by_name_handler(team_name)
-    if view:
-        return view
-    else:
-        abort(404)
+    pass
 
 @app.route('/resources/team/<team_name>')
 def team_by_name(team_name):
@@ -107,11 +67,7 @@ def team_by_name(team_name):
     the given team_name and will further filter that request 
     based on optional parameters in the HTTP request object.
     """
-    team_data = api_handlers.team_by_name_handler(team_name) 
-    if team_data:
-        return team_data
-    else:
-        abort(404)
+    pass
 
 @app.route('/resources/team/<team_name>/schedule')
 def team_schedule(team_name):
@@ -119,14 +75,7 @@ def team_schedule(team_name):
     This function will return the schedule of games played
     by the team given by team_name.
     """
-    # Requests all games filtered by home_team OR away_team 
-    # equal team_name. Done with SQLAlchemy filter(_or..
-
-    schedule = api_handlers.team_schedule_handler(team_name) 
-    if schedule:
-        return schedule
-    else:
-        abort(404)
+    pass
 
 @app.route('/resources/team/<team_name>/top_starters')
 def team_top_starters(team_name):
@@ -134,21 +83,21 @@ def team_top_starters(team_name):
     This function will return the top five players of given 
     team_name based on number of games started.
     """
-    return api_handlers.team_top_starters_handler(team_name)
+    pass
 
 @app.route('/resources/team/<team_name>/wins')
 def team_wins(team_name):
     """
     Returns the list of games won by team_name
     """
-    return api_handlers.team_wins_handler(team_name)
+    pass
 
 @app.route('/resources/team/<team_name>/losses')
 def team_losses(team_name):
     """
     Returns the list of games lost by team_name
     """
-    return api_handlers.team_losses_handler(team_name)
+    pass
 
 @app.route('/resources/games', methods=['GET','POST'])
 def games_collection():
@@ -156,41 +105,28 @@ def games_collection():
     This function will return all games, filtered by the parameters
     provided in the HTTP request object.
     """
-    return api_handlers.games_collection_handler(request.args)
-
-@app.route('/resources/game/view/<game_id>')
-def game_view_by_id(game_id):
-    view = api_handlers.game_view_by_id_handler(game_id)
-    if view:
-        return view
-    else:
-        abort(404)
+    pass
 
 @app.route('/resources/game/<game_id>')
 def game_by_id(game_id):
     """
     This function will return a game object by ID.
     """
-    return api_handlers.game_by_id_handler(game_id)
+    pass
 
-@app.route('/resources/game/month/<month_id>')
+@app.route('/resources/game/<month_id>')
 def games_by_month(month_id):
     """
     This function will return all games played in a given month.
     """
-    return api_handlers.game_by_month_handler(month_id)
+    pass
 
-
-@app.route('/resources/game/site/<site>')
+@app.route('/resources/game/<site>')
 def games_by_site(site):
     """
     This function will return all games played at a given arena.
     """
-    return api_handlers.game_by_site_handler(site)
-
-@app.route("/resources/search/<query>")
-def search(query):
-    return api_handlers.search_by_query(query)
+    pass
 
 if __name__ == "__main__":
     app.debug = True
