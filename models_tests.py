@@ -1,6 +1,5 @@
-from __init__ import db_tests
+from db_workaround import db_tests
 from sqlalchemy.dialects.mysql import BIGINT
-
 
 class Player(db_tests.Model):
   '''

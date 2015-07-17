@@ -1,3 +1,117 @@
+commit f7c988b891e1a73cb3ec7985e7881495d2d4d5c0
+Merge: 113a92e 5afd7d5
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 17 15:58:37 2015 -0500
+
+    merge fix from dev
+
+commit 5afd7d5a498f5e840c0c2267a2d2010246592a32
+Merge: 9cf04a7 2c46b8b
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 17 15:59:27 2015 -0500
+
+    Merge branch 'perry' of http://github.com/jrpeden/cs373-idb into perry
+
+commit 9cf04a71361d7c3404f0599fca1c6aafae1535c2
+Merge: 1545b00 fd32ea9
+Author: Perry - lazercorn <perry_feng@utexas.edu>
+Date:   Fri Jul 17 15:56:53 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 113a92e928458966425c1a365f47e5db30315783
+Author: John Peden <john.peden@utexas.edu>
+Date:   Fri Jul 17 15:55:31 2015 -0500
+
+    unit tests display on about page, controlled by button resolved #129
+
+commit 2c46b8b27c830e863fd9cc172c05dc1c6ab3e7fc
+Merge: 1545b00 fd32ea9
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 17 15:39:54 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit 1545b0092ee317e17ebd930bf19f6516e3a53821
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 17 15:37:05 2015 -0500
+
+    made player and game id static. reflected this in populateDB.py as well.
+
+commit 7fe51cd0e50c5edd57b278ab0131b4acab046f18
+Merge: 071cf61 2d6a38d
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Fri Jul 17 15:19:04 2015 -0500
+
+    Merge branch 'dev' into perry
+
+commit fd32ea91a7f0882519f0f93d1bad46c230af5e0c
+Merge: 3d9f8fc 2d6a38d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jul 17 15:05:15 2015 -0500
+
+    fixing conflicts
+
+commit 3d9f8fc45e13be9b3431ad7e0c9b4b905e6f6ab8
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jul 17 15:04:19 2015 -0500
+
+    initialization changes
+
+commit 2d6a38dff97cd125bfc634807cd07c5020cfc2d1
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jul 17 11:04:01 2015 -0500
+
+    shell for search API
+
+commit c09ad5e213d07f56211b1d3a7a7c44dc95909f9b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jul 17 11:02:31 2015 -0500
+
+    search front-end done
+
+commit 9086b30270408f11119f6ebe405a515154982976
+Author: John Peden <john.peden@utexas.edu>
+Date:   Thu Jul 16 17:42:44 2015 -0500
+
+    able to get unit test output on about page #129
+
+commit 071cf615940d9951347efa373eba59cf454df26f
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Thu Jul 16 16:31:01 2015 -0500
+
+    id
+
+commit 86060d3796f9718484c931d4f1dab8375a5361d5
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 16 16:08:38 2015 -0500
+
+    fixing 404 for jquery.min.map
+
+commit d55303acc26a19d34526cc7c106313398e90984c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 16 16:04:43 2015 -0500
+
+    fixing bugs
+
+commit 26cd6c1d1547ff7760356e6c0f329af0ad20bb06
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Thu Jul 16 15:50:30 2015 -0500
+
+    resolve #143
+
+commit 575c9f520cc17bf0e39ee6a0bbc94ca2d27940f6
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Wed Jul 15 00:29:54 2015 +0000
+
+    resolved  #127
+
+commit adbf2cf58f3c14b25489f3be23ac673d2d15f545
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jul 14 23:28:04 2015 +0000
+
+    resolved #114
+
 commit 3bfcacc5e22b16c29bf95d1e7222c51e733bdab3
 Author: Brandon Gottesman <brandon.gottesman@gmail.com>
 Date:   Tue Jul 14 23:27:13 2015 +0000

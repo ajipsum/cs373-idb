@@ -3,7 +3,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 from flask.json import jsonify
 from flask import Flask, send_file, send_from_directory, safe_join, request, Response, abort
 from jinja2 import TemplateNotFound
-import about_tests
+from tests import makeJSON
 
 app = Flask(__name__)
 
@@ -12,11 +12,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
 db = SQLAlchemy(app)
-
-app_tests = Flask(__name__)
-app_tests.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
-db_tests = SQLAlchemy(app_tests)
-
 
 import api_handlers
 
@@ -189,7 +184,7 @@ def games_by_site(site):
 
 @app.route('/unittestbutton')
 def test_results():
-    return about_tests.makeJSON()
+    return makeJSON()
 
 @app.route("/resources/search/<query>")
 def search(query):
