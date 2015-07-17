@@ -1,11 +1,16 @@
 from db_workaround import db_tests
 from sqlalchemy.dialects.mysql import BIGINT
+import flask.ext.whooshalchemy
 
 class Player(db_tests.Model):
   '''
   Information about player
   Information includes name, picture, position, player number, weight etc.
   '''
+
+  __searchable__ = ['id', 'name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name']  # these fields will be indexed by whoosh
+  # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
+                                         # StemmingAnalyzer if not specified
   id = db_tests.Column(db_tests.Integer, primary_key=True,unique=True,index=True)
   name = db_tests.Column(db_tests.String(256))
   picture = db_tests.Column(db_tests.String(256), unique=True)
@@ -68,6 +73,10 @@ class Team(db_tests.Model):
   Information about Team 
   Information includes name, conference, division, site_name, city, state, mascot
   '''
+
+  __searchable__ = ['name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps']  # these fields will be indexed by whoosh
+  # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
+                                         # StemmingAnalyzer if not specified
   players = db_tests.relationship('Player', backref='team', lazy='dynamic')
   name = db_tests.Column(db_tests.String(256), primary_key=True,unique=True,index=True)
   conference = db_tests.Column(db_tests.String(256))
@@ -97,6 +106,10 @@ class Game(db_tests.Model):
   Information about Game
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
+
+  __searchable__ = ['id', 'home_team', 'away_team', 'date', 'home_score', 'away_score']  # these fields will be indexed by whoosh
+  # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
+                                         # StemmingAnalyzer if not specified
   id = db_tests.Column(db_tests.Integer, primary_key=True)
   home_team = db_tests.Column(db_tests.String(256))
   away_team = db_tests.Column(db_tests.String(256))

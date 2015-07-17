@@ -1,5 +1,6 @@
 from __init__ import db
 from sqlalchemy.dialects.mysql import BIGINT
+import flask.ext.whooshalchemy
 
 
 class Player(db.Model):
@@ -7,6 +8,11 @@ class Player(db.Model):
   Information about player
   Information includes name, picture, position, player number, weight etc.
   '''
+
+  __searchable__ = ['id', 'name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name']  # these fields will be indexed by whoosh
+  # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
+                                         # StemmingAnalyzer if not specified
+
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   name = db.Column(db.String(256))
   picture = db.Column(db.String(256), unique=True)
@@ -129,6 +135,9 @@ class Team(db.Model):
   Information about Team 
   Information includes name, conference, division, site_name, city, state, mascot
   '''
+  __searchable__ = ['name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps']  # these fields will be indexed by whoosh
+  # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
+                                         # StemmingAnalyzer if not specified
   players = db. relationship('Player', backref='team', lazy='dynamic')
   name = db.Column(db.String(256), primary_key=True)
   conference = db.Column(db.String(256))
@@ -174,6 +183,10 @@ class Game(db.Model):
   Information about Game
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
+
+  __searchable__ = ['id', 'home_team', 'away_team', 'date', 'home_score', 'away_score']  # these fields will be indexed by whoosh
+  # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
+                                         # StemmingAnalyzer if not specified
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
