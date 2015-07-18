@@ -1,4 +1,4 @@
-from __init__ import db
+from __init__ import db, app
 from sqlalchemy.dialects.mysql import BIGINT
 import flask.ext.whooshalchemy
 
@@ -178,6 +178,7 @@ player_game = db.Table('player_game',
   db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
 )
 
+
 class Game(db.Model):
   '''
   Information about Game
@@ -281,3 +282,7 @@ class Game(db.Model):
   #many to many player game relationship
   player_game = db.relationship('Player', secondary=player_game,
     backref=db.backref('games', lazy='dynamic'))
+
+flask.ext.whooshalchemy.whoosh_index(app, Game)
+flask.ext.whooshalchemy.whoosh_index(app, Team)
+flask.ext.whooshalchemy.whoosh_index(app, Player)

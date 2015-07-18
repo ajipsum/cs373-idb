@@ -3,6 +3,7 @@ from sqlalchemy import or_, and_
 from models import Player, Team, Game
 import json
 import datetime
+import flask.ext.whooshalchemy
 
 # Purposely avoiding pulling in Flask modules here
 # in order to maintain some separation of concern
