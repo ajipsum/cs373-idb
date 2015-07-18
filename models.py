@@ -238,6 +238,7 @@ class Game(db.Model):
         "home_team" : self.home_team, 
         "away_team" : self.away_team, 
         "date" : self.date, 
+        "date_string": self.date_string,
         "home_score" : self.home_score, 
         "away_score" : self.away_score, 
         "home_box_fgm" : self.home_box_fgm, 
