@@ -83,7 +83,7 @@ video#bgvid { transition: 1s opacity; }
 /* About CSS */
 
 .errorbox {
-    height:200px;
+    height:150px;
     overflow:auto;
 }
 

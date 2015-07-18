@@ -184,13 +184,14 @@ class Game(db.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
-  __searchable__ = ['id', 'home_team', 'away_team', 'date', 'home_score', 'away_score']  # these fields will be indexed by whoosh
+  __searchable__ = ['id', 'home_team', 'away_team', 'date_string', 'home_score', 'away_score']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
   date = db.Column(BIGINT(unsigned=True))
+  date_string = db.Column(db.String(256))
   home_score = db.Column(db.String(256))
   away_score = db.Column(db.String(256))
   home_box_fgm = db.Column(db.String(256))

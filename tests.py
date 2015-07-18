@@ -1,10 +1,22 @@
 #!/usr/bin/env python3
-from unittest import TestCase, main
+from unittest import TestCase, main, TestLoader, TextTestRunner
 from models_tests import Player, Team, Game, player_game, team_game
+from flask.ext.sqlalchemy import SQLAlchemy
 from flask import Flask
-from __init__ import app, db_tests
+from db_workaround import db_tests
 import json
+from io import StringIO
 from urllib.request import urlopen
+
+def makeJSON():
+    
+    result = {}
+    suite = TestLoader().loadTestsFromTestCase(TestAPI)
+    testStream = StringIO()
+    testStatus = TextTestRunner(stream=testStream, verbosity=1).run(suite)
+    result['results'] = testStream.getvalue()
+    result['status'] = str(testStatus)
+    return json.dumps(result)
 
 class TestAPI (TestCase) :
     # app = Flask(__name__)

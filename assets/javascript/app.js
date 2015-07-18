@@ -23,6 +23,10 @@ var app = angular.module('api2k15', [
         .state('root', {
             url: '',
             abstract: true,
+            params: {
+                results: null,
+                query: null
+            },
             views: {
                 'navbar': {
                     templateUrl: 'assets/templates/shared/navbar.html',
@@ -176,15 +180,11 @@ var app = angular.module('api2k15', [
             }
         })
         .state('root.search', {
-            url: "/search?results&query",
+            url: "/search",
             views: {
                 '@' : {
                     templateUrl: 'assets/templates/search/search.html',
                     controller: 'SearchCtrl',
-                    params: {
-                        results: null,
-                        query: null
-                    }
                 }
             }
         })

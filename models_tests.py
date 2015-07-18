@@ -1,7 +1,6 @@
-from __init__ import db_tests
+from db_workaround import db_tests
 from sqlalchemy.dialects.mysql import BIGINT
 import flask.ext.whooshalchemy
-
 
 class Player(db_tests.Model):
   '''
@@ -108,13 +107,14 @@ class Game(db_tests.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
-  __searchable__ = ['id', 'home_team', 'away_team', 'date', 'home_score', 'away_score']  # these fields will be indexed by whoosh
+  __searchable__ = ['id', 'home_team', 'away_team', 'date_string', 'home_score', 'away_score']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
   id = db_tests.Column(db_tests.Integer, primary_key=True)
   home_team = db_tests.Column(db_tests.String(256))
   away_team = db_tests.Column(db_tests.String(256))
   date = db_tests.Column(BIGINT(unsigned=True))
+  date_string = db_tests.Column(db_tests.String(256))
   home_score = db_tests.Column(db_tests.String(256))
   away_score = db_tests.Column(db_tests.String(256))
   home_box_fgm = db_tests.Column(db_tests.String(256))
