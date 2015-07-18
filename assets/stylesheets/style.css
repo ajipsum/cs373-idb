@@ -253,4 +253,18 @@ video#bgvid { transition: 1s opacity; }
 
 .searchHeading {
     background-color: white;
+    border-radius: 5px;
+}
+
+.searchHeading h2 {
+    margin: 10px;
+}
+
+.searchResults {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.searchResults h3 {
+    margin: 10px;
 }

@@ -1,6 +1,16 @@
 app.controller('SearchCtrl', function($scope, $stateParams) {
-    console.log($stateParams);
+    console.log($stateParams['results']);
     $scope.results = $stateParams['results'];
     $scope.query = $stateParams['query'];
-    console.log($scope.results);
+    $scope.noResults = true;
+
+    if ($scope.results) {
+        $scope.noResults = ($scope.results.teams == 0) && ($scope.results.games == 0) && ($scope.results.players == 0);
+    } else {
+        $scope.results = {
+            "teams" : 0,
+            "players" : 0,
+            "games" : 0
+        }
+    }
 });
