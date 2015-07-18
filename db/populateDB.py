@@ -154,6 +154,7 @@ def populate():
                         home_team = teams[str(game['home_id'])]['last_name'],
                         away_team = teams[str(game['away_id'])]['last_name'],
                         date = game['date'] * 1000,
+                        date_string = game['date_string'],
                         home_score = game['home_score'],
                         away_score = game['away_score'],
                         home_box_fgm = home_team_stats['box_fgm'],
