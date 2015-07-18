@@ -7,6 +7,7 @@ app.controller('NavbarCtrl', function($scope, $state, searchFactory){
         if ($scope.searchString !== '') {
             searchFactory.search($scope.searchString).then(
                 function(data) {
+                    console.log(data);
                     $state.go('root.search', {"results": data.data.results, "query": $scope.searchString});
                 },
                 function(error) {
