@@ -105,5 +105,16 @@ def game_by_site_handler(site):
 # --------------
 
 def search_by_query(query):
-    return json.dumps({'results': query});
+    teams_result   = Team.query.whoosh_search(query)
+    games_result   = Game.query.whoosh_search(query)
+    players_result = Player.query.whoosh_search(query)
+
+    data = { 'results': {
+                'teams'   : [i.serialize for i in teams_result],
+                'games'   : [i.serialize for i in games_result],
+                'players' : [i.serialize for i in players_result]
+                }
+            }
+
+    return json.dumps(data);
 
