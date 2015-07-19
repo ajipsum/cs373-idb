@@ -106,10 +106,17 @@ def game_by_site_handler(site):
 
 def search_by_query(query):
     print("Hitting Search Query: " + query)
-    teams_result   = Team.query.whoosh_search(query)
-    games_result   = Game.query.whoosh_search(query)
-    players_result = Player.query.whoosh_search(query)
-    print("Team count: " + str(teams_result.count()))
+    # teams_result   = Team.query.whoosh_search(query)
+    # games_result   = Game.query.whoosh_search(query)
+    # players_result = Player.query.whoosh_search(query)
+    # Article.query.search(u'Finland').limit(5).all()
+    teams_result   = Team.query.search(query)
+    games_result   = Game.query.search(query)
+    players_result = Player.query.search(query)
+    # print("Team count: " + str(teams_result.count()))
+    print("game count: " + str(games_result.count()))
+    print("player count: " + str(players_result.count()))
+
 
     data = { 'results': {
                 'teams'   : [i.serialize for i in teams_result],
