@@ -1,16 +1,24 @@
 from __init__ import db, app
-from sqlalchemy.dialects.mysql import BIGINT
-import flask.ext.whooshalchemy
+from sqlalchemy.dialects.postgresql import BIGINT
+# import flask.ext.whooshalchemy
+from flask.ext.sqlalchemy import SQLAlchemy, BaseQuery
+from sqlalchemy_searchable import SearchQueryMixin
+from sqlalchemy_utils.types import TSVectorType
+from sqlalchemy_searchable import make_searchable
 
+make_searchable()
+
+class ArticleQuery(BaseQuery, SearchQueryMixin):
+    pass
 
 class Player(db.Model):
   '''
   Information about player
   Information includes name, picture, position, player number, weight etc.
   '''
-
-  __tablename__ = 'player'
-  __searchable__ = ['id', 'name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name']  # these fields will be indexed by whoosh
+  query_class = ArticleQuery
+  # __tablename__ = 'Player'
+  # __searchable__ = ['name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
 
@@ -68,7 +76,9 @@ class Player(db.Model):
   season_3PM_A = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
-  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+  search_vector = db.Column(TSVectorType('name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name'))
+
+  # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
 
   @property 
@@ -131,18 +141,19 @@ class Player(db.Model):
             }
 
 
-flask.ext.whooshalchemy.whoosh_index(app, Player)
+# flask.ext.whooshalchemy.whoosh_index(app, Player)
 
 class Team(db.Model):
   '''
   Information about Team 
   Information includes name, conference, division, site_name, city, state, mascot
   '''
-  __tablename__ = 'team'
-  __searchable__ = ['name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps']  # these fields will be indexed by whoosh
+  query_class = ArticleQuery
+  # __tablename__ = 'Team'
+  # __searchable__ = ['name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
-  players = db. relationship('Player', backref='team', lazy='dynamic')
+  players = db.relationship('Player', backref='team', lazy='dynamic')
   name = db.Column(db.String(256), primary_key=True)
   conference = db.Column(db.String(256))
   division = db.Column(db.String(256))
@@ -153,7 +164,9 @@ class Team(db.Model):
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   google_maps = db.Column(db.String(256))
-  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+  search_vector = db.Column(TSVectorType('name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps'))
+
+  # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
 
   @property
@@ -172,17 +185,17 @@ class Team(db.Model):
             "google_maps" : self.google_maps,
         }
 
-flask.ext.whooshalchemy.whoosh_index(app, Team)
+# flask.ext.whooshalchemy.whoosh_index(app, Team)
 
 
 team_game = db.Table('team_game',
   db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
+  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
 )
 
 player_game = db.Table('player_game',
   db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id')), mysql_engine='InnoDB', mysql_charset='utf8', mysql_row_format='dynamic'
+  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
 )
 
 class Game(db.Model):
@@ -190,14 +203,15 @@ class Game(db.Model):
   Information about Game
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
-  __tablename__ = 'game'
-  __searchable__ = ['id', 'home_team', 'away_team', 'date_string', 'home_score', 'away_score']  # these fields will be indexed by whoosh
+  query_class = ArticleQuery
+  # __tablename__ = 'Game'
+  # __searchable__ = ['home_team', 'away_team', 'date_string', 'home_score', 'away_score']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
   id = db.Column(db.Integer, primary_key=True,unique=True,index=True)
   home_team = db.Column(db.String(256))
   away_team = db.Column(db.String(256))
-  date = db.Column(BIGINT(unsigned=True))
+  date = db.Column(BIGINT())
   date_string = db.Column(db.String(256))
   home_score = db.Column(db.String(256))
   away_score = db.Column(db.String(256))
@@ -234,7 +248,9 @@ class Game(db.Model):
   youtube_link_1 = db.Column(db.String(256))
   youtube_link_2 = db.Column(db.String(256))
   youtube_link_3 = db.Column(db.String(256))
-  __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
+  search_vector = db.Column(TSVectorType('home_team', 'away_team', 'date_string', 'home_score', 'away_score'))
+
+  # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
 
   @property
@@ -283,7 +299,7 @@ class Game(db.Model):
         "youtube_link_3" : self.youtube_link_3, 
         }
 
-flask.ext.whooshalchemy.whoosh_index(app, Game)
+# flask.ext.whooshalchemy.whoosh_index(app, Game)
 
 #many to many team game relationship
 team_game = db.relationship('Team', secondary=team_game,
@@ -292,3 +308,6 @@ team_game = db.relationship('Team', secondary=team_game,
 #many to many player game relationship
 player_game = db.relationship('Player', secondary=player_game,
     backref=db.backref('games', lazy='dynamic'))
+
+db.configure_mappers()
+

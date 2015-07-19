@@ -4,12 +4,23 @@ from flask.json import jsonify
 from flask import Flask, send_file, send_from_directory, safe_join, request, Response, abort
 from jinja2 import TemplateNotFound
 from tests import makeJSON
+import getpass
+import sys
+
+# https://stackoverflow.com/questions/842059/is-there-a-portable-way-to-get-the-current-username-in-python
+print(getpass.getuser())
+# sys.exit()
 
 app = Flask(__name__)
 
+# 'postgresql://maxilius@localhost:5432/scrape'
 # Load config.py
 #app.config.from_object('config')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://' + getpass.getuser() + '@localhost:5432/nba_flask'
+print(app.config['SQLALCHEMY_DATABASE_URI'])
+# sys.exit()
+
 app.config['WHOOSH_BASE'] = 'path/to/whoosh/base'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
 db = SQLAlchemy(app)
