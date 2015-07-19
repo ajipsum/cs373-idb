@@ -1,4 +1,4 @@
-from db_workaround import db_tests
+from db_workaround import db_tests, app_tests
 from sqlalchemy.dialects.mysql import BIGINT
 import flask.ext.whooshalchemy
 
@@ -8,6 +8,7 @@ class Player(db_tests.Model):
   Information includes name, picture, position, player number, weight etc.
   '''
 
+  __tablename__ = 'player'
   __searchable__ = ['id', 'name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
@@ -67,13 +68,14 @@ class Player(db_tests.Model):
   team_name = db_tests.Column(db_tests.String(256), db_tests.ForeignKey('team.name'))
   __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
+flask.ext.whooshalchemy.whoosh_index(app_tests, Player)
 
 class Team(db_tests.Model):
   '''
   Information about Team 
   Information includes name, conference, division, site_name, city, state, mascot
   '''
-
+  __tablename__ = 'team'
   __searchable__ = ['name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
@@ -90,6 +92,7 @@ class Team(db_tests.Model):
   google_maps = db_tests.Column(db_tests.String(256))
   __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
+flask.ext.whooshalchemy.whoosh_index(app_tests, Team)
 
 team_game = db_tests.Table('team_game',
   db_tests.Column('team_name', db_tests.String(256), db_tests.ForeignKey('team.name')),
@@ -107,6 +110,7 @@ class Game(db_tests.Model):
   Information include home_team, away_team, data, home_score, away_score, etc.
   '''
 
+  __tablename__ = 'game'
   __searchable__ = ['id', 'home_team', 'away_team', 'date_string', 'home_score', 'away_score']  # these fields will be indexed by whoosh
   # __analyzer__ = SimpleAnalyzer()        # configure analyzer; defaults to
                                          # StemmingAnalyzer if not specified
@@ -152,11 +156,12 @@ class Game(db_tests.Model):
   youtube_link_3 = db_tests.Column(db_tests.String(256))
   __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
+flask.ext.whooshalchemy.whoosh_index(app_tests, Game)
 
-  #many to many team game relationship
-  team_game = db_tests.relationship('Team', secondary=team_game,
+#many to many team game relationship
+team_game = db_tests.relationship('Team', secondary=team_game,
     backref=db_tests.backref('games', lazy='dynamic'))
 
-  #many to many player game relationship
-  player_game = db_tests.relationship('Player', secondary=player_game,
+#many to many player game relationship
+player_game = db_tests.relationship('Player', secondary=player_game,
     backref=db_tests.backref('games', lazy='dynamic'))
