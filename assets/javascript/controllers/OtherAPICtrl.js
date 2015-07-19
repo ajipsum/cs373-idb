@@ -10,4 +10,5 @@ app.controller('AboutCtrl', ['$scope', 'bplayer', 'fplayer',function ($scope) {
 	$scope.fPlayerName=fPlayer.name;
 	$scope.bPlayerWeight=bPlayer.weight;
 	$scope.fPlayerWeight=fPlayer.wt;
-}
+
+}]);
