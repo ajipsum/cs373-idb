@@ -309,5 +309,6 @@ team_game = db.relationship('Team', secondary=team_game,
 player_game = db.relationship('Player', secondary=player_game,
     backref=db.backref('games', lazy='dynamic'))
 
+#life saver: https://github.com/kvesteri/sqlalchemy-searchable/issues/30
 db.configure_mappers()
 
