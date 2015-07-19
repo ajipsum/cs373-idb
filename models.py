@@ -1,7 +1,6 @@
 from __init__ import db, app
 from sqlalchemy.dialects.mysql import BIGINT
-import flask.ext.whooshalchemy
-
+import flask.ext.whooshalchemy as whooshalchemy
 
 class Player(db.Model):
   '''
@@ -130,8 +129,7 @@ class Player(db.Model):
             "team_name" : self.team_name, 
             }
 
-
-flask.ext.whooshalchemy.whoosh_index(app, Player)
+whooshalchemy.whoosh_index(app, Player)
 
 class Team(db.Model):
   '''
@@ -172,7 +170,7 @@ class Team(db.Model):
             "google_maps" : self.google_maps,
         }
 
-flask.ext.whooshalchemy.whoosh_index(app, Team)
+whooshalchemy.whoosh_index(app, Team)
 
 
 team_game = db.Table('team_game',
@@ -283,7 +281,7 @@ class Game(db.Model):
         "youtube_link_3" : self.youtube_link_3, 
         }
 
-flask.ext.whooshalchemy.whoosh_index(app, Game)
+whooshalchemy.whoosh_index(app, Game)
 
 #many to many team game relationship
 team_game = db.relationship('Team', secondary=team_game,
