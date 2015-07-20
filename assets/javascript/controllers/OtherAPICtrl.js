@@ -1,4 +1,5 @@
-app.controller('AboutCtrl', ['$scope', 'bplayer', 'fplayer',function ($scope) {
+app.controller('OtherAPICtrl', ['$scope', 'bplayer', 'fplayer', function ($scope, bplayer, fplayer) {
+	
 	$scope.weightButton = function()
 	{
 
