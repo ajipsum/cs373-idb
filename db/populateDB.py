@@ -33,7 +33,8 @@ def populate():
     db.session.remove()
     db.drop_all()
     db.create_all()
-
+    # db.session.commit()
+    # sys.exit()
 
     # print(len(teams))
     # sys.exit()
@@ -41,10 +42,11 @@ def populate():
     t = 1
     for team_id in teams:
         team = teams[team_id]
+
         team_entry = Team(
-                name = team['last_name'],
+                name = str(team['last_name']),
                 conference = team['conference'],
-                division = team['division'],
+                division =  team['division'],
                 site_name = team['site_name'],
                 city = team['city'],
                 state = team['state'],

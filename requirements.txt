@@ -14,3 +14,8 @@ PyMySQL==0.6.6
 
 #Whoosh for search
 flask_whooshalchemy
+
+#for postgres
+psycopg2
+
+SQLAlchemy-Searchable==0.9.3

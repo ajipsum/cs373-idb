@@ -1,0 +1,39 @@
+<div class="row otherAPIheading">
+	<div>
+		<h1>
+			Who Weighs More?
+		</h1>
+		<h3>
+			A random college football player or a random professional basketball player?
+		</h3>
+	</div>
+</div>
+<div class="row otherAPIcontent">
+	<button ng-click="weightButton(); showRest=true">Click here to find out!</button>
+	<div class="otherAPIresults" ng-init="showRest=false" ng-show="showRest">
+		<div class="row playerPics">
+			<div class="col-md-5 col-xs-5 bPlayerPicSetup">
+				<img class="bPlayerPic" src="{{ bPlayerPic }}">
+			</div>
+			<div class="col-md-6 col-xs-6 fPlayerPicSetup pull-right">
+				<img class="fPlayerImg" src="{{ fPlayerPic }}">
+			</div>
+		</div>
+		<div class="row playerNames">
+			<div class="col-md-5 col-xs-5 bPlayerNameSetup">
+				<p class="bPlayerName">{{ bPlayerName }}</p>
+			</div>
+			<div class="col-md-6 col-xs-6 fPlayerNameSetup pull-right">
+				<p class="fPlayerName">{{ fPlayerName }}</p>
+			</div>
+		</div>
+		<div class="row playerWeights">
+			<div class="col-md-5 col-xs-5 bPlayerWeightSetup">
+				<p class="bPlayerWeight">{{ bPlayerWeight }}</p>
+			</div>
+			<div class="col-md-6 col-xs-6 fPlayerWeightSetup pull-right">
+				<p class="fPlayerWeight">{{ fPlayerWeight }}</p>
+			</div>
+		</div>
+	</div>
+</div>
