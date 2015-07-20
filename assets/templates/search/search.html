@@ -1,5 +1,5 @@
 <div class="searchHeading row">
-    <h2>Search Results for: {{query}}</h2>
+    <h2>{{results.teams.length + results.games.length + results.players.length}} search results for: <span class="qResult">{{query}}</span></h2>
 </div>
 
 <div class="searchResults row" >
@@ -7,21 +7,30 @@
         <h3>No Results Found :(</h3>
     </div>
     <div ng-hide="results.teams == 0">
-        <h3>Teams</h3>
-        <div ng-repeat"team in result.teams">
-            <p>I am team</p>
+        <h3>Teams ({{results.teams.length}})</h3>
+        <div ng-repeat="team in results.teams">
+            <div class="pull-left teamThumb">
+                <img src="/assets/images/teamlogos/{{team.name}}.png"></img>
+            </div>
+            <div class="pull-left">
+                <h4><a href="/teams/{{team.name}}">{{team.name}}</a></h4>
+                <p>Conference: {{team.conference}}; Division: {{team.division}}; Roster: {{team.players[0].name}}, 
+                    {{team.players[1].name}}, {{team.players[2].name}}, ...
+                </p> 
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
     <div ng-hide="results.players == 0">
-        <h3>Players</h3>
-        <div ng-repeat"player in result.players">
-            <p>I am player</p>
+        <h3>Players ({{results.players.length}})</h3>
+        <div ng-repeat="player in results.players">
+            <h4><a href="/player/{{player.id}}">{{player.name}}</a></h4>
         </div>
     </div>
     <div ng-hide="results.games == 0">
-        <h3>Games</h3>
-        <div ng-repeat"game in result.games">
-            <p>I am game</p>
+        <h3>Games ({{results.games.length}})</h3>
+        <div ng-repeat="game in results.games">
+            <h4><a href="/game/{{game.id}}">{{game.away_team}} vs {{game.home_team}}</a></h4>
         </div>
     </div>
 </div>
