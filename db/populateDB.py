@@ -33,7 +33,8 @@ def populate():
     db.session.remove()
     db.drop_all()
     db.create_all()
-
+    # db.session.commit()
+    # sys.exit()
 
     # print(len(teams))
     # sys.exit()
@@ -41,10 +42,11 @@ def populate():
     t = 1
     for team_id in teams:
         team = teams[team_id]
+
         team_entry = Team(
-                name = team['last_name'],
+                name = str(team['last_name']),
                 conference = team['conference'],
-                division = team['division'],
+                division =  team['division'],
                 site_name = team['site_name'],
                 city = team['city'],
                 state = team['state'],
@@ -197,40 +199,45 @@ def populate():
         i += 1
 
 
-    # #game to team relationship inserting
+
+    #game to team relationship inserting
     # games = Game.query.all()
     # j = 1
     # for game in games:
     #     home_team = game.home_team
     #     away_team = game.away_team
+    #     # game_identification = game.id
+    #     # print("game id is: " + str(game.id))
+    #     # sys.exit()
     #     # print(game.id)
     #     # sys.exit()
     #     # id_of_game = game.id
     #     # print(type(id_of_game))
 
-    #     db.session.execute(team_game.insert().values([(home_team, game.id)]))
+    #     # db.session.execute(team_game.insert().values([(home_team, game.id)]))
+    #     # db.session.commit()
+    #     # db.session.execute(team_game.insert().values([(away_team, game.id)]))
+    #     # db.session.commit()
+
+    #     team_game_entry = team_game(
+    #             team_name = home_team,
+    #             game_id = game.id,
+    #         )
+
+    #     db.session.add(team_game_entry)
     #     db.session.commit()
-    #     db.session.execute(team_game.insert().values([(away_team, game.id)]))
+    #     team_game_entry_1 = team_game(
+    #             team_name = away_team,
+    #             game_id = game.id,
+    #         )
+    #     db.session.add(team_game_entry_1)
     #     db.session.commit()
 
     #     print(j)
     #     j += 1
-    #     # team_game_entry = team_game(
-    #     #         team_name = home_team,
-    #     #         game_id = 5,
-    #     #     )
-
-    #     # db.session.add(team_game_entry)
-    #     # db.session.commit()
-    #     # team_game_entry_1 = team_game(
-    #     #         team_name = away_team,
-    #     #         game_id = 5,
-    #     #     )
-    #     # db.session.add(team_game_entry)
-    #     # db.session.commit()
     # print("DONE WITH INSERTING TEAM AND PLAYER DATA AND GAME DATA")
 
-    # #player to team relationship inserting
+    #player to team relationship inserting
     # b = 1
     # for game in games:
     #     home_team = game.home_team
@@ -249,6 +256,7 @@ def populate():
     #         db.session.commit()
     #     print(b)
     #     b += 1
+
 
 
 
