@@ -1,6 +1,6 @@
 from db_workaround import db_tests, app_tests
 from sqlalchemy.dialects.mysql import BIGINT
-import flask.ext.whooshalchemy
+import flask.ext.whooshalchemy as whooshalchemy
 
 class Player(db_tests.Model):
   '''
@@ -68,7 +68,7 @@ class Player(db_tests.Model):
   team_name = db_tests.Column(db_tests.String(256), db_tests.ForeignKey('team.name'))
   __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
-flask.ext.whooshalchemy.whoosh_index(app_tests, Player)
+whooshalchemy.whoosh_index(app_tests, Player)
 
 class Team(db_tests.Model):
   '''
@@ -92,7 +92,7 @@ class Team(db_tests.Model):
   google_maps = db_tests.Column(db_tests.String(256))
   __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
-flask.ext.whooshalchemy.whoosh_index(app_tests, Team)
+whooshalchemy.whoosh_index(app_tests, Team)
 
 team_game = db_tests.Table('team_game',
   db_tests.Column('team_name', db_tests.String(256), db_tests.ForeignKey('team.name')),
@@ -156,7 +156,7 @@ class Game(db_tests.Model):
   youtube_link_3 = db_tests.Column(db_tests.String(256))
   __table_args__ = {'mysql_engine':'InnoDB', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
-flask.ext.whooshalchemy.whoosh_index(app_tests, Game)
+whooshalchemy.whoosh_index(app_tests, Game)
 
 #many to many team game relationship
 team_game = db_tests.relationship('Team', secondary=team_game,
