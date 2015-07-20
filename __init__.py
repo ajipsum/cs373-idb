@@ -7,6 +7,7 @@ from tests import makeJSON
 import getpass
 import sys
 import random
+import requests
 
 # https://stackoverflow.com/questions/842059/is-there-a-portable-way-to-get-the-current-username-in-python
 print(getpass.getuser())
