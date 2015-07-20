@@ -1,14 +1,15 @@
-app.controller('AboutCtrl', ['$scope', 'bplayer', 'fplayer',function ($scope) {
+app.controller('OtherAPICtrl', ['$scope', 'bplayer', 'fplayer', function ($scope, bplayer, fplayer) {
+	
 	$scope.weightButton = function()
 	{
 
 	}
 
-	$scope.bPlayerPic=bPlayer.picture;
+	$scope.bPlayerPic=bplayer.picture;
 	$scope.fPlayerPic=fplayer.photo;
-	$scope.bPlayerName=bPlayer.name;
-	$scope.fPlayerName=fPlayer.name;
-	$scope.bPlayerWeight=bPlayer.weight;
-	$scope.fPlayerWeight=fPlayer.wt;
+	$scope.bPlayerName=bplayer.name;
+	$scope.fPlayerName=fplayer.name;
+	$scope.bPlayerWeight=bplayer.weight;
+	$scope.fPlayerWeight=fplayer.wt;
 
 }]);

@@ -193,31 +193,31 @@ var app = angular.module('api2k15', [
             views: {
                 '@' : {
                     templateUrl: 'assets/templates/otherAPI/otherAPI.html',
-                    controller: 'OtherAPICtrl'//,
-                    //resolve: {
-                    //    bplayer: function(otherFactory, $q, $stateParams) {
-                    //        var deferred = $q.defer();
-                    //        otherFactory.getBPlayer($stateParams['id']).then(
-                    //            function(data) {
-                    //                deferred.resolve(data.data);
-                    //            }, function(error) {
-                    //                console.log("Can't resolve player details", error);
-                    //                window.location.href = '/';
-                    //            });
-                    //        return deferred.promise;
-                    //    }//,
-                        //fplayer: function(otherFactory, $q, $stateParams) {
-                        //    var deferred = $q.defer();
-                        //    otherFactory.getFPlayer($stateParams['id']).then(
-                        //        function(data) {
-                        //            deferred.resolve(data.data);
-                        //        }, function(error) {
-                        //            console.log("Can't resolve player details", error);
-                        //            window.location.href = '/';
-                        //        });
-                        //    return deferred.promise;
-                        //}
-                    //}
+                    controller: 'OtherAPICtrl',
+                    resolve: {
+                        bplayer: function(otherFactory, $q) {
+                            var deferred = $q.defer();
+                            otherFactory.getBPlayer().then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve player details", error);
+                                    window.location.href = '/';
+                                });
+                            return deferred.promise;
+                        },
+                        fplayer: function(otherFactory, $q) {
+                            var deferred = $q.defer();
+                            otherFactory.getFPlayer().then(
+                                function(data) {
+                                    deferred.resolve(data.data);
+                                }, function(error) {
+                                    console.log("Can't resolve player details", error);
+                                    window.location.href = '/';
+                                });
+                            return deferred.promise;
+                        }
+                    }
                 }
             }
         })
