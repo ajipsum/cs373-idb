@@ -208,7 +208,7 @@ def search(query):
 def get_other_data():
     id = random.randint(1,14241)
     #http://cfdb.me:5000/punt/players/"+id
-    return requests.get('http://cfdb.me:5000/punt/players/'+id).content 
+    return requests.get('http://cfdb.me:5000/punt/players/'+str(id)).content 
 
 if __name__ == "__main__":
     app.debug = True
