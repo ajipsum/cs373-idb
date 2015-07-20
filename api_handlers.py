@@ -115,7 +115,7 @@ def search_by_query(query):
     player_data = []
     game_data = []
 
-    seach_items = [query] + query.split()
+    search_items = [query] + query.split()
     for item in search_items:
         teams_result   = Team.query.search(item)
         games_result   = Game.query.search(item)
@@ -128,10 +128,10 @@ def search_by_query(query):
                 # if the player object has already been added then
                 # we don't need to grab related data.
                 player_data.append(p)
-                td = Team.query.filter(name = p.team_name).first()
+                td = Team.query.filter_by(name = p.team_name).first()
                 if not contains(team_data, lambda x: x.name == td.name):
                     team_data.append(td)
-                gs = team_schedule_handler(p.team_name)
+                gs = Game.query.filter(or_(Game.home_team == p.team_name, Game.away_team == p.team_name))
                 for g in gs:
                     if not contains(game_data, lambda x: x.id == g.id):
                         game_data.append(g)
@@ -148,7 +148,7 @@ def search_by_query(query):
                     if not contains(player_data, lambda x: x.id == p.id):
                         player_data.append(p)
 
-                gs = team_schedule_handler(t.name)
+                gs = Game.query.filter(or_(Game.home_team == t.name, Game.away_team == t.name))
                 for g in gs:
                     if not contains(game_data, lambda x: x.id == g.id):
                         game_data.append(g)
@@ -158,8 +158,8 @@ def search_by_query(query):
         for g in games_result:
             if not contains(game_data, lambda x: x.id == g.id):
                 game_data.append(g)
-                ht = Team.query.filter(name = g.home_team).first()
-                at = Team.query.filter(name = g.away_team).first()
+                ht = Team.query.filter_by(name = g.home_team).first()
+                at = Team.query.filter_by(name = g.away_team).first()
                 if not contains(team_data, lambda x: x.name == ht.name):
                     team_data.append(ht)
                     ps = ht.players
