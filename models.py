@@ -76,7 +76,7 @@ class Player(db.Model):
   season_3PM_A = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
-  search_vector = db.Column(TSVectorType('name', 'picture', 'experience_years', 'draft_info', 'position', 'player_number', 'current_team', 'college', 'birth_info', 'weight', 'twitter', 'age', 'team_name'))
+  search_vector = db.Column(TSVectorType('name','experience_years', 'position', 'player_number', 'current_team', 'weight', 'twitter', 'age', 'team_name'))
 
   # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
@@ -164,7 +164,7 @@ class Team(db.Model):
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   google_maps = db.Column(db.String(256))
-  search_vector = db.Column(TSVectorType('name', 'conference', 'division', 'site_name', 'city', 'state', 'mascot', 'twitter', 'google_maps'))
+  search_vector = db.Column(TSVectorType('name', 'conference', 'division', 'site_name', 'google_maps'))
 
   # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
@@ -188,15 +188,43 @@ class Team(db.Model):
 # flask.ext.whooshalchemy.whoosh_index(app, Team)
 
 
-team_game = db.Table('team_game',
-  db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
-)
+# team_game = db.Table('team_game',
+#   db.Column('team_name', db.String(256), db.ForeignKey('team.name')),
+#   db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
+# )
 
-player_game = db.Table('player_game',
-  db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
-  db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
-)
+class team_game(db.Model):
+  query_class = ArticleQuery
+
+  team_name = db.Column(db.String(256), db.ForeignKey('team.name'), primary_key=True)
+  game_id = db.Column(db.Integer, db.ForeignKey('game.id'), primary_key=True)
+  # search_vector = db.Column(TSVectorType('game_id'))
+
+  @property
+  def serialize(self):
+      return {
+        "team_name" : self.team_name,
+        "game_id" : self.game_id, 
+        }
+
+# player_game = db.Table('player_game',
+#   db.Column('player_id', db.Integer, db.ForeignKey('player.id')),
+#   db.Column('game_id', db.Integer, db.ForeignKey('game.id'))
+# )
+
+class player_game(db.Model):
+  query_class = ArticleQuery
+
+  player_id = db.Column(db.Integer, db.ForeignKey('player.id'), primary_key=True)
+  game_id = db.Column(db.Integer, db.ForeignKey('game.id'), primary_key=True)
+  # search_vector = db.Column(TSVectorType('player_id', 'game_id'))
+
+  @property
+  def serialize(self):
+      return {
+        "player_id" : self.player_id,
+        "game_id" : self.game_id, 
+        }
 
 class Game(db.Model):
   '''
@@ -302,13 +330,14 @@ class Game(db.Model):
 # flask.ext.whooshalchemy.whoosh_index(app, Game)
 
 #many to many team game relationship
-team_game = db.relationship('Team', secondary=team_game,
-    backref=db.backref('games', lazy='dynamic'))
+# team_game = db.relationship('Team', secondary=team_game,
+#     backref=db.backref('games', lazy='dynamic'))
+team_game_1 = db.relationship("Team", secondary=lambda: team_game)
 
 #many to many player game relationship
-player_game = db.relationship('Player', secondary=player_game,
-    backref=db.backref('games', lazy='dynamic'))
+# player_game = db.relationship('Player', secondary=player_game,
+#     backref=db.backref('games', lazy='dynamic'))
+player_game_1 = db.relationship("Player", secondary=lambda: player_game)
 
-#life saver: https://github.com/kvesteri/sqlalchemy-searchable/issues/30
 db.configure_mappers()
 

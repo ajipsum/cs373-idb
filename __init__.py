@@ -21,7 +21,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://' + getpass.getus
 print(app.config['SQLALCHEMY_DATABASE_URI'])
 # sys.exit()
 
-app.config['WHOOSH_BASE'] = 'path/to/whoosh/base'
+#app.config['WHOOSH_BASE'] = 'path/to/whoosh/base'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://api2k15:@127.0.0.1:3306/nba_flask_test'
 db = SQLAlchemy(app)
 
@@ -201,6 +201,12 @@ def test_results():
 @app.route("/resources/search/<query>")
 def search(query):
     return api_handlers.search_by_query(query)
+
+@app.route("/resources/otherAPI/get_other_data")
+def get_other_data():
+    id = random.randint(1,14241)
+    #http://cfdb.me:5000/punt/players/"+id
+    return requests.get('http://cfdb.me:5000/punt/players/'+id).content 
 
 if __name__ == "__main__":
     app.debug = True
