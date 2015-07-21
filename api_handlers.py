@@ -125,59 +125,76 @@ def search_by_query(query):
         #For each player, populate team and games 
         #only if they are not already populated.
         for p in players_result:
-            if not contains(player_data, lambda x: x.id == p.id):
+            p = p.serialize
+            p['query_string'] = item
+            if not contains(player_data, lambda x: x['id'] == p['id']):
                 # if the player object has already been added then
                 # we don't need to grab related data.
                 player_data.append(p)
                 td = Team.query.filter_by(name = p.team_name).first()
-                if not contains(team_data, lambda x: x.name == td.name):
+                td = td.serialize
+                td['query_string'] = item
+                if not contains(team_data, lambda x: x['name' == td['name']):
                     team_data.append(td)
                 gs = Game.query.filter(or_(Game.home_team == p.team_name, Game.away_team == p.team_name))
                 for g in gs:
-                    if not contains(game_data, lambda x: x.id == g.id):
+                    g = g.serialize
+                    g['query_string'] = item
+                    if not contains(game_data, lambda x: x['id'] == g['id']):
                         game_data.append(g)
 
         
         #For each team populate players and game as well
         for t in teams_result:
-            if not contains(team_data, lambda x: x.name == t.name):
+            t = t.serialize
+            t['query_string'] = item
+            if not contains(team_data, lambda x: x['name'] == t['name']):
                 # if the team object has already been added then 
                 # so has the data related to that team object.
                 team_data.append(t)
-                ps = t.players
+                ps = t['players'] # already serialized.
                 for p in ps:
-                    if not contains(player_data, lambda x: x.id == p.id):
+                    p['query_string'] = item
+                    if not contains(player_data, lambda x: x['id'] == p['id']):
                         player_data.append(p)
 
                 gs = Game.query.filter(or_(Game.home_team == t.name, Game.away_team == t.name))
                 for g in gs:
-                    if not contains(game_data, lambda x: x.id == g.id):
+                    g = g.serialize
+                    g['query_string'] = item
+                    if not contains(game_data, lambda x: x['id'] == g['id']):
                         game_data.append(g)
         
         #For each game populate the teams (home and away) and 
         #players for each team
         for g in games_result:
-            if not contains(game_data, lambda x: x.id == g.id):
+            g = g.serialize
+            g['query_string'] = item
+            if not contains(game_data, lambda x: x['id'] == g['id']):
                 game_data.append(g)
-                ht = Team.query.filter_by(name = g.home_team).first()
-                at = Team.query.filter_by(name = g.away_team).first()
-                if not contains(team_data, lambda x: x.name == ht.name):
+                ht = Team.query.filter_by(name = g.home_team).first().serialize
+                at = Team.query.filter_by(name = g.away_team).first().serialize
+                ht['query_string'] = item
+                at['query_string'] = item
+                if not contains(team_data, lambda x: x['name'] == ht['name']):
                     team_data.append(ht)
-                    ps = ht.players
+                    ps = ht['players']
                     for p in ps:
-                        if not contains(player_data, lambda x: x.id == p.id):
+                        p['query_string'] = item
+                        if not contains(player_data, lambda x: x['id'] == p['id']):
                             player_data.append(p)
-                if not contains(team_data, lambda x: x.name == at.name):
+                if not contains(team_data, lambda x: x['name'] == at['name']):
                     team_data.append(at)
-                    ps = at.players
+                    ps = at['players']
                     for p in ps:
-                        if not contains(player_data, lambda x: x.id == p.id):
+                        p['query_string'] = item
+                        if not contains(player_data, lambda x: x['id'] == p['id']):
                             player_data.append(p)
 
     data = { 'results': {
-                'teams'   : [i.serialize for i in team_data],
-                'games'   : [i.serialize for i in game_data],
-                'players' : [i.serialize for i in player_data]
+                'teams'   : team_data,
+                'games'   : game_data,
+                'players' : player_data
                 }
             }
 
