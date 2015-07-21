@@ -265,8 +265,7 @@ video#bgvid { transition: 1s opacity; }
     margin-top: 20px;
 }
 
-.searchResults h3,
-.searchResults h4{
+.searchResults h3{
     margin: 10px;
 }
 
@@ -274,7 +273,20 @@ video#bgvid { transition: 1s opacity; }
     color: #D93434;
 }
 
+.teamSum {
+    margin-bottom: 20px;
+}
+
 .teamThumb img{
     height: 75px;
     width: 75px;
+    margin-right: 10px;
+}
+
+.s_result {
+    margin: 20px;
+}
+
+.s_result h4 {
+    margin-bottom: 3px;
 }

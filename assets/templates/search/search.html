@@ -8,15 +8,15 @@
     </div>
     <div ng-hide="results.teams == 0">
         <h3>Teams ({{results.teams.length}})</h3>
-        <div ng-repeat="team in results.teams">
+        <div ng-repeat="team in results.teams" class="s_result">
             <div class="pull-left teamThumb">
                 <img src="/assets/images/teamlogos/{{team.name}}.png"></img>
             </div>
-            <div class="pull-left">
+            <div class="pull-left teamSum">
                 <h4><a href="/teams/{{team.name}}">{{team.name}}</a></h4>
-                <p>Conference: {{team.conference}}; Division: {{team.division}}; Roster: {{team.players[0].name}}, 
-                    {{team.players[1].name}}, {{team.players[2].name}}, ...
-                </p> 
+                <span ng-repeat="(key, value) in team.matched_keywords">
+                    {{key}}: <strong>{{value}}</strong>
+                </span>
             </div>
             <div class="clearfix"></div>
         </div>
