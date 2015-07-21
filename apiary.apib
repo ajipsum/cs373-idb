@@ -218,6 +218,25 @@ Request will return a list of all games played at the given arena during the yea
     
 + Response 200 (application/json)
 
+## Group Site Search
+
+The Site Search API Endpoint.
+
+## Search [/resources/search/{search_string}]
+
+Search requests will will execute searches on all space delimited words in the query string.
+Searches are ordered first by matches against the entire string and then subsequently by each 
+individual word in the string.
+
+### Search [GET]
+
++ Parameters
+    + search_string: "Tim Duncan" (required, string) - Query string to search against.
+
++ Response 200 (application/json)
+
+
+
 
 
 
