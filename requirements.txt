@@ -1,6 +1,9 @@
 # Flask framework
 Flask==0.10.1
 
+#for postgresql
+postgresql-server-dev-all
+
 # Template Engine
 Jinja2==2.7.3
 
