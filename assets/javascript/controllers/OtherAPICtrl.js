@@ -2,7 +2,6 @@ app.controller('OtherAPICtrl', ['$scope', 'bplayer', 'fplayer', function ($scope
 
 	$scope.bPlayerPic=bplayer.picture;
 	$scope.fPlayerPic=fplayer.photo;
-	console.log(fplayer.photo);
 	if (fplayer.photo == "") {
 		$scope.fPlayerPic = "/assets/images/fplayer_default.png";
 	};
