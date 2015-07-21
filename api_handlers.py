@@ -103,25 +103,80 @@ def game_by_site_handler(site):
 # --------------
 # Search Handler
 # --------------
+def contains(l, f):
+    for x in l:
+        if f(x):
+            return True
+    return False
 
 def search_by_query(query):
     print("Hitting Search Query: " + query)
-    # teams_result   = Team.query.whoosh_search(query)
-    # games_result   = Game.query.whoosh_search(query)
-    # players_result = Player.query.whoosh_search(query)
-    # Article.query.search(u'Finland').limit(5).all()
-    teams_result   = Team.query.search(query)
-    games_result   = Game.query.search(query)
-    players_result = Player.query.search(query)
-    # print("Team count: " + str(teams_result.count()))
-    print("game count: " + str(games_result.count()))
-    print("player count: " + str(players_result.count()))
+    team_data = []
+    player_data = []
+    game_data = []
 
+    search_items = [query] + query.split()
+    for item in search_items:
+        teams_result   = Team.query.search(item)
+        games_result   = Game.query.search(item)
+        players_result = Player.query.search(item)
+
+        #For each player, populate team and games 
+        #only if they are not already populated.
+        for p in players_result:
+            if not contains(player_data, lambda x: x.id == p.id):
+                # if the player object has already been added then
+                # we don't need to grab related data.
+                player_data.append(p)
+                td = Team.query.filter_by(name = p.team_name).first()
+                if not contains(team_data, lambda x: x.name == td.name):
+                    team_data.append(td)
+                gs = Game.query.filter(or_(Game.home_team == p.team_name, Game.away_team == p.team_name))
+                for g in gs:
+                    if not contains(game_data, lambda x: x.id == g.id):
+                        game_data.append(g)
+
+        
+        #For each team populate players and game as well
+        for t in teams_result:
+            if not contains(team_data, lambda x: x.name == t.name):
+                # if the team object has already been added then 
+                # so has the data related to that team object.
+                team_data.append(t)
+                ps = t.players
+                for p in ps:
+                    if not contains(player_data, lambda x: x.id == p.id):
+                        player_data.append(p)
+
+                gs = Game.query.filter(or_(Game.home_team == t.name, Game.away_team == t.name))
+                for g in gs:
+                    if not contains(game_data, lambda x: x.id == g.id):
+                        game_data.append(g)
+        
+        #For each game populate the teams (home and away) and 
+        #players for each team
+        for g in games_result:
+            if not contains(game_data, lambda x: x.id == g.id):
+                game_data.append(g)
+                ht = Team.query.filter_by(name = g.home_team).first()
+                at = Team.query.filter_by(name = g.away_team).first()
+                if not contains(team_data, lambda x: x.name == ht.name):
+                    team_data.append(ht)
+                    ps = ht.players
+                    for p in ps:
+                        if not contains(player_data, lambda x: x.id == p.id):
+                            player_data.append(p)
+                if not contains(team_data, lambda x: x.name == at.name):
+                    team_data.append(at)
+                    ps = at.players
+                    for p in ps:
+                        if not contains(player_data, lambda x: x.id == p.id):
+                            player_data.append(p)
 
     data = { 'results': {
-                'teams'   : [i.serialize for i in teams_result],
-                'games'   : [i.serialize for i in games_result],
-                'players' : [i.serialize for i in players_result]
+                'teams'   : [i.serialize for i in team_data],
+                'games'   : [i.serialize for i in game_data],
+                'players' : [i.serialize for i in player_data]
                 }
             }
 
