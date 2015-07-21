@@ -23,8 +23,17 @@
     </div>
     <div ng-hide="results.players == 0">
         <h3>Players ({{results.players.length}})</h3>
-        <div ng-repeat="player in results.players">
-            <h4><a href="/player/{{player.id}}">{{player.name}}</a></h4>
+        <div ng-repeat="player in results.players" class="s_result">
+            <div class="pull-left playerThumb">
+                <img src="{{player.picture}}"></img>
+            </div>
+            <div class="pull-left playerSum">
+                <h4><a href="/player/{{player.id}}">{{player.name}}</a></h4>
+                <span ng-repeat="(key, value) in player.matched_keywords">
+                    {{key}}: <strong>{{value}}</strong>
+                </span>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
     <div ng-hide="results.games == 0">
