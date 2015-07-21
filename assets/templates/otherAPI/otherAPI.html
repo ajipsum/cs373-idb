@@ -1,0 +1,41 @@
+<div class="row otherAPIheading">
+	<div class="text-center">
+		<h1>
+			Who Weighs More?
+		</h1>
+		<h3>
+			A random NBA player or a random college football player?
+		</h3>
+	</div>
+</div>
+<div class="row otherButton container-fluid text-center">
+		<button class="text-center" onclick="javascript:location.reload()">Get a different pair of players</button>
+</div>
+<div class="row otherAPIcontent">
+	<div class="otherAPIresults">
+		<div class="row playerPics">
+			<div class="col-md-5 col-xs-5 bPlayerPicSetup">
+				<img class="bPlayerPic center-block img-responsive" src="{{ bPlayerPic }}">
+			</div>
+			<div class="col-md-6 col-xs-6 fPlayerPicSetup pull-right">
+				<img class="fPlayerImg center-block img-responsive" style="max-width:190px !important;max-height:254px;min-height:25vh;min-width:16vw;" src='{{ fPlayerPic }}'>
+			</div>
+		</div>
+		<div class="row playerNames">
+			<div class="col-md-5 col-xs-5 bPlayerNameSetup">
+				<h4 class="bPlayerName text-center">{{ bPlayerName }}</h4>
+			</div>
+			<div class="col-md-6 col-xs-6 fPlayerNameSetup pull-right">
+				<h4 class="fPlayerName text-center">{{ fPlayerName }}</h4>
+			</div>
+		</div>
+		<div class="row playerWeights">
+			<div class="col-md-5 col-xs-5 bPlayerWeightSetup">
+				<h4 class="bPlayerWeight text-center">{{ bPlayerWeight }} lbs</h4>
+			</div>
+			<div class="col-md-6 col-xs-6 fPlayerWeightSetup pull-right">
+				<h4 class="fPlayerWeight text-center">{{ fPlayerWeight }} lbs</h4>
+			</div>
+		</div>
+	</div>
+</div>

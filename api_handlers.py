@@ -100,6 +100,147 @@ def game_by_site_handler(site):
     site_team = Team.query.filter_by(site_name = site).first()
     return json.dumps([i.serialize for i in Game.query.filter_by(home_team = site_team.name).all()])
 
+# --------------
+# Search Handler
+# --------------
+def contains(l, f):
+    for x in l:
+        if f(x):
+            return True
+    return False
 
+def search_by_query(query):
+    print("Hitting Search Query: " + query)
+    team_data = []
+    player_data = []
+    game_data = []
 
+    search_items = [query] + query.split()
+    for item in search_items:
+        teams_result   = Team.query.search(item)
+        games_result   = Game.query.search(item)
+        players_result = Player.query.search(item)
+
+        #For each player, populate team and games 
+        #only if they are not already populated.
+        for p in players_result:
+            if not contains(player_data, lambda x: x.id == p.id):
+                # if the player object has already been added then
+                # we don't need to grab related data.
+                player_data.append(p)
+#                td = Team.query.filter_by(name = p.team_name).first()
+#                if not contains(team_data, lambda x: x.name == td.name):
+#                    team_data.append(td)
+#                gs = Game.query.filter(or_(Game.home_team == p.team_name, Game.away_team == p.team_name))
+#                for g in gs:
+#                    if not contains(game_data, lambda x: x.id == g.id):
+#                        game_data.append(g)
+
+        
+        #For each team populate players and game as well
+        for t in teams_result:
+            if not contains(team_data, lambda x: x.name == t.name):
+                # if the team object has already been added then 
+                # so has the data related to that team object.
+                team_data.append(t)
+#                ps = t.players
+#                for p in ps:
+#                    if not contains(player_data, lambda x: x.id == p.id):
+#                        player_data.append(p)
+# 
+#                gs = Game.query.filter(or_(Game.home_team == t.name, Game.away_team == t.name))
+#                for g in gs:
+#                    if not contains(game_data, lambda x: x.id == g.id):
+#                        game_data.append(g)
+        
+        #For each game populate the teams (home and away) and 
+        #players for each team
+        for g in games_result:
+            if not contains(game_data, lambda x: x.id == g.id):
+                game_data.append(g)
+#                ht = Team.query.filter_by(name = g.home_team).first()
+#                at = Team.query.filter_by(name = g.away_team).first()
+#                if not contains(team_data, lambda x: x.name == ht.name):
+#                    team_data.append(ht)
+#                    ps = ht.players
+#                    for p in ps:
+#                        if not contains(player_data, lambda x: x.id == p.id):
+#                            player_data.append(p)
+#                if not contains(team_data, lambda x: x.name == at.name):
+#                    team_data.append(at)
+#                    ps = at.players
+#                    for p in ps:
+#                        if not contains(player_data, lambda x: x.id == p.id):
+#                            player_data.append(p)
+
+    data = { 'results': {
+                'teams'   : [i.serialize for i in team_data],
+                'games'   : [i.serialize for i in game_data],
+                'players' : [i.serialize for i in player_data]
+                }
+            }
+    
+    # temp object for matched values
+    matched_keywords = {
+        'teams' : {},
+        'games' : {},
+        'players' : {}
+    }
+
+    # iterate through the teams we found based on the query
+    for t in teams_result :
+        # quick reference variable
+        teams_matched = matched_keywords["teams"]
+        # Organize results based on team names
+        teams_matched[t.name] = {}
+        # quick reference variable
+        team_obj = teams_matched[t.name]
+        # iterate through attributes within each team vector
+        for a in dir(t) : 
+            # ignore irrelevant attributes
+            if a.startswith(('city', 'conference', 'division', 'mascot', 'site_name', 'state', 'twitter')) :
+                print(a)
+                # check each search_item against the returned values for each attribute
+                for i in search_items :
+                    attr_val = getattr(t, a)
+                    # check to see if search_item is contained within a result; if so, add it to our object
+                    if ((i.lower() in attr_val.lower()) and not a in team_obj) :
+                        # We only care if we don't have this key's value stored yet, otherwise it's more than likely a duplicate
+                        team_obj[a] = attr_val
+
+    # iterate through the teams in our results array to find where to put the matched_keywords
+    for t in data["results"]["teams"] :
+        # store each object of matched_keywords with respective team data
+        if (t["name"] in matched_keywords["teams"]) :
+            t["matched_keywords"] = matched_keywords["teams"][t["name"]]
+
+    #iterate through the games we found based on the query
+    for g in games_result :
+        # quick reference variable
+        games_matched = matched_keywords["games"]
+        # organize results based on game ids
+        games_matched[g.id] = {}
+        # quick reference variable
+        game_obj = games_matched[g.id]
+        # iterate through attributes within each game vector
+        for a in dir(g) :
+            # only care about the following attributes
+            if a.startswith(('away_score', 'away_team', 'date_string', 'home_score', 'home_team', 'id')) :
+                #check each search_item against the returned values for each attribute
+                for i in search_items :
+                    attr_val = getattr(g, a)
+                    if ((type(attr_val) == int) and (attr_val == i) and not a in game_obj) :
+                        game_obj[a] = attr_val
+                    # check to see if search_item is contained within a result; if so, add it to our object
+                    elif (not(type(attr_val) == int) and (i.lower() in attr_val.lower()) and not a in game_obj) :
+                        # We only care if we don't have this key's value sored yet, otherwise it's more than likely a duplicate
+                        game_obj[a] = attr_val
+
+    #iterate through the games inour results array to find where to put the matched_keywords
+    for g in data["results"]["games"] :
+        # store each object of matched_keywords with respective game data
+        if (g["id"] in matched_keywords["games"]) :
+            g["matched_keywords"] = matched_keywords["games"][g["id"]]
+
+    return json.dumps(data);
 

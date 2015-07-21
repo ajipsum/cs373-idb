@@ -1,0 +1,45 @@
+<div class="searchHeading row">
+    <h2>{{results.teams.length + results.games.length + results.players.length}} search results for: <span class="qResult">{{query}}</span></h2>
+</div>
+
+<div class="searchResults row" >
+    <div ng-show="noResults">
+        <h3>No Results Found :(</h3>
+    </div>
+    <div ng-hide="results.teams == 0">
+        <h3>Teams ({{results.teams.length}})</h3>
+        <div ng-repeat="team in results.teams" class="s_result">
+            <div class="pull-left teamThumb">
+                <img src="/assets/images/teamlogos/{{team.name}}.png"></img>
+            </div>
+            <div class="pull-left teamSum">
+                <h4><a href="/teams/{{team.name}}">{{team.name}}</a></h4>
+                <span ng-repeat="(key, value) in team.matched_keywords">
+                    {{key}}: <strong>{{value}}</strong>
+                </span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div ng-hide="results.players == 0">
+        <h3>Players ({{results.players.length}})</h3>
+        <div ng-repeat="player in results.players">
+            <h4><a href="/player/{{player.id}}">{{player.name}}</a></h4>
+        </div>
+    </div>
+    <div ng-hide="results.games == 0">
+        <h3>Games ({{results.games.length}})</h3>
+        <div ng-repeat="game in results.games" class="s_result">
+            <div class="pull-left gameThumb">
+                <img src="/assets/images/teamlogos/{{game.away_team}}.png"></img>VS   <img src="/assets/images/teamlogos/{{game.home_team}}.png"></img>
+            </div>
+            <div class="pull-left gameSum">
+                <h4><a href="/game/{{game.id}}">{{game.away_team}} vs {{game.home_team}}</a></h4>
+                <span ng-repeat="(key, value) in game.matched_keywords">
+                    {{key}}: <strong>{{value}}</strong>
+                </span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
