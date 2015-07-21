@@ -1,5 +1,5 @@
 <div class="row otherAPIheading">
-	<div>
+	<div class="text-center">
 		<h1>
 			Who Weighs More?
 		</h1>
@@ -9,30 +9,29 @@
 	</div>
 </div>
 <div class="row otherAPIcontent">
-	<button ng-click="weightButton(); showRest=true">Click here to find out!</button>
-	<div class="otherAPIresults" ng-init="showRest=false" ng-show="showRest">
+	<div class="otherAPIresults">
 		<div class="row playerPics">
 			<div class="col-md-5 col-xs-5 bPlayerPicSetup">
-				<img class="bPlayerPic" src="{{ bPlayerPic }}">
+				<img class="bPlayerPic center-block" src="{{ bPlayerPic }}">
 			</div>
 			<div class="col-md-6 col-xs-6 fPlayerPicSetup pull-right">
-				<img class="fPlayerImg" src="{{ fPlayerPic }}">
+				<img class="fPlayerImg center-block" src='{{ fPlayerPic }}' width="192px" height="256px">
 			</div>
 		</div>
 		<div class="row playerNames">
 			<div class="col-md-5 col-xs-5 bPlayerNameSetup">
-				<p class="bPlayerName">{{ bPlayerName }}</p>
+				<h4 class="bPlayerName text-center">{{ bPlayerName }}</h4>
 			</div>
 			<div class="col-md-6 col-xs-6 fPlayerNameSetup pull-right">
-				<p class="fPlayerName">{{ fPlayerName }}</p>
+				<h4 class="fPlayerName text-center">{{ fPlayerName }}</h4>
 			</div>
 		</div>
 		<div class="row playerWeights">
 			<div class="col-md-5 col-xs-5 bPlayerWeightSetup">
-				<p class="bPlayerWeight">{{ bPlayerWeight }}</p>
+				<h4 class="bPlayerWeight text-center">{{ bPlayerWeight }}</h4>
 			</div>
 			<div class="col-md-6 col-xs-6 fPlayerWeightSetup pull-right">
-				<p class="fPlayerWeight">{{ fPlayerWeight }}</p>
+				<h4 class="fPlayerWeight text-center">{{ fPlayerWeight }}</h4>
 			</div>
 		</div>
 	</div>

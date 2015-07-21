@@ -131,12 +131,12 @@ def search_by_query(query):
                 # if the player object has already been added then
                 # we don't need to grab related data.
                 player_data.append(p)
-                td = Team.query.filter_by(name = p.team_name).first()
+                td = Team.query.filter_by(name = p['team_name']).first()
                 td = td.serialize
                 td['query_string'] = item
-                if not contains(team_data, lambda x: x['name' == td['name']):
+                if not contains(team_data, lambda x: x['name'] == td['name']):
                     team_data.append(td)
-                gs = Game.query.filter(or_(Game.home_team == p.team_name, Game.away_team == p.team_name))
+                gs = Game.query.filter(or_(Game.home_team == p['team_name'], Game.away_team == p['team_name']))
                 for g in gs:
                     g = g.serialize
                     g['query_string'] = item
@@ -158,7 +158,7 @@ def search_by_query(query):
                     if not contains(player_data, lambda x: x['id'] == p['id']):
                         player_data.append(p)
 
-                gs = Game.query.filter(or_(Game.home_team == t.name, Game.away_team == t.name))
+                gs = Game.query.filter(or_(Game.home_team == t['name'], Game.away_team == t['name']))
                 for g in gs:
                     g = g.serialize
                     g['query_string'] = item
@@ -172,8 +172,8 @@ def search_by_query(query):
             g['query_string'] = item
             if not contains(game_data, lambda x: x['id'] == g['id']):
                 game_data.append(g)
-                ht = Team.query.filter_by(name = g.home_team).first().serialize
-                at = Team.query.filter_by(name = g.away_team).first().serialize
+                ht = Team.query.filter_by(name = g['home_team']).first().serialize
+                at = Team.query.filter_by(name = g['away_team']).first().serialize
                 ht['query_string'] = item
                 at['query_string'] = item
                 if not contains(team_data, lambda x: x['name'] == ht['name']):
