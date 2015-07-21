@@ -180,67 +180,44 @@ def search_by_query(query):
                 }
             }
     
-    # temp object for matched values
-    matched_keywords = {
-        'teams' : {},
-        'games' : {},
-        'players' : {}
-    }
-
-    # iterate through the teams we found based on the query
-    for t in teams_result :
-        # quick reference variable
-        teams_matched = matched_keywords["teams"]
-        # Organize results based on team names
-        teams_matched[t.name] = {}
-        # quick reference variable
-        team_obj = teams_matched[t.name]
-        # iterate through attributes within each team vector
-        for a in dir(t) : 
-            # ignore irrelevant attributes
-            if a.startswith(('city', 'conference', 'division', 'mascot', 'site_name', 'state', 'twitter')) :
-                print(a)
-                # check each search_item against the returned values for each attribute
-                for i in search_items :
-                    attr_val = getattr(t, a)
-                    # check to see if search_item is contained within a result; if so, add it to our object
-                    if ((i.lower() in attr_val.lower()) and not a in team_obj) :
-                        # We only care if we don't have this key's value stored yet, otherwise it's more than likely a duplicate
-                        team_obj[a] = attr_val
-
-    # iterate through the teams in our results array to find where to put the matched_keywords
-    for t in data["results"]["teams"] :
-        # store each object of matched_keywords with respective team data
-        if (t["name"] in matched_keywords["teams"]) :
-            t["matched_keywords"] = matched_keywords["teams"][t["name"]]
-
-    #iterate through the games we found based on the query
-    for g in games_result :
-        # quick reference variable
-        games_matched = matched_keywords["games"]
-        # organize results based on game ids
-        games_matched[g.id] = {}
-        # quick reference variable
-        game_obj = games_matched[g.id]
-        # iterate through attributes within each game vector
-        for a in dir(g) :
-            # only care about the following attributes
-            if a.startswith(('away_score', 'away_team', 'date_string', 'home_score', 'home_team', 'id')) :
-                #check each search_item against the returned values for each attribute
-                for i in search_items :
-                    attr_val = getattr(g, a)
-                    if ((type(attr_val) == int) and (attr_val == i) and not a in game_obj) :
-                        game_obj[a] = attr_val
-                    # check to see if search_item is contained within a result; if so, add it to our object
-                    elif (not(type(attr_val) == int) and (i.lower() in attr_val.lower()) and not a in game_obj) :
-                        # We only care if we don't have this key's value sored yet, otherwise it's more than likely a duplicate
-                        game_obj[a] = attr_val
-
-    #iterate through the games inour results array to find where to put the matched_keywords
-    for g in data["results"]["games"] :
-        # store each object of matched_keywords with respective game data
-        if (g["id"] in matched_keywords["games"]) :
-            g["matched_keywords"] = matched_keywords["games"][g["id"]]
+    find_matched_keys(search_items, teams_result, data, "teams", "name", ('city', 'conference', 'division', 'mascot', 'site_name', 'state', 'twitter'))
+    find_matched_keys(search_items, games_result, data, "games", "id",  ('away_score', 'away_team', 'date_string', 'home_score', 'home_team', 'id')) 
+    find_matched_keys(search_items, players_result, data, "players", "id", ('age', 'current_team', 'id', 'player_number', 'position', 'twitter', 'weight'))
 
     return json.dumps(data);
 
+def find_matched_keys(search_items, items_result, data, items_name_str, primary_identifier_str, attributes_of_interest):
+    # temp object for matched values
+    matched_keywords = {}
+
+    #iterate through the items we found based on the query
+    for i in items_result :
+        # quick reference variable
+        item_obj = None
+        # organize results based on primary identifier
+        if (primary_identifier_str == "id") :
+            matched_keywords[i.id] = {}
+            item_obj = matched_keywords[i.id]
+        else : # identifier is names
+            matched_keywords[i.name] = {}
+            item_obj = matched_keywords[i.name]
+        # iterate through attributes within search result vector
+        for a in dir(i) :
+            print(a, getattr(i, a))
+            # only care about the following attributes
+            if a.startswith(attributes_of_interest) :
+                #check each search_item against the returned values for each attribute
+                for s in search_items :
+                    attr_val = getattr(i, a)
+                    if ((type(attr_val) == int) and (attr_val == s) and not a in item_obj) :
+                        item_obj[a] = attr_val
+                    # check to see if search_item is contained within result; if so, add it to our object
+                    elif (not(type(attr_val) == int) and (s.lower() in attr_val.lower()) and not a in item_obj) :
+                        # We only care if we don't have this key's value sored yet, otherwise it's more than likely a duplicate
+                        item_obj[a] = attr_val
+
+    #iterate through the items in our results array to find where to put the matched_keywords
+    for i in data["results"][items_name_str] :
+        # store each object of matched_keywords with respective data objects
+        if (i[primary_identifier_str] in matched_keywords) :
+            i["matched_keywords"] = matched_keywords[i[primary_identifier_str]]
