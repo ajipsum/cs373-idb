@@ -254,3 +254,13 @@ video#bgvid { transition: 1s opacity; }
 .searchHeading {
     background-color: white;
 }
+
+/*Who Weighs More CSS */
+
+.otherAPIheading {
+    background-color: white;
+}
+
+.otherAPIcontent {
+    background-color: white;
+}
