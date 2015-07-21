@@ -29,8 +29,17 @@
     </div>
     <div ng-hide="results.games == 0">
         <h3>Games ({{results.games.length}})</h3>
-        <div ng-repeat="game in results.games">
-            <h4><a href="/game/{{game.id}}">{{game.away_team}} vs {{game.home_team}}</a></h4>
+        <div ng-repeat="game in results.games" class="s_result">
+            <div class="pull-left gameThumb">
+                <img src="/assets/images/teamlogos/{{game.away_team}}.png"></img>VS   <img src="/assets/images/teamlogos/{{game.home_team}}.png"></img>
+            </div>
+            <div class="pull-left gameSum">
+                <h4><a href="/game/{{game.id}}">{{game.away_team}} vs {{game.home_team}}</a></h4>
+                <span ng-repeat="(key, value) in game.matched_keywords">
+                    {{key}}: <strong>{{value}}</strong>
+                </span>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
 </div>

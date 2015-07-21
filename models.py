@@ -164,7 +164,7 @@ class Team(db.Model):
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   google_maps = db.Column(db.String(256))
-  search_vector = db.Column(TSVectorType('name', 'conference', 'division', 'site_name', 'google_maps'))
+  search_vector = db.Column(TSVectorType('name', 'conference', 'division', 'site_name'))
 
   # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
