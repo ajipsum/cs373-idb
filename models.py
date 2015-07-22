@@ -76,7 +76,7 @@ class Player(db.Model):
   season_3PM_A = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   team_name = db.Column(db.String(256), db.ForeignKey('team.name'))
-  search_vector = db.Column(TSVectorType('name','experience_years', 'position', 'player_number', 'current_team', 'weight', 'twitter', 'age', 'team_name'))
+  search_vector = db.Column(TSVectorType('name', 'position', 'player_number', 'current_team', 'weight', 'twitter', 'age', 'team_name'))
 
   # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 
@@ -164,7 +164,7 @@ class Team(db.Model):
   twitter = db.Column(db.String(256))
   citation = db.Column(db.String(256))
   google_maps = db.Column(db.String(256))
-  search_vector = db.Column(TSVectorType('name', 'conference', 'division', 'site_name'))
+  search_vector = db.Column(TSVectorType('name', 'conference', 'division'))
 
   # __table_args__ = {'mysql_engine':'MyISAM', 'mysql_charset':'utf8', 'mysql_row_format':'dynamic'}
 

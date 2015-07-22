@@ -177,6 +177,7 @@ id = db.Column(db.Integer, primary_key=True) - The identifying number of the gam
 <li>home_team = db.Column(db.String(256)) - The name of the home team.</li>
 <li>away_team = db.Column(db.String(256)) - The name of the away team.</li>
 <li>date = db.Column(BIGINT(unsigned=True)) - The date on which the game was played in epoch format.</li>
+<li>date_string = db.Column(db.String(256)) - Contains the date in string format used for the search </li>
 <li>home_score = db.Column(db.String(256)) - The home team's final score.</li>
 <li>away_score = db.Column(db.String(256)) - The away team's final score.</li>
 <li>home_box_fgm = db.Column(db.String(256))</li>
