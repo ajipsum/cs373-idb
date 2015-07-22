@@ -34,10 +34,10 @@ within that range.
 + Parameters
     + name:  None (optional, string) - Name of player to filter by.
     + position: None (optional, string) - Position to filter by.
-    + player_number: None (optional, number) - Jersey number to filter by, may be tuple range.
+    + player_number: None (optional, number) - Jersey number to filter by.
     + current_team: None (optional, string) - Shortened team name to filter by.
-    + age: None (optional, number) - Age to filter by, may be tuple range.
-    + weight: None (optional, number) - Weight to filter by, may be tuple range.
+    + age: None (optional, number) - Age to filter by.
+    + weight: None (optional, number) - Weight to filter by.
 
 + Response 200 (application/json)
 
@@ -48,7 +48,7 @@ collection endpoint and providing a JSON Player object as the message body.
 
 + Response 201 (application/json)
 
-## Player [/resources/player/{name}?{attribute}]
+## Player [/resources/player/{id}]
 
 Single resource endpoint. Will return the Player data associated with the provided
 name if it exists, optionally filtered by the provided attribute parameters.
@@ -56,8 +56,7 @@ name if it exists, optionally filtered by the provided attribute parameters.
 ### Retrieve a Player [GET]
 
 + Parameters
-    + name: None (required, string) - Name of the Player to retrieve.
-    + attribute: None (optional, bool) - Specific attribute to return, may be zero or more of the attributes associated with the Player data model.
+    + id: None (required, number) - ID (Primary Key) of the Player to retrieve.
 
 + Response 200 (application/json)
 
@@ -94,7 +93,7 @@ collection endpoint and providing a JSON Team object as the message body.
 
 + Response 201 (application/json)
 
-## Team [/resources/team/{team_name}?{attribute}]
+## Team [/resources/team/{team_name}]
 
 This single resource endpoint will return the data model of a team which matches
 Team name, optinally filtered by the associated attributes.
@@ -103,7 +102,6 @@ Team name, optinally filtered by the associated attributes.
 
 + Parameters
     + team_name: None (required, string) - Name of the Team to retrieve.
-    + attribute: None (optional, bool) - Specific attribute to return, may be zero or more of the attributes associated with the Team data model.
 
 + Response 200 (application/json)
 
@@ -219,6 +217,25 @@ Request will return a list of all games played at the given arena during the yea
     + site: None (required, string) - Name of the Arena to query for.
     
 + Response 200 (application/json)
+
+## Group Site Search
+
+The Site Search API Endpoint.
+
+## Search [/resources/search/{search_string}]
+
+Search requests will will execute searches on all space delimited words in the query string.
+Searches are ordered first by matches against the entire string and then subsequently by each 
+individual word in the string.
+
+### Search [GET]
+
++ Parameters
+    + search_string: "Tim Duncan" (required, string) - Query string to search against.
+
++ Response 200 (application/json)
+
+
 
 
 

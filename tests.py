@@ -169,7 +169,7 @@ class TestAPI (TestCase) :
          self.assertEqual(p.weight, "250")
 
     def test_RESTful_player(self):
-        url = urlopen(self.api_host + "resources/player/341")
+        url = urlopen(self.api_host + "resources/player/350")
         p = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
         self.assertEqual(p["name"], "Phil Pressey") 
         self.assertEqual(p["position"], "PG")
@@ -242,7 +242,7 @@ class TestAPI (TestCase) :
          self.assertEqual(g.date, 1420934400)
 
     def test_RESTful_game(self):
-        url = urlopen(self.api_host + "resources/game/1151")
+        url = urlopen(self.api_host + "resources/game/2280")
         g = json.loads(url.read().decode(url.info().get_param('charset') or 'utf-8'))
         self.assertEqual(g["home_team"], "Celtics") 
         self.assertEqual(g["home_score"], "86")
